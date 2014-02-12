@@ -1,0 +1,9 @@
+# robots.txt for http://www.chadstovern.com/
+
+User-agent: *
+Disallow: /archives/
+Disallow: /author/
+Disallow: /categories/
+Disallow: /static/
+Disallow: /theme/
+Disallow: /tag/

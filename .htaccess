@@ -1,0 +1,16 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+
+## non-www to www
+RewriteCond %{HTTP_HOST} ^chadstovern\.com$
+RewriteRule ^(.*)$ "http\:\/\/www\.chadstovern\.com\/$1" [R=301,L]
+
+## change homepage
+RewriteCond %{HTTP_HOST} ^chadstovern\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.chadstovern\.com$
+RewriteRule ^index\.html$ "http\:\/\/www\.chadstovern\.com\/about" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^chadstovern\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.chadstovern\.com$
+RewriteRule ^/?$ "http\:\/\/www\.chadstovern\.com\/about" [R=301,L]

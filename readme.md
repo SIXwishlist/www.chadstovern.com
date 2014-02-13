@@ -1,3 +1,1 @@
-# www.chadstovern.com
-
-## [](www.chadstovern.com)
+[chadstovern.com](http://www.chadstovern.com)

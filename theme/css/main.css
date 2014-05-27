@@ -26,6 +26,12 @@ body {
     text-align: left;
 }
 
+/*chad image settings*/
+img.floatRight {
+	float: right;
+	margin: 10px;
+}
+
 /* Headings */
 h1 {font-size: 2em }
 h2 {font-size: 1.571em}	/* 22px */

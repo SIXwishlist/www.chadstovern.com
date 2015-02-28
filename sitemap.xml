@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/index.html</loc>
-<lastmod>2015-02-22T00:25:05-00:00</lastmod>
+<lastmod>2015-02-28T13:23:49-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/about/</loc>
-<lastmod>2015-02-22T00:25:05-00:00</lastmod>
+<lastmod>2015-02-28T13:23:49-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/projects/</loc>
-<lastmod>2015-02-22T00:25:05-00:00</lastmod>
+<lastmod>2015-02-28T13:23:49-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>

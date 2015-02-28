@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>changing your internal field&nbsp;separator | chadstovern.com</title>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!--site title-->
+	<div id="site_title">
+		<h1><a href="http://www.chadstovern.com">chadstovern.com</a></h1>	</div>
+	<!--menu-->
+	<div id="menu">
+		<ul>
+			<li><a href="/">blog</a></li>
+			<li><a href="/about/">about</a></li>
+			<li><a href="/about/#contact">contact</a></li>
+			<li><a href="/projects/">projects</a></li>
+			<li><a href="/archives/">archives</a></li>
+			<li><a href="/feed/all-posts.xml" type="application/atom+xml" rel="alternate"><i class="fa fa-rss"></i></a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+	<div id="main">
+		<div id="page_title">
+<div id="article_title">
+	<!--link post support-->
+		<h1>changing your internal field&nbsp;separator</h1>
+</div>
+		</div>
+<div class="index_meta">
+Wed 27 March 2013 &nbsp;
+
+filed under: <a href="/technology//">technology</a> &nbsp;
+
+ 
+    tags: <a href="/tag/scripting//">scripting</a> <a href="/tag/bash//">bash</a> </div>
+<div class="article_content">
+<h2>Wow; that sounds pretty exciting doesn’t&nbsp;it?</h2>
+<p>If you do much shell scripting (I frequent bash) at some point you’ll come across “<span class="caps">IFS</span>” and learn to appreciate the usefulness in manipulating it.  Let’s look at a script showing that — and then dive into the&nbsp;details.</p>
+<div class="highlight"><pre><span class="c">#!/usr/bin/env bash</span>
+
+<span class="c">## test function</span>
+ifs_test<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">cd</span> ~/tmp <span class="o">||</span> <span class="nb">exit </span>1
+    <span class="k">for</span> entry in <span class="sb">`</span>ls -lah<span class="sb">`</span>
+    <span class="k">do</span>
+        <span class="nb">echo</span> <span class="nv">$entry</span>
+    <span class="k">done</span>
+<span class="o">}</span>
+
+<span class="c">## let’s see how it behaves</span>
+ifs_test
+
+<span class="c">## let’s modify IFS and run it again</span>
+<span class="nv">oIFS</span><span class="o">=</span><span class="nv">$IFS</span>
+<span class="nv">IFS</span><span class="o">=</span><span class="s2">&quot;</span>
+<span class="s2">&quot;</span>
+ifs_test
+
+<span class="c">## let’s be anal and restore IFS explicitly</span>
+<span class="nv">IFS</span><span class="o">=</span><span class="nv">$oIFS</span>
+
+<span class="nb">exit</span>
+</pre></div>
+
+
+<h2>So what’s happening here and how is it&nbsp;relevant?</h2>
+<p>A number of times I’ve had to write scripts to automate the processing of files, which can turn out to be any combination of renaming them, moving them around, or checking if they are valid based on some set of rules.  One thing that can often bite me is file names with unexpected spaces.  You may say, “but people know how to name the files correctly, there’s documentation for it even.”  I’m sure you’re right, but you’re not accounting for the fact that these people are human.  Humans make mistakes.  You can get clever and pass results through another Unix tool, but I prefer to avoid extra dependencies when the shell I’m working in can handle it cleanly and&nbsp;efficiently.</p>
+<p>As an example look at the bash function <code>ifs_test</code> in our example.  It’s just a trivial for loop which echoes out the results of the <code>ls -lah</code> command.  The first time it is called this is the result we&nbsp;get:</p>
+<div class="highlight"><pre>[chadhs@mac scratch]$ ./ifstest.sh
+drwxr-xr-x
+4
+chadhs
+staff
+136B
+Mar
+24
+19:36
+.
+drwxr-xr-x+
+39
+chadhs
+staff
+1.3K
+Mar
+24
+19:36
+..
+-rw-r--r--
+1
+chadhs
+staff
+576B
+Jul
+31
+2012
+pckeyboardhack.tmp
+-rw-r--r--
+1
+chadhs
+staff
+0B
+Mar
+24
+17:17
+so-secret-filename-is-classified.md
+</pre></div>
+
+
+<h2>Ouch.  That was super ugly; how do we fix&nbsp;it?</h2>
+<p>Before explaining that, let’s see how the output looks the second time the function <code>ifs_test</code> is&nbsp;called.</p>
+<div class="highlight"><pre>drwxr-xr-x   4 chadhs  staff   136B Mar 24 19:36 .
+drwxr-xr-x+ 39 chadhs  staff   1.3K Mar 24 19:36 ..
+-rw-r--r--   1 chadhs  staff   576B Jul 31  2012 pckeyboardhack.tmp
+-rw-r--r--   1 chadhs  staff     0B Mar 24 17:17 so-secret-filename…
+</pre></div>
+
+
+<h2>Ahh… that’s much&nbsp;better.</h2>
+<p>So to fully understand what is going on each time the function <code>ifs_test</code> is called we need to understand what the variable <span class="caps">IFS</span> is.  By default the internal shell variable <span class="caps">IFS</span> is set to recognize spaces, tabs, and new lines as a field delimiter (aka Internal Field Separator).  Seeing that there are multiple spaces in each of our results from the <code>ls -lah</code> command in the for loop, our shell is treating every single white space (compare the first result to the second) as a delimiter for a new item in our list of results renerated in the for&nbsp;loop.</p>
+<h2>Now for the&nbsp;fix</h2>
+<p>You’ll notice in our example that before the function <code>ifs_test</code> is called the second time, we set a variable called oIFS to store the default value of <span class="caps">IFS</span>, and then change <span class="caps">IFS</span> to only treat a new line as a field separator / delimiter.  Once we no longer need this behavior we then set <span class="caps">IFS</span> back to it’s default value <sup id="fnref:unset"><a class="footnote-ref" href="#fn:unset" rel="footnote">1</a></sup>.</p>
+<h2>Wrapping it all&nbsp;up</h2>
+<p>The reason I spent a little time writing this up and sharing it was the simple fact that learning about how to alter <span class="caps">IFS</span> to control how the shell delimits results saved me some pain in a project recently.  My scripts continued to run and do their job but I’d get a lot of little errors when someone didn’t follow the documentation; and trusting humans is just bad for business.&nbsp;;-)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:unset">
+<p>In theory we can just unset <span class="caps">IFS</span> to return it to it’s default value, but I like to do it manually <span class="amp">&amp;</span> explicitly.&#160;<a class="footnote-backref" href="#fnref:unset" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+</div>
+	</div>
+	</div>
+	<div id="footer">
+<div class="comments">
+	<h4>have a comment, question, or correction?  let's talk on <i class="fa fa-twitter"></i> <a href="https://twitter.com/chadhs">twitter</a> or via <i class="fa fa-envelope-o"></i> <a href="mailto:comment@chadstovern.com">email</a>.<br><br></h4>
+</div>
+
+<br>
+© 2012–2015 <a href="http://www.chadstovern.com">Chad Stovern</a>.	</div>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-7881849-4");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+</body>
+
+</html>

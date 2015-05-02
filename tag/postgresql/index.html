@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>technology | Chad Stovern</title>
+	<title>posts tagged with “postgresql” | Chad Stovern</title>
 	<link rel="stylesheet" href="/theme/css/main.css" type="text/css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
@@ -27,8 +27,9 @@
 	<div id="content">
 	<div id="main">
 		<div id="page_title">
- <div id="category_title"><h1>technology</h1></div>		</div>
-
+<h1>posts tagged with “postgresql”</h1>		</div>
+	<br>
+	
 <!--articles-->
 
 			<div id="first_article">
@@ -96,123 +97,10 @@ Do this now and save keystrokes&nbsp;later.</p>
 			</div>
 			<br>
 
-			<div class="more_articles">
-			<h1>more articles</h1>
-			<hr>
-			</div>
 
 
 
-			<div class="more_articles">
-			<!--link post support-->
-				<a href="/quick-css-for-better-looking-pull-quotes/"><h2>Quick <span class="caps">CSS</span> for better looking pull&nbsp;quotes</h2></a>
-			</div>
-			<div class="index_meta">
-Mon 15 December 2014 &nbsp;
 
-filed under: <a href="/technology//">technology</a> &nbsp;
-
- 
-    tags: <a href="/tag/css//">css</a> <a href="/tag/design//">design</a> 			</div>
-			<div class="article_content">
-			<p>I decided that I wanted to be one of the cool kids that could do daringfireball.net style quick pull quote + commentary&nbsp;posts.</p>
-<p><strong>Problem:</strong>  My custom theme&#8217;s <span class="caps">CSS</span> just left pull quotes looking like plain indented text… blah, blargh,&nbsp;barf.</p>
-<p>I don&#8217;t pretend to be a designer today, but I want things I make to minimize eye-bleeding whenever&nbsp;possible.</p>
-<p>I gave myself a timebox of 15 minutes to find a workable solution and here are the fruits of that&nbsp;labor:</p>
-<p><strong>Solution:</strong></p>
-<div class="highlight"><pre><span class="nt">blockquote</span> <span class="p">{</span>
-    <span class="k">margin-top</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
-    <span class="k">margin-bottom</span><span class="o">:</span> <span class="m">25px</span><span class="p">;</span>
-    <span class="k">margin-left</span><span class="o">:</span> <span class="m">50px</span><span class="p">;</span>
-    <span class="k">padding-left</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
-    <span class="k">border-left</span><span class="o">:</span> <span class="m">3px</span> <span class="k">solid</span> <span class="m">#ccc</span><span class="p">;</span>
-<span class="p">}</span>
-</pre></div>
-
-
-<p><strong>Example:</strong></p>
-<blockquote>
-<p>Things can be ...</p></blockquote>
-			</div>
-			<div class="readmore">
-				<a href="/quick-css-for-better-looking-pull-quotes/">read more</a>
-			</div>
-			<br>
-
-
-
-			<div class="more_articles">
-			<!--link post support-->
-				<a href="/how-to-backup-all-your-files-to-amazon-s3/"><h2>How to Backup All Your Files to Amazon&nbsp;S3</h2></a>
-			</div>
-			<div class="index_meta">
-Wed 08 October 2014 &nbsp;
-
-filed under: <a href="/technology//">technology</a> &nbsp;
-
- 
-    tags: <a href="/tag/amazon-s3//">amazon-s3</a> <a href="/tag/backups//">backups</a> 			</div>
-			<div class="article_content">
-			<p><img alt="Amazon Web Services" src="/images/amazon-aws.jpg" /></p>
-<p>Losing your favorite photos, your entire music collection, or your most important documents is something none us want to experience, yet there are still so many of us that either have an inadequate backup strategy or none at&nbsp;all.</p>
-<p>I&#8217;ve written a full <a href="http://computers.tutsplus.com/tutorials/how-to-backup-all-your-files-to-amazon-s3--cms-21386">tutorial</a> over at Tuts+ covering exactly how you can protect yourself with Amazon&nbsp;S3.</p>
-<p>Check it out here:  <strong><a href="http://computers.tutsplus.com/tutorials/how-to-backup-all-your-files-to-amazon-s3--cms-21386">How to Backup All Your Files to Amazon&nbsp;S3</a></strong></p>
-			</div>
-			<div class="readmore">
-				<a href="/how-to-backup-all-your-files-to-amazon-s3/">read more</a>
-			</div>
-			<br>
-
-
-
-			<div class="more_articles">
-			<!--link post support-->
-				<a href="/upgrade-freebsd-ports-without-confirmation-prompts/"><h2>Upgrade FreeBSD ports without confirmation&nbsp;prompts</h2></a>
-			</div>
-			<div class="index_meta">
-Mon 17 February 2014 &nbsp;
-
-filed under: <a href="/technology//">technology</a> &nbsp;
-
- 
-    tags: <a href="/tag/freebsd//">freebsd</a> 			</div>
-			<div class="article_content">
-			<p>Here is a very handy method for updating all of the software on your FreeBSD box.  This gives you the ability to just &#8220;walk away&#8221; while your machine merrily hums along recompiling all your software without you having to sit around to answer&nbsp;prompts.</p>
-<h2>Update your ports&nbsp;tree</h2>
-<div class="highlight"><pre>portsnap fetch &amp;&amp; portsnap update
-</pre></div>
-
-
-<h2>Check for updates and choose / update any&nbsp;options</h2>
-<div class="highlight"><pre>portmaster -an --no-confirm
-</pre></div>
-
-
-<h2>Update all ports without any confirmation&nbsp;questions</h2>
-<div class="highlight"><pre>portmaster -aydbg --no-confirm
-</pre></div>
-
-
-<h2>…Or update only specific ports without any confirmation&nbsp;questions</h2>
-<div class="highlight"><pre>portmaster -ydbg --no-confirm portdir/port portdir2/port2
-</pre></div>
-
-
-<h2>Explanations of options from the portmaster man&nbsp;page</h2>
-<blockquote>
-<p>-y  answer yes ...</p></blockquote>
-			</div>
-			<div class="readmore">
-				<a href="/upgrade-freebsd-ports-without-confirmation-prompts/">read more</a>
-			</div>
-			<br>
-
-
-
-<p class="paginator">
-    Page 1 / 2
-        	<a href="http://www.chadstovern.com/technology//page/2/">next &raquo;</a>
-</p>
 
 	</div>
 	</div>

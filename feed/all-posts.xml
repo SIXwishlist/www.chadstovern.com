@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Chad Stovern</title><link href="http://www.chadstovern.com/" rel="alternate"></link><link href="http://www.chadstovern.com/feed/all-posts.xml" rel="self"></link><id>http://www.chadstovern.com/</id><updated>2015-02-16T16:58:00-06:00</updated><entry><title>What you should be doing even when you don’t want to</title><link href="http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-want-to/" rel="alternate"></link><updated>2015-02-16T16:58:00-06:00</updated><author><name>Chad Stovern</name></author><id>tag:www.chadstovern.com,2015-02-16:what-you-should-be-doing-even-when-you-dont-want-to/</id><summary type="html">&lt;p&gt;Brett Terpstra&amp;#8217;s &lt;a href="http://www.esn.fm/systematic/126"&gt;interview&lt;/a&gt; with Rory Vaden was a gold mine, I highly recommend a &lt;a href="http://www.esn.fm/systematic/126"&gt;listen&lt;/a&gt;.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Chad Stovern</title><link href="http://www.chadstovern.com/" rel="alternate"></link><link href="http://www.chadstovern.com/feed/all-posts.xml" rel="self"></link><id>http://www.chadstovern.com/</id><updated>2015-05-01T23:19:00-05:00</updated><entry><title>Setting Up PostgreSQL on OS X Yosemite for Local Development</title><link href="http://www.chadstovern.com/setting-up-postgresql-on-osx-yosemite-for-local-development/" rel="alternate"></link><updated>2015-05-01T23:19:00-05:00</updated><author><name>Chad Stovern</name></author><id>tag:www.chadstovern.com,2015-05-01:setting-up-postgresql-on-osx-yosemite-for-local-development/</id><summary type="html">&lt;p&gt;First and foremost, I highly recommend that you download &lt;a href="https://www.virtualbox.org/wiki/Downloads"&gt;VirtualBox&lt;/a&gt; and &lt;a href="https://www.vagrantup.com/downloads.html"&gt;Vagrant&lt;/a&gt; to bootstrap a development server on your&amp;nbsp;Mac.&lt;/p&gt;
+&lt;p&gt;That being said there are times when you&amp;#8217;re doing a simple test or tutorial and you&amp;#8217;d like to be able to run PostgreSQL on your local&amp;nbsp;machine.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;m writing this as I found setting this up on &lt;span class="caps"&gt;OS&lt;/span&gt; X 10.10 Yosemite to be a bit of a pain, since a simple &lt;a href="http://brew.sh"&gt;homebrew&lt;/a&gt; install didn&amp;#8217;t do the trick for&amp;nbsp;me.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Caution&lt;/strong&gt;: Before going any further, this tutorial assumes you do not have a prior installation that has data you actually want to keep.  If this is not the case then &lt;strong&gt;stop now&lt;/strong&gt;, and backup your data to restore&amp;nbsp;later.&lt;/p&gt;
+&lt;h2&gt;Fire Up That Command Line, It&amp;#8217;s Time to Dive&amp;nbsp;In.&lt;/h2&gt;
+&lt;p&gt;This is not a production environment and chances are this is a Mac that you alone use.  Therefore it&amp;#8217;s perfectly acceptable to optimize for simplicity and ease of&amp;nbsp;use.&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;ve never installed PostgreSQL in the past &lt;em&gt;(if you have skip ahead one step)&lt;/em&gt;, then create the data directory you need and set the permissions so your user account has full&amp;nbsp;access.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;mkdir /usr/local/var/postgres
+chmod 770 /usr/local/var/postgres
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you&amp;#8217;ve installed PostgreSQL before &lt;em&gt;(if you haven&amp;#8217;t you should follow the first step and skip this one)&lt;/em&gt; and &lt;strong&gt;do not&lt;/strong&gt; have data you care about, follow these steps to setup your data directory with full access for your user account.&lt;br /&gt;
+If the first command produces an error just ignore it, you&amp;#8217;re making sure PostgreSQL isn&amp;#8217;t loaded already and trying to run before you have things setup&amp;nbsp;correctly.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+sudo rm -rf /usr/local/var/postgres
+mkdir /usr/local/var/postgres
+chmod 770 /usr/local/var/postgres
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now install PostgreSQL using &lt;a href="http://brew.sh"&gt;homebrew&lt;/a&gt;.  If you already have it or an old build just uninstall that first.  &lt;em&gt;(hint: &lt;code&gt;brew uninstall postgresql&lt;/code&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;brew install postgresql
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Next initialize the data&amp;nbsp;directory.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;initdb -D /usr/local/var/postgres
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;After the initialization is complete, setup PostgreSQL to run on boot with these two commands.  The first creates a symlink to a launch agent and the second tells launchctl that that agent would be loaded now and on&amp;nbsp;boot.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;PostgreSQL will now start up and be ready to use.  One trick is to run the &lt;code&gt;createdb&lt;/code&gt; command with no arguments to create a database named after your user account.  You never have to do anything with this database, but this allows you to run the &lt;code&gt;psql&lt;/code&gt; command unadorned to connect to&amp;nbsp;PostgreSQL.  &lt;/p&gt;
+&lt;p&gt;&lt;span class="caps"&gt;TL&lt;/span&gt;;&lt;span class="caps"&gt;DR&lt;/span&gt;&lt;br /&gt;
+Do this now and save keystrokes&amp;nbsp;later.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;createdb
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Now you can connect to your locally running PostgreSQL server just by running this short&amp;nbsp;command.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;psql
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You&amp;#8217;re now ready to create a database or two for your projects to use and start hacking.  Have fun!&amp;nbsp;:-)&lt;/p&gt;</summary><category term="postgresql"></category><category term="osx"></category></entry><entry><title>What you should be doing even when you don’t want to</title><link href="http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-want-to/" rel="alternate"></link><updated>2015-02-16T16:58:00-06:00</updated><author><name>Chad Stovern</name></author><id>tag:www.chadstovern.com,2015-02-16:what-you-should-be-doing-even-when-you-dont-want-to/</id><summary type="html">&lt;p&gt;Brett Terpstra&amp;#8217;s &lt;a href="http://www.esn.fm/systematic/126"&gt;interview&lt;/a&gt; with Rory Vaden was a gold mine, I highly recommend a &lt;a href="http://www.esn.fm/systematic/126"&gt;listen&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here are a couple pull quotes in no particular order that I thought were nothing other than&amp;nbsp;amazing:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Successful people and top performers at some point learn to do the things they should be doing even when they don&amp;#8217;t feel like doing&amp;nbsp;them.&lt;/p&gt;

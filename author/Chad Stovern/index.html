@@ -34,6 +34,37 @@
 
 			<div id="first_article">
 			<!--link post support-->
+				<a href="/build-a-20-dollar-standing-desk-in-20-minutes/"><h2>Build a $20 Standing Desk in 20&nbsp;Minutes</h2></a>
+			</div>
+			<div class="index_meta">
+Tue 12 May 2015 &nbsp;
+
+filed under: <a href="/productivity//">productivity</a> &nbsp;
+
+ 
+    tags: <a href="/tag/ergonomics//">ergonomics</a> <a href="/tag/standing-desks//">standing-desks</a> <a href="/tag/DIY//">DIY</a> 			</div>
+			<div class="article_content">
+			<p>After nearly a decade of working jobs doing geek stuff sitting in front of a computer all day, I started developing lower back pain.  Even being active off hours wasn&#8217;t enough, so I caved and talked my boss into a <a href="http://www.geekdesk.com/geekdesk-v3">GeekDesk v3</a>.</p>
+<p>However, now that I&#8217;ve moved on and am part of a small <a href="https://idonethis.com/about/our-team/">startup team</a> working from my home office, that&#8217;s just not a purchase I was ready to justify again.  Nine months into my new adventure with <a href="https://idonethis.com">iDoneThis</a> and my enthusiasm is high, yet my back is killing&nbsp;me…</p>
+<p>Colin, the founder of <a href="http://customer.io">Customer.io</a>, has an awesome and famous post about his <a href="http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html">$22 standing desk</a>.  This is truly a creative gem, that I really wanted to set up for&nbsp;myself.</p>
+<p>My problem was that my desk has a raised monitor area.  I would either have to remove part of the desk or hack off half of the back legs of the table in Colin&#8217;s solution.&nbsp;:-(</p>
+<p><img alt="Desk Sitting" src="/images/desk-sitting.jpg" /></p>
+<p>I thought about finding or building a couple simple boxes as the dimensions I would need for the monitor section of my desk and the work surface were roughly the&nbsp;same.  </p>
+<p>After searching around for those dimensions I found this stackable <a href="http://www.target.com/p/room-essentials-24-horizontal-shelf-espresso/-/A-15091670">shelf unit</a> (11.63&#8221; H x 24.13&#8221; W x 11.63&#8221; D and holds up to 20 pounds) at Target.  The total cost with tax and shipping was only $19.84 ( due to a 10% off coupon code + free in store&nbsp;pickup).</p>
+<p>Once I brought the shelves home, it took me all of 20 minutes to clear my desk, assemble them, and set my gear back up.  I&#8217;ve been standing for a week now and once again my back pain has&nbsp;subsided.</p>
+<p><img alt="Desk Standing" src="/images/desk-standing.jpg" /></p>
+			</div>
+			<br>
+
+			<div class="more_articles">
+			<h1>more articles</h1>
+			<hr>
+			</div>
+
+
+
+			<div class="more_articles">
+			<!--link post support-->
 				<a href="/setting-up-postgresql-on-osx-yosemite-for-local-development/"><h2>Setting Up PostgreSQL on <span class="caps">OS</span> X Yosemite for Local&nbsp;Development</h2></a>
 			</div>
 			<div class="index_meta">
@@ -47,60 +78,12 @@ filed under: <a href="/technology//">technology</a> &nbsp;
 			<p>First and foremost, I highly recommend that you download <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> and <a href="https://www.vagrantup.com/downloads.html">Vagrant</a> to bootstrap a development server on your&nbsp;Mac.</p>
 <p>That being said there are times when you&#8217;re doing a simple test or tutorial and you&#8217;d like to be able to run PostgreSQL on your local&nbsp;machine.</p>
 <p>I&#8217;m writing this as I found setting this up on <span class="caps">OS</span> X 10.10 Yosemite to be a bit of a pain, since a simple <a href="http://brew.sh">homebrew</a> install didn&#8217;t do the trick for&nbsp;me.</p>
-<p><strong>Caution</strong>: Before going any further, this tutorial assumes you do not have a prior installation that has data you actually want to keep.  If this is not the case then <strong>stop now</strong>, and backup your data to restore&nbsp;later.</p>
-<h2>Fire Up That Command Line, It&#8217;s Time to Dive&nbsp;In.</h2>
-<p>This is not a production environment and chances are this is a Mac that you alone use.  Therefore it&#8217;s perfectly acceptable to optimize for simplicity and ease of&nbsp;use.</p>
-<p>If you&#8217;ve never installed PostgreSQL in the past <em>(if you have skip ahead one step)</em>, then create the data directory you need and set the permissions so your user account has full&nbsp;access.</p>
-<div class="highlight"><pre>mkdir /usr/local/var/postgres
-chmod 770 /usr/local/var/postgres
-</pre></div>
-
-
-<p>If you&#8217;ve installed PostgreSQL before <em>(if you haven&#8217;t you should follow the first step and skip this one)</em> and <strong>do not</strong> have data you care about, follow these steps to setup your data directory with full access for your user account.<br />
-If the first command produces an error just ignore it, you&#8217;re making sure PostgreSQL isn&#8217;t loaded already and trying to run before you have things setup&nbsp;correctly.</p>
-<div class="highlight"><pre>launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-sudo rm -rf /usr/local/var/postgres
-mkdir /usr/local/var/postgres
-chmod 770 /usr/local/var/postgres
-</pre></div>
-
-
-<p>Now install PostgreSQL using <a href="http://brew.sh">homebrew</a>.  If you already have it or an old build just uninstall that first.  <em>(hint: <code>brew uninstall postgresql</code>)</em></p>
-<div class="highlight"><pre>brew install postgresql
-</pre></div>
-
-
-<p>Next initialize the data&nbsp;directory.</p>
-<div class="highlight"><pre>initdb -D /usr/local/var/postgres
-</pre></div>
-
-
-<p>After the initialization is complete, setup PostgreSQL to run on boot with these two commands.  The first creates a symlink to a launch agent and the second tells launchctl that that agent would be loaded now and on&nbsp;boot.</p>
-<div class="highlight"><pre>ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-</pre></div>
-
-
-<p>PostgreSQL will now start up and be ready to use.  One trick is to run the <code>createdb</code> command with no arguments to create a database named after your user account.  You never have to do anything with this database, but this allows you to run the <code>psql</code> command unadorned to connect to&nbsp;PostgreSQL.  </p>
-<p><span class="caps">TL</span>;<span class="caps">DR</span><br />
-Do this now and save keystrokes&nbsp;later.</p>
-<div class="highlight"><pre>createdb
-</pre></div>
-
-
-<p>Now you can connect to your locally running PostgreSQL server just by running this short&nbsp;command.</p>
-<div class="highlight"><pre>psql
-</pre></div>
-
-
-<p>You&#8217;re now ready to create a database or two for your projects to use and start hacking.  Have fun!&nbsp;:-)</p>
+<p><strong>Caution</strong>: Before going any further, this tutorial assumes you do not have a prior installation that ...</p>
+			</div>
+			<div class="readmore">
+				<a href="/setting-up-postgresql-on-osx-yosemite-for-local-development/">read more</a>
 			</div>
 			<br>
-
-			<div class="more_articles">
-			<h1>more articles</h1>
-			<hr>
-			</div>
 
 
 
@@ -170,40 +153,8 @@ filed under: <a href="/technology//">technology</a> &nbsp;
 
 
 
-			<div class="more_articles">
-			<!--link post support-->
-				<a href="http://www.practicallyefficient.com/home/rest-begets"
-			 	rel="bookmark"
-  				title="External Link"
-	  			><h2>The importance of&nbsp;rest → </h2></a>
-			<!--link post support-->
-			</div>
-			<div class="index_meta">
-Mon 15 December 2014 &nbsp;
-
-filed under: <a href="/productivity//">productivity</a> &nbsp;
-
- 
-    tags: <a href="/tag/sleep//">sleep</a> <a href="/tag/focus//">focus</a> <a href="/tag/care//">care</a> 			</div>
-			<div class="article_content">
-			<blockquote>
-<p>Rest begets&nbsp;awareness.</p>
-<p>Awareness begets&nbsp;prioritization.</p>
-<p>Prioritization begets&nbsp;caring.</p>
-<p>Caring begets&nbsp;achievement.</p>
-</blockquote>
-<p>This is Eddie Smith at his <a href="http://www.practicallyefficient.com/home/rest-begets">best</a>.  It&#8217;s also some of the best advice you can follow, but it&#8217;s really hard and seems counterintuitive at&nbsp;times.</p>
-<p><a href="/the-importance-of-rest/">∞</a>  </p>
-			</div>
-			<div class="readmore">
-				<a href="/the-importance-of-rest/">read more</a>
-			</div>
-			<br>
-
-
-
 <p class="paginator">
-    Page 1 / 4
+    Page 1 / 5
         	<a href="http://www.chadstovern.com/author/Chad Stovern//page/2/">next &raquo;</a>
 </p>
 

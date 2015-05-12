@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chad Stovern</title>
+	<link rel="stylesheet" href="/theme/css/main.css" type="text/css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<!--site title-->
+	<div id="site_title">
+		<h1><a href="http://www.chadstovern.com">Chad Stovern</a></h1><br>
+		<strong>Christian. Husband. Dad. Geek.</strong>	</div>
+	<!--menu-->
+	<div id="menu">
+		<ul>
+			<li><a href="/">blog</a></li>
+			<li><a href="/about/">about</a></li>
+			<li><a href="/about/#contact">contact</a></li>
+			<li><a href="/projects/">projects</a></li>
+			<li><a href="/archives/">archives</a></li>
+			<li><a href="/feed/all-posts.xml" type="application/atom+xml" rel="alternate"><i class="fa fa-rss"></i></a></li>
+		</ul>
+	</div>
+
+	<div id="content">
+	<div id="main">
+		<div id="page_title">
+		</div>
+
+<!--articles-->
+
+			<div class="more_articles">
+			<!--link post support-->
+				<a href="/changing-your-internal-field-separator/"><h2>changing your internal field&nbsp;separator</h2></a>
+			</div>
+			<div class="index_meta">
+Wed 27 March 2013 &nbsp;
+
+filed under: <a href="/technology//">technology</a> &nbsp;
+
+ 
+    tags: <a href="/tag/scripting//">scripting</a> <a href="/tag/bash//">bash</a> 			</div>
+			<div class="article_content">
+			<h2>Wow; that sounds pretty exciting doesn’t&nbsp;it?</h2>
+<p>If you do much shell scripting (I frequent bash) at some point you’ll come across “<span class="caps">IFS</span>” and learn to appreciate the usefulness in manipulating it.  Let’s look at a script showing that — and then dive into the&nbsp;details.</p>
+<div class="highlight"><pre><span class="c">#!/usr/bin/env bash</span>
+
+<span class="c">## test function</span>
+ifs_test<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">cd</span> ~/tmp <span class="o">||</span> <span class="nb">exit </span>1
+    <span class="k">for</span> entry in <span class="sb">`</span>ls -lah<span class="sb">`</span>
+    <span class="k">do</span>
+        <span class="nb">echo</span> <span class="nv">$entry</span>
+    <span class="k">done</span>
+<span class="o">}</span>
+
+<span class="c">## let’s see how it behaves</span>
+ifs_test
+
+<span class="c">## let’s modify IFS and run it again</span>
+<span class="nv">oIFS</span><span class="o">=</span><span class="nv">$IFS</span>
+<span class="nv">IFS</span><span class="o">=</span><span class="s2">&quot;</span>
+<span class="s2">&quot;</span>
+ifs_test
+
+<span class="c">## let’s be anal and restore IFS explicitly</span>
+<span class="nv">IFS</span><span class="o">=</span><span class="nv">$oIFS</span>
+
+<span class="nb">exit</span>
+</pre></div>
+
+
+<h2>So what ...</h2>
+			</div>
+			<div class="readmore">
+				<a href="/changing-your-internal-field-separator/">read more</a>
+			</div>
+			<br>
+
+
+
+<p class="paginator">
+            	<a href="http://www.chadstovern.com/page/4/">&laquo; back</a>
+    Page 5 / 5
+</p>
+
+	</div>
+	</div>
+	<div id="footer">
+
+<br>
+© 2012–2015 <a href="http://www.chadstovern.com">Chad Stovern</a>.	</div>
+
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-7881849-4");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
+</body>
+
+</html>

@@ -5,23 +5,30 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/index.html</loc>
-<lastmod>2015-05-02T00:29:53-00:00</lastmod>
+<lastmod>2015-05-11T22:39:44-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/about/</loc>
-<lastmod>2015-05-02T00:29:53-00:00</lastmod>
+<lastmod>2015-05-11T22:39:44-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/projects/</loc>
-<lastmod>2015-05-02T00:29:53-00:00</lastmod>
+<lastmod>2015-05-11T22:39:44-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
+</url>
+
+<url>
+<loc>http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes/</loc>
+<lastmod>2015-05-12T09:06:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
 </url>
 
 <url>
@@ -145,7 +152,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/productivity/</loc>
-<lastmod>2015-02-16T16:58:00-05:51</lastmod>
+<lastmod>2015-05-12T09:06:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -207,8 +214,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://www.chadstovern.com/tag/design/</loc>
-<lastmod>2014-12-15T16:17:00-05:51</lastmod>
+<loc>http://www.chadstovern.com/tag/ergonomics/</loc>
+<lastmod>2015-05-12T09:06:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -305,6 +312,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://www.chadstovern.com/tag/standing-desks/</loc>
+<lastmod>2015-05-12T09:06:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://www.chadstovern.com/tag/failure/</loc>
 <lastmod>2014-04-12T14:52:00-05:51</lastmod>
 <changefreq>daily</changefreq>
@@ -326,8 +340,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://www.chadstovern.com/tag/amazon-s3/</loc>
-<lastmod>2014-10-08T09:01:00-05:51</lastmod>
+<loc>http://www.chadstovern.com/tag/security/</loc>
+<lastmod>2013-10-08T09:50:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -361,6 +375,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://www.chadstovern.com/tag/sleep/</loc>
+<lastmod>2014-12-15T16:01:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://www.chadstovern.com/tag/postgresql/</loc>
 <lastmod>2015-05-01T23:19:00-05:51</lastmod>
 <changefreq>daily</changefreq>
@@ -375,6 +396,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://www.chadstovern.com/tag/DIY/</loc>
+<lastmod>2015-05-12T09:06:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://www.chadstovern.com/tag/freebsd/</loc>
 <lastmod>2014-02-17T12:28:00-05:51</lastmod>
 <changefreq>daily</changefreq>
@@ -382,15 +410,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://www.chadstovern.com/tag/sleep/</loc>
-<lastmod>2014-12-15T16:01:00-05:51</lastmod>
+<loc>http://www.chadstovern.com/tag/design/</loc>
+<lastmod>2014-12-15T16:17:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://www.chadstovern.com/tag/security/</loc>
-<lastmod>2013-10-08T09:50:00-05:51</lastmod>
+<loc>http://www.chadstovern.com/tag/amazon-s3/</loc>
+<lastmod>2014-10-08T09:01:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -418,7 +446,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/author/Chad Stovern/</loc>
-<lastmod>2015-05-01T23:19:00-05:51</lastmod>
+<lastmod>2015-05-12T09:06:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

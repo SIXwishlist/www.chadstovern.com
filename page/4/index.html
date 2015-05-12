@@ -33,6 +33,50 @@
 
 			<div class="more_articles">
 			<!--link post support-->
+				<a href="/upgrade-freebsd-ports-without-confirmation-prompts/"><h2>Upgrade FreeBSD ports without confirmation&nbsp;prompts</h2></a>
+			</div>
+			<div class="index_meta">
+Mon 17 February 2014 &nbsp;
+
+filed under: <a href="/technology//">technology</a> &nbsp;
+
+ 
+    tags: <a href="/tag/freebsd//">freebsd</a> 			</div>
+			<div class="article_content">
+			<p>Here is a very handy method for updating all of the software on your FreeBSD box.  This gives you the ability to just &#8220;walk away&#8221; while your machine merrily hums along recompiling all your software without you having to sit around to answer&nbsp;prompts.</p>
+<h2>Update your ports&nbsp;tree</h2>
+<div class="highlight"><pre>portsnap fetch &amp;&amp; portsnap update
+</pre></div>
+
+
+<h2>Check for updates and choose / update any&nbsp;options</h2>
+<div class="highlight"><pre>portmaster -an --no-confirm
+</pre></div>
+
+
+<h2>Update all ports without any confirmation&nbsp;questions</h2>
+<div class="highlight"><pre>portmaster -aydbg --no-confirm
+</pre></div>
+
+
+<h2>…Or update only specific ports without any confirmation&nbsp;questions</h2>
+<div class="highlight"><pre>portmaster -ydbg --no-confirm portdir/port portdir2/port2
+</pre></div>
+
+
+<h2>Explanations of options from the portmaster man&nbsp;page</h2>
+<blockquote>
+<p>-y  answer yes ...</p></blockquote>
+			</div>
+			<div class="readmore">
+				<a href="/upgrade-freebsd-ports-without-confirmation-prompts/">read more</a>
+			</div>
+			<br>
+
+
+
+			<div class="more_articles">
+			<!--link post support-->
 				<a href="/a-moment-of-clarity-in-stressful-times/"><h2>A moment of clarity in stressful&nbsp;times</h2></a>
 			</div>
 			<div class="index_meta">
@@ -106,60 +150,10 @@ filed under: <a href="/productivity//">productivity</a> &nbsp;
 
 
 
-			<div class="more_articles">
-			<!--link post support-->
-				<a href="/changing-your-internal-field-separator/"><h2>changing your internal field&nbsp;separator</h2></a>
-			</div>
-			<div class="index_meta">
-Wed 27 March 2013 &nbsp;
-
-filed under: <a href="/technology//">technology</a> &nbsp;
-
- 
-    tags: <a href="/tag/scripting//">scripting</a> <a href="/tag/bash//">bash</a> 			</div>
-			<div class="article_content">
-			<h2>Wow; that sounds pretty exciting doesn’t&nbsp;it?</h2>
-<p>If you do much shell scripting (I frequent bash) at some point you’ll come across “<span class="caps">IFS</span>” and learn to appreciate the usefulness in manipulating it.  Let’s look at a script showing that — and then dive into the&nbsp;details.</p>
-<div class="highlight"><pre><span class="c">#!/usr/bin/env bash</span>
-
-<span class="c">## test function</span>
-ifs_test<span class="o">()</span>
-<span class="o">{</span>
-    <span class="nb">cd</span> ~/tmp <span class="o">||</span> <span class="nb">exit </span>1
-    <span class="k">for</span> entry in <span class="sb">`</span>ls -lah<span class="sb">`</span>
-    <span class="k">do</span>
-        <span class="nb">echo</span> <span class="nv">$entry</span>
-    <span class="k">done</span>
-<span class="o">}</span>
-
-<span class="c">## let’s see how it behaves</span>
-ifs_test
-
-<span class="c">## let’s modify IFS and run it again</span>
-<span class="nv">oIFS</span><span class="o">=</span><span class="nv">$IFS</span>
-<span class="nv">IFS</span><span class="o">=</span><span class="s2">&quot;</span>
-<span class="s2">&quot;</span>
-ifs_test
-
-<span class="c">## let’s be anal and restore IFS explicitly</span>
-<span class="nv">IFS</span><span class="o">=</span><span class="nv">$oIFS</span>
-
-<span class="nb">exit</span>
-</pre></div>
-
-
-<h2>So what ...</h2>
-			</div>
-			<div class="readmore">
-				<a href="/changing-your-internal-field-separator/">read more</a>
-			</div>
-			<br>
-
-
-
 <p class="paginator">
             	<a href="http://www.chadstovern.com/page/3/">&laquo; back</a>
-    Page 4 / 4
+    Page 4 / 5
+        	<a href="http://www.chadstovern.com/page/5/">next &raquo;</a>
 </p>
 
 	</div>

@@ -5,23 +5,30 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/index.html</loc>
-<lastmod>2015-05-11T22:39:44-00:00</lastmod>
+<lastmod>2015-06-02T09:59:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/about/</loc>
-<lastmod>2015-05-11T22:39:44-00:00</lastmod>
+<lastmod>2015-06-02T09:59:34-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/projects/</loc>
-<lastmod>2015-05-11T22:39:44-00:00</lastmod>
+<lastmod>2015-06-02T09:59:34-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
+</url>
+
+<url>
+<loc>http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/</loc>
+<lastmod>2015-06-02T10:04:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
 </url>
 
 <url>
@@ -159,7 +166,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/technology/</loc>
-<lastmod>2015-05-01T23:19:00-05:51</lastmod>
+<lastmod>2015-06-02T10:04:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -235,8 +242,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://www.chadstovern.com/tag/gmail/</loc>
-<lastmod>2013-10-08T09:50:00-05:51</lastmod>
+<loc>http://www.chadstovern.com/tag/mind-mapping mind-node-pro/</loc>
+<lastmod>2014-06-02T22:30:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -256,6 +263,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://www.chadstovern.com/tag/fastmail/</loc>
+<lastmod>2013-10-08T09:50:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://www.chadstovern.com/tag/simplenote/</loc>
 <lastmod>2014-05-27T12:25:00-05:51</lastmod>
 <changefreq>daily</changefreq>
@@ -263,8 +277,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://www.chadstovern.com/tag/mind-mapping mind-node-pro/</loc>
-<lastmod>2014-06-02T22:30:00-05:51</lastmod>
+<loc>http://www.chadstovern.com/tag/gmail/</loc>
+<lastmod>2013-10-08T09:50:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -291,8 +305,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://www.chadstovern.com/tag/fastmail/</loc>
-<lastmod>2013-10-08T09:50:00-05:51</lastmod>
+<loc>http://www.chadstovern.com/tag/sendmail/</loc>
+<lastmod>2015-06-02T10:04:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -404,7 +418,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/tag/freebsd/</loc>
-<lastmod>2014-02-17T12:28:00-05:51</lastmod>
+<lastmod>2015-06-02T10:04:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -446,7 +460,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/author/Chad Stovern/</loc>
-<lastmod>2015-05-12T09:06:00-05:51</lastmod>
+<lastmod>2015-06-02T10:04:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

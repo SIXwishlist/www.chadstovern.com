@@ -33,6 +33,37 @@
 
 			<div id="first_article">
 			<!--link post support-->
+				<a href="https://www.digitalocean.com/community/tutorials/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1"
+			 	rel="bookmark"
+  				title="External Link"
+	  			><h2>How To Send Email through an External <span class="caps">SMTP</span> Service with Sendmail on FreeBSD&nbsp;10.1 → </h2></a>
+			<!--link post support-->
+			</div>
+			<div class="index_meta">
+Tue 02 June 2015 &nbsp;
+
+filed under: <a href="/technology//">technology</a> &nbsp;
+
+ 
+    tags: <a href="/tag/freebsd//">freebsd</a> <a href="/tag/sendmail//">sendmail</a> 			</div>
+			<div class="article_content">
+			<p>One of the most common needs when setting up a new web server is sending email. The safest and easiest way to do this is to connect your server to a mailing service such as SendGrid or Amazon <span class="caps">SES</span>. Using an external service will help you avoid pitfalls like your server <span class="caps">IP</span> getting blacklisted by anti-spam&nbsp;services.</p>
+<p>I’ve written a <a href="https://www.digitalocean.com/community/tutorials/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1">full tutorial</a> over at <a href="https://www.digitalocean.com/?refcode=70a5a49b1c4c">DigitalOcean</a> covering exactly how you set this up on your FreeBSD&nbsp;droplet.</p>
+<p>If you&#8217;re new to FreeBSD, some of what we do may look a little scary, but you&#8217;ll soon be comfortable rolling up your sleeves to do a little recompiling of system tools like the FreeBSD&nbsp;pros.</p>
+<p>Check out the full tutorial here: <a href="https://www.digitalocean.com/community/tutorials/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1">How To Send Email through an External <span class="caps">SMTP</span> Service with Sendmail on FreeBSD&nbsp;10.1</a></p>
+<p><a href="/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/">∞</a>  </p>
+			</div>
+			<br>
+
+			<div class="more_articles">
+			<h1>more articles</h1>
+			<hr>
+			</div>
+
+
+
+			<div class="more_articles">
+			<!--link post support-->
 				<a href="/setting-up-postgresql-on-osx-yosemite-for-local-development/"><h2>Setting Up PostgreSQL on <span class="caps">OS</span> X Yosemite for Local&nbsp;Development</h2></a>
 			</div>
 			<div class="index_meta">
@@ -46,60 +77,12 @@ filed under: <a href="/technology//">technology</a> &nbsp;
 			<p>First and foremost, I highly recommend that you download <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> and <a href="https://www.vagrantup.com/downloads.html">Vagrant</a> to bootstrap a development server on your&nbsp;Mac.</p>
 <p>That being said there are times when you&#8217;re doing a simple test or tutorial and you&#8217;d like to be able to run PostgreSQL on your local&nbsp;machine.</p>
 <p>I&#8217;m writing this as I found setting this up on <span class="caps">OS</span> X 10.10 Yosemite to be a bit of a pain, since a simple <a href="http://brew.sh">homebrew</a> install didn&#8217;t do the trick for&nbsp;me.</p>
-<p><strong>Caution</strong>: Before going any further, this tutorial assumes you do not have a prior installation that has data you actually want to keep.  If this is not the case then <strong>stop now</strong>, and backup your data to restore&nbsp;later.</p>
-<h2>Fire Up That Command Line, It&#8217;s Time to Dive&nbsp;In.</h2>
-<p>This is not a production environment and chances are this is a Mac that you alone use.  Therefore it&#8217;s perfectly acceptable to optimize for simplicity and ease of&nbsp;use.</p>
-<p>If you&#8217;ve never installed PostgreSQL in the past <em>(if you have skip ahead one step)</em>, then create the data directory you need and set the permissions so your user account has full&nbsp;access.</p>
-<div class="highlight"><pre>mkdir /usr/local/var/postgres
-chmod 770 /usr/local/var/postgres
-</pre></div>
-
-
-<p>If you&#8217;ve installed PostgreSQL before <em>(if you haven&#8217;t you should follow the first step and skip this one)</em> and <strong>do not</strong> have data you care about, follow these steps to setup your data directory with full access for your user account.<br />
-If the first command produces an error just ignore it, you&#8217;re making sure PostgreSQL isn&#8217;t loaded already and trying to run before you have things setup&nbsp;correctly.</p>
-<div class="highlight"><pre>launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-sudo rm -rf /usr/local/var/postgres
-mkdir /usr/local/var/postgres
-chmod 770 /usr/local/var/postgres
-</pre></div>
-
-
-<p>Now install PostgreSQL using <a href="http://brew.sh">homebrew</a>.  If you already have it or an old build just uninstall that first.  <em>(hint: <code>brew uninstall postgresql</code>)</em></p>
-<div class="highlight"><pre>brew install postgresql
-</pre></div>
-
-
-<p>Next initialize the data&nbsp;directory.</p>
-<div class="highlight"><pre>initdb -D /usr/local/var/postgres
-</pre></div>
-
-
-<p>After the initialization is complete, setup PostgreSQL to run on boot with these two commands.  The first creates a symlink to a launch agent and the second tells launchctl that that agent would be loaded now and on&nbsp;boot.</p>
-<div class="highlight"><pre>ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-</pre></div>
-
-
-<p>PostgreSQL will now start up and be ready to use.  One trick is to run the <code>createdb</code> command with no arguments to create a database named after your user account.  You never have to do anything with this database, but this allows you to run the <code>psql</code> command unadorned to connect to&nbsp;PostgreSQL.  </p>
-<p><span class="caps">TL</span>;<span class="caps">DR</span><br />
-Do this now and save keystrokes&nbsp;later.</p>
-<div class="highlight"><pre>createdb
-</pre></div>
-
-
-<p>Now you can connect to your locally running PostgreSQL server just by running this short&nbsp;command.</p>
-<div class="highlight"><pre>psql
-</pre></div>
-
-
-<p>You&#8217;re now ready to create a database or two for your projects to use and start hacking.  Have fun!&nbsp;:-)</p>
+<p><strong>Caution</strong>: Before going any further, this tutorial assumes you do not have a prior installation that ...</p>
+			</div>
+			<div class="readmore">
+				<a href="/setting-up-postgresql-on-osx-yosemite-for-local-development/">read more</a>
 			</div>
 			<br>
-
-			<div class="more_articles">
-			<h1>more articles</h1>
-			<hr>
-			</div>
 
 
 
@@ -160,50 +143,6 @@ filed under: <a href="/technology//">technology</a> &nbsp;
 			</div>
 			<div class="readmore">
 				<a href="/how-to-backup-all-your-files-to-amazon-s3/">read more</a>
-			</div>
-			<br>
-
-
-
-			<div class="more_articles">
-			<!--link post support-->
-				<a href="/upgrade-freebsd-ports-without-confirmation-prompts/"><h2>Upgrade FreeBSD ports without confirmation&nbsp;prompts</h2></a>
-			</div>
-			<div class="index_meta">
-Mon 17 February 2014 &nbsp;
-
-filed under: <a href="/technology//">technology</a> &nbsp;
-
- 
-    tags: <a href="/tag/freebsd//">freebsd</a> 			</div>
-			<div class="article_content">
-			<p>Here is a very handy method for updating all of the software on your FreeBSD box.  This gives you the ability to just &#8220;walk away&#8221; while your machine merrily hums along recompiling all your software without you having to sit around to answer&nbsp;prompts.</p>
-<h2>Update your ports&nbsp;tree</h2>
-<div class="highlight"><pre>portsnap fetch &amp;&amp; portsnap update
-</pre></div>
-
-
-<h2>Check for updates and choose / update any&nbsp;options</h2>
-<div class="highlight"><pre>portmaster -an --no-confirm
-</pre></div>
-
-
-<h2>Update all ports without any confirmation&nbsp;questions</h2>
-<div class="highlight"><pre>portmaster -aydbg --no-confirm
-</pre></div>
-
-
-<h2>…Or update only specific ports without any confirmation&nbsp;questions</h2>
-<div class="highlight"><pre>portmaster -ydbg --no-confirm portdir/port portdir2/port2
-</pre></div>
-
-
-<h2>Explanations of options from the portmaster man&nbsp;page</h2>
-<blockquote>
-<p>-y  answer yes ...</p></blockquote>
-			</div>
-			<div class="readmore">
-				<a href="/upgrade-freebsd-ports-without-confirmation-prompts/">read more</a>
 			</div>
 			<br>
 

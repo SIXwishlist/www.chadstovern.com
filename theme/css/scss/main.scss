@@ -314,7 +314,8 @@ a:visited { color: $link; }
 	float: left;
 }
 .alignright {
-	float: right;
+	/*float: right;*/
+	display: none;
 }
 .alignleft_img {
 	float: left;

@@ -5,23 +5,30 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/index.html</loc>
-<lastmod>2015-06-02T09:59:34-00:00</lastmod>
+<lastmod>2015-06-08T20:36:58-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/about/</loc>
-<lastmod>2015-06-02T09:59:34-00:00</lastmod>
+<lastmod>2015-06-08T20:36:58-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 
 <url>
 <loc>http://www.chadstovern.com/projects/</loc>
-<lastmod>2015-06-02T09:59:34-00:00</lastmod>
+<lastmod>2015-06-08T20:36:58-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
+</url>
+
+<url>
+<loc>http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/</loc>
+<lastmod>2015-06-08T08:38:00-05:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
 </url>
 
 <url>
@@ -166,7 +173,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/technology/</loc>
-<lastmod>2015-06-02T10:04:00-05:51</lastmod>
+<lastmod>2015-06-08T08:38:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -403,6 +410,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://www.chadstovern.com/tag/django/</loc>
+<lastmod>2015-06-08T08:38:00-05:51</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://www.chadstovern.com/tag/habits/</loc>
 <lastmod>2014-02-15T09:26:00-05:51</lastmod>
 <changefreq>daily</changefreq>
@@ -418,7 +432,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/tag/freebsd/</loc>
-<lastmod>2015-06-02T10:04:00-05:51</lastmod>
+<lastmod>2015-06-08T08:38:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -460,7 +474,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.chadstovern.com/author/Chad Stovern/</loc>
-<lastmod>2015-06-02T10:04:00-05:51</lastmod>
+<lastmod>2015-06-08T08:38:00-05:51</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

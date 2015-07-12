@@ -1,0 +1,99 @@
+body {
+    font-family: helvetica neue, sans-serif;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2d70bd;
+}
+
+p, ul {
+    padding: 0px 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 99%;
+}
+
+#wrapper {
+    width: 835px;
+    margin: 0 auto;
+    /*border: solid 2px;*/
+}
+
+#header {
+    height: 155px;
+    /* top | right | bottom | left */
+    margin: 10px 30px 0px 30px;
+}
+
+@-moz-document url-prefix() {
+    #header {
+        margin-bottom: 0px;
+    }
+}
+
+#header_text {
+    float: left;
+    color: #333;
+    margin-top: 15px;
+}
+
+#subheader_text {
+    float: right;
+    margin-top: 30px;
+}
+
+#subheader_text i{
+    color: #333;
+}
+
+#subheader_text a {
+    color: #2d70bd;
+    text-decoration: none;
+}
+
+#subheader_text a:hover {
+    color: #2d70bd;
+    text-decoration: underline;
+}
+
+#main {
+    float: right;
+    width: 520px;
+    /* top | right | bottom | left */
+    margin: 0px 30px 0px 20px;
+}
+
+.job-title {
+    font-size: 18px;
+    color: #b36760;
+}
+
+#sidebar {
+    float: left;
+    width: 235px;
+    /* top | right | bottom | left */
+    margin: 0px 0px 0px 30px;
+}
+
+#sidebar img {
+    margin-top: 30px;
+    max-width: 90%;
+}
+
+#sidebar h2 {
+    margin-bottom: 10px;
+}
+
+#cleared {
+    clear: both;
+}

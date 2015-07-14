@@ -52,6 +52,8 @@ img {
 
 #subheader_text i {
     color: #333;
+    width: 20px;
+    text-align: center;
 }
 
 #subheader_text a {
@@ -74,6 +76,7 @@ img {
 
 #main h2 {
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 .job-title {
@@ -98,6 +101,7 @@ img {
 #sidebar h2 {
     margin-bottom: 10px;
     font-weight: normal;
+    text-transform: uppercase;
 }
 
 #sidebar a {

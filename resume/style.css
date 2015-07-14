@@ -100,6 +100,16 @@ img {
     font-weight: normal;
 }
 
+#sidebar a {
+    color: #666;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    color: #2d70bd;
+    text-decoration: underline;
+}
+
 #cleared {
     clear: both;
 }

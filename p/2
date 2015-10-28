@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Chad Stovern</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/zenburn.min.css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="site_title">
+        <h1><a href="/index.html">Chad Stovern</a></h1>
+        
+          <br><strong>Christian. Husband. Dad. Geek.</strong>
+        
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="/index.html">blog</a></li>
+            
+            <li><a href="/about.html">about</a></li>
+            
+            <li><a href="/projects.html">projects</a></li>
+            
+            <li><a href="/archives.html">archives</a></li>
+            <li><a href="/all-posts.xml"><i class="fa fa-rss"></i></a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="main">
+            <div id="page_title">
+                
+            </div>
+            
+  
+    <div class="preview_post">
+      <a href="/posts/setting-up-postgresql-on-yosemite-for-local-development.html"><h2>Setting Up PostgreSQL on OS X Yosemite for Local Development</h2></a>
+    </div>
+    <div class="post_meta">
+  May 1, 2015 &nbsp;
+  
+</div>
+<div class="post_content">
+  <p>First and foremost, I highly recommend that you download <a href="https://www.virtualbox.org/wiki/Downloads" shape="rect">VirtualBox</a> and <a href="https://www.vagrantup.com/downloads.html" shape="rect">Vagrant</a> to bootstrap a development server on your Mac.</p><p>That being said there are times when you're doing a simple test or tutorial and you'd like to be able to run PostgreSQL on your local machine.</p><p>I'm writing this as I found setting this up on OS X 10.10 Yosemite to be a bit of a pain, since a simple <a href="http://brew.sh" shape="rect">homebrew</a> install didn't do the trick for me.</p><p><strong>Caution</strong>: Before going any further, this tutorial assumes you do not have a prior installation that has data you actually want to keep.  If this is not the case then <strong>stop now</strong>, and backup your data to restore later.</p><h2><a name="fire_up_that_command_line,_it&apos;s_time_to_dive_in." shape="rect"></a>Fire Up That Command Line, It's Time to Dive In.</h2><p>This is not a production environment and chances are this is a Mac that you alone use.  Therefore it's perfectly acceptable to optimize for simplicity and ease of use.</p><p>If you've never installed PostgreSQL in the past <em>(if you have skip ahead one step)</em>, then create the data directory you need and set the permissions so your user account has full access.</p><pre><code>mkdir /usr/local/var/postgres
+chmod 770 /usr/local/var/postgres
+</code></pre><p>If you've installed PostgreSQL before <em>(if you haven't you should follow the first step and skip this one)</em> and <strong>do not</strong> have data you care about, follow these steps to setup your data directory with full access for your user account.<br clear="none" /> If the first command produces an error just ignore it, you're making sure PostgreSQL isn't loaded already and trying to run before you have things setup correctly.</p><pre><code>launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+sudo rm -rf /usr/local/var/postgres
+mkdir /usr/local/var/postgres
+chmod 770 /usr/local/var/postgres
+</code></pre><p>Now install PostgreSQL using [homebrew][].  If you already have it or an old build just uninstall that first.  <em>(hint: <code>brew uninstall postgresql</code>)</em></p><pre><code>brew install postgresql
+</code></pre><p>Next initialize the data directory.</p><pre><code>initdb -D /usr/local/var/postgres
+</code></pre><p>After the initialization is complete, setup PostgreSQL to run on boot with these two commands.  The first creates a symlink to a launch agent and the second tells launchctl that that agent would be loaded now and on boot.</p><pre><code>ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+</code></pre><p>PostgreSQL will now start up and be ready to use.  One trick is to run the <code>createdb</code> command with no arguments to create a database named after your user account.  You never have to do anything with this database, but this allows you to run the <code>psql</code> command unadorned to connect to PostgreSQL.<br clear="none" /></p><p>TL;DR<br clear="none" /> Do this now and save keystrokes later.</p><pre><code>createdb
+</code></pre><p>Now you can connect to your locally running PostgreSQL server just by running this short command.</p><pre><code>psql
+</code></pre><p>You're now ready to create a database or two for your projects to use and start hacking.  Have fun!  :-)</p>
+</div>
+
+    
+    <br>
+  
+    <div class="preview_post">
+      <a href="/posts/what-you-should-be-doing-even-when-you-dont-feel-like-it.html"><h2>What you should be doing even when you don’t want to</h2></a>
+    </div>
+    <div class="post_meta">
+  Feb 16, 2015 &nbsp;
+  
+</div>
+<div class="post_content">
+  <p>Brett Terpstra's <a href="http://www.esn.fm/systematic/126" shape="rect">interview</a> with Rory Vaden was a gold mine, I highly recommend a <a href="http://www.esn.fm/systematic/126" shape="rect">listen</a>.</p><p>Here are a couple pull quotes in no particular order that I thought were nothing other than amazing:</p><blockquote><p> Successful people and top performers at some point learn to do the things they should be doing even when they don't feel like doing them. </p></blockquote><p>This is very true.  Many of the people that inspire me, are great at this, and it's really hard to be great at doing things you just don't feel like doing.</p><blockquote><p> Procrastination and indulgence are nothing more than creditors that charge you interest. </p></blockquote><p>Relating procrastination to personal finance really resonates with me.  "I'll do it later" just leaves you feeling behind and you can't catch up.  Taking care of priorities before fun is one of the smartest things you can do.</p><blockquote><p> The paradox principle of sacrifice: <br clear="none" /></p><ul><li>Easy short term choices lead to difficult long term consequences.</li><li>Difficult short term choices lead to easy long term consequences.</li></ul>It's really easy to eat a cookie and grab more coffee than to go for a run and drink plenty of water each day.  :-P </blockquote>
+</div>
+
+    
+    <br>
+  
+    <div class="preview_post">
+      <a href="/posts/the-importance-of-rest.html"><h2>The importance of rest</h2></a>
+    </div>
+    <div class="post_meta">
+  Dec 15, 2014 &nbsp;
+  
+</div>
+<div class="post_content">
+  <blockquote><p> Rest begets awareness. </p></blockquote><blockquote><p> Awareness begets prioritization. </p></blockquote><blockquote><p> Prioritization begets caring. </p></blockquote><blockquote><p> Caring begets achievement. </p></blockquote><p>This is Eddie Smith at his <a href="http://www.practicallyefficient.com/home/rest-begets" shape="rect">best</a>.  It's also some of the best advice you can follow, but it's really hard and seems counterintuitive at times.</p>
+</div>
+
+    
+    <br>
+  
+    <div class="preview_post">
+      <a href="/posts/quick-css-for-better-looking-pull-quotes.html"><h2>Quick CSS for better looking pull quotes</h2></a>
+    </div>
+    <div class="post_meta">
+  Dec 15, 2014 &nbsp;
+  
+</div>
+<div class="post_content">
+  <p>I decided that I wanted to be one of the cool kids that could do daringfireball.net style quick pull quote + commentary posts.</p><p><strong>Problem:</strong>  My custom theme's CSS just left pull quotes looking like plain indented text… blah, blargh, barf.</p><p>I don't pretend to be a designer today, but I want things I make to minimize eye-bleeding whenever possible.</p><p>I gave myself a timebox of 15 minutes to find a workable solution and here are the fruits of that labor:</p><p><strong>Solution:</strong></p><pre><code>blockquote {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 50px;
+	padding-left: 15px;
+	border-left: 3px solid #ccc;
+}
+</code></pre><p><strong>Example:</strong></p><blockquote><p>Things can be really fun, if you let them be. <br clear="none" /></p><footer> Me (just now, boom!)</footer><p></p></blockquote><p><strong>Next steps:</strong></p><p>Learn more from <a href="http://css-tricks.com/examples/Blockquotes/" shape="rect">css-tricks</a> and go nuts with different classes for different uses on different parts of your site.  Have fun!</p>
+</div>
+
+    
+    <br>
+  
+
+  <div class="paginator">
+    
+      <a class="left" href="/index.html">&laquo; newer posts</a>
+    
+    
+      <a class="right" href="/p/3">older posts &raquo;</a>
+    
+  </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        
+
+<br>
+&copy; 2015 Chad Stovern — Powered by <a href="http://cryogenweb.org">Cryogen</a>
+
+    </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="../js/highlight.pack.js" type="text/javascript"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-7881849-4");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

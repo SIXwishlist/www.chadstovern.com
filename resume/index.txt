@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <title>Chad Stovern's Resume</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="header_text">
+                    <h1>Chad Stovern</h1>
+                </div>
+                <div id="subheader_text">
+                    <i class="fa fa-envelope-o"></i> <a href="mailto:chad@stovern.me">chad@stovern.me</a><br />
+                    <i class="fa fa-phone"></i> <a href="tel:2624584433">(262) 458-4433</a><br>
+                    <i class="fa fa-rss"></i> <a href="http://www.chadstovern.com">chadstovern.com</a><br />
+                    <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/chadhs">linkedin.com/in/chadhs</a><br />
+                    <i class="fa fa-github"></i> <a href="https://github.com/chadhs">github.com/chadhs</a><br />
+                    <i class="fa fa-twitter"></i> <a href="https://twitter.com/chadhs">@chadhs</a><br />
+                </div>
+            </div>
+
+
+            <div id="main">
+                <h2>Experience</h2>
+                <h3>iDoneThis</h3>
+                <em>August 2014 – Present (1 year)</em><br /><br />
+
+                <div class="job-title"><strong>Customer Success Engineer</strong></div>
+                Build integrations for current and potential customers.  Identify salient issues and feature requests.  Investigate and fix bugs and performance issues in production code.  Onboard and provide direct support for iDoneThis customers.
+                <ul>
+                    <li>Created a new site using Django and the iDoneThis API, to allow teams using iDoneThis to share the accomplishments they journal with the public.  This project was driven by the buffer.com team's transparency project.  I worked closely with them to ensure we met all their requirements.
+                    <li>Reduced the run time of one of our worst performing API calls from an average of 431ms to 174ms by using a more efficient query tactic.  New Relic was used for investigating and taking these measurements.</li>
+                </ul>
+
+
+                <h3>Liturgical Publications</h3>
+                <em>March 2009 – August 2014 (5 years 6 months)</em><br /><br />
+
+                <div class="job-title"><strong>Information Services Infrastructure Manager</strong></div>
+                <div class="job-date"><em>September 2013 – August 2014</em></div>
+                Manage six direct reports making up the IS Infrastructure and Support Team.  Oversee the planning, engineering, implementation, and maintenance of all internal and external facing technology infrastructure.
+                <ul>
+                    <li>Worked as both technical lead and project manager in a large infrastructure upgrade effort that spanned six office locations in the US.  To meet new business requirements we upgraded our WAN to faster, lower latency MPLS circuits at all locations.  Leveraging VMWare, FreeBSD, and Linux; over 100 virtual servers and network devices were upgraded with minimal planned downtime.</li>
+                    <li>Proactively worked with a key technical staff member at a remote location and our HR Director, to help them create a career plan.  Having a concrete set of goals, we not only retained this key individual, but they very quickly showed higher engagement and overall job satisfaction.</li>
+                </ul>
+
+                <div class="job-title"><strong>Information Services Operations Team Leader</strong></div>
+                <div class="job-date"><em>April 2012 – September 2013</em></div>
+                Manage all of Liturgical Publications' technology infrastructure.  Mentor and provide training for support staff.
+                <ul>
+                    <li>Partnered with the Web Development Manager to introduce both version control and a tiered development → staging → production work-flow into our software engineering process.</li>
+                    <li>Completely automated an invoicing process that previously required back office staff to manually edit each electronic invoice before they were sent to customers.  This was accomplished using Unix shell scripting, Ghostscript, and LPD for automatic printing.</li>
+                    <li>Trained support staff on both VMWare and Unix command line basics, to increase coverage.</li>
+                </ul>
+
+                <div class="job-title"><strong>Web Systems Administrator</strong></div>
+                <div class="job-date"><em>March 2009 – April 2012</em></div>
+                Build and maintain Linux based web infrastructure to drive Liturgical Publications' new digital products.
+                <ul>
+                    <li>Completely redesigned our infrastructure to make use of Rackspace Cloud Servers and Cloud Files to help reduce load on our own datacenter's resources.</li>
+                    <li>Measured and tuned our MySQL database servers as customer demand began to significantly increase the load on our sites.</li>
+                </ul>
+
+
+                <h3>Coakley Brothers Company </h3>
+                <em>July 2006 – March 2009 (2 years 9 months)</em><br /><br />
+
+                <div class="job-title"><strong>Technology Services Manager – Datastore Division</strong></div>
+                <div class="job-date"><em>July 2008 – March 2009</em></div>
+                Manage all internal technology operations including a staff of three direct reports.  Assist in the sales and development of a new digital asset management product.
+                <ul>
+                    <li>Prototyped a content management solution using Microsoft Sharepoint.  Documented and trained technical staff on the installation and implementation.</li>
+                    <li>Played a key role in the complete planning, discovery process, and implementation of a company-wide disaster recovery plan.  This plan included coordinating an off-site work space and instituting scheduled server recovery drills.</li>
+                </ul>
+
+                <div class="job-title"><strong>Information Technology Generalist</strong></div>
+                <div class="job-date"><em>July 2006 – July 2008</em></div>
+                Provide direct technical support to all employees.  Maintain IT infrastructure for three offices and two warehouse locations.
+                <ul>
+                    <li>Carefully planned and executed a difficult legacy email system migration from Microsoft Exchange 5.5 to Microsoft Exchange 2003 without data loss and within the planned outage window.</li>
+                    <li>Implemented a Symantec backup solution for automatic off-site data protection, that included bare metal server restoration for the company's most critical servers.</li>
+                </ul>
+
+            </div>
+
+
+            <div id="sidebar">
+                <h2>Summary</h2>
+                I'm a multi-disciplined technologist,
+                excellent communicator,
+                skilled team leader,
+                and a naturally curious problem solver.
+
+                <h2>Education</h2>
+                <strong>University of Wisconsin Whitewater</strong><br />
+                <em>September 2001 – May 2005</em><br />
+                BBA, Information Technology Infrastructure<br /><br />
+
+                <strong>MRA Institute of Management</strong><br />
+                <em>August 2013 – February 2014</em><br />
+                Principles of Leadership Excellence Certificate Series<br />
+
+                <h2>Competencies</h2>
+                <strong>Leadership</strong><br />
+                Effective team management<br />
+                Training | Mentoring | Recruiting<br /><br />
+
+                <strong>Development</strong><br />
+                Building sites and connecting services using APIs<br />
+                Django | Flask | Python<br />
+                HTML | CSS | SASS | JQuery<br />
+                Test Driven Development<br /><br />
+
+                <strong>DevOps</strong><br />
+                Automation of system builds for development, staging, production environments and continuous code deployments<br />
+                Ansible | Shell Scripting | Python<br />
+                VMWare | Rackspace | AWS<br />
+                Git | Heroku | Vagrant<br /><br />
+
+                <strong>IT Infrastructure</strong><br />
+                Managing large server environments spanning<br />
+                multiple locations<br />
+                FreeBSD | Linux | Windows<br />
+                IPFW | NATD | BIND | AD<br />
+                Sendmail | Postfix | Exchange<br />
+                MySQL | PostgreSQL<br />
+                Nagios | Icinga | MRTG | Cacti<br />
+
+                <h2>Volunteer Work</h2>
+                <strong><a href="https://djangogirls.org/chicago/">DjangoGirls Chicago Mentor</a></strong><br />
+                <em>June 20, 2015</em><br />
+                Mentored attendees at this workshop for women interested in learning programming and web development.
+
+            </div>
+
+
+            <div id="cleared"></div>
+
+
+        </div>
+    </body>
+</html>

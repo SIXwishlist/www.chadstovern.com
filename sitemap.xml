@@ -5,7 +5,7 @@
 http://www.chadstovern.com/404.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -13,7 +13,7 @@ http://www.chadstovern.com/404.html
 http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -21,7 +21,7 @@ http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times.html
 http://www.chadstovern.com/a-new-job-where-im-learning-to-code.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -29,7 +29,7 @@ http://www.chadstovern.com/a-new-job-where-im-learning-to-code.html
 http://www.chadstovern.com/about.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -37,7 +37,7 @@ http://www.chadstovern.com/about.html
 http://www.chadstovern.com/amazon-s3.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -45,7 +45,15 @@ http://www.chadstovern.com/amazon-s3.html
 http://www.chadstovern.com/archives.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
+</lastmod>
+</url>
+<url>
+<loc>
+http://www.chadstovern.com/atom.html
+</loc>
+<lastmod>
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -53,7 +61,7 @@ http://www.chadstovern.com/archives.html
 http://www.chadstovern.com/backups.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -61,7 +69,7 @@ http://www.chadstovern.com/backups.html
 http://www.chadstovern.com/balance.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -69,7 +77,7 @@ http://www.chadstovern.com/balance.html
 http://www.chadstovern.com/blizzard.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -77,7 +85,7 @@ http://www.chadstovern.com/blizzard.html
 http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -85,7 +93,7 @@ http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes.html
 http://www.chadstovern.com/care.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -93,7 +101,31 @@ http://www.chadstovern.com/care.html
 http://www.chadstovern.com/changing-your-internal-field-separator.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
+</lastmod>
+</url>
+<url>
+<loc>
+http://www.chadstovern.com/clojure-in-atom.html
+</loc>
+<lastmod>
+2016-02-15
+</lastmod>
+</url>
+<url>
+<loc>
+http://www.chadstovern.com/clojure-in-sublime-text.html
+</loc>
+<lastmod>
+2016-02-15
+</lastmod>
+</url>
+<url>
+<loc>
+http://www.chadstovern.com/clojure.html
+</loc>
+<lastmod>
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -101,7 +133,7 @@ http://www.chadstovern.com/changing-your-internal-field-separator.html
 http://www.chadstovern.com/coding.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -109,7 +141,7 @@ http://www.chadstovern.com/coding.html
 http://www.chadstovern.com/css.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -117,7 +149,7 @@ http://www.chadstovern.com/css.html
 http://www.chadstovern.com/design.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -125,7 +157,7 @@ http://www.chadstovern.com/design.html
 http://www.chadstovern.com/distraction.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -133,7 +165,7 @@ http://www.chadstovern.com/distraction.html
 http://www.chadstovern.com/django.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -141,7 +173,7 @@ http://www.chadstovern.com/django.html
 http://www.chadstovern.com/email.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -149,7 +181,7 @@ http://www.chadstovern.com/email.html
 http://www.chadstovern.com/ergonomics.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -157,7 +189,7 @@ http://www.chadstovern.com/ergonomics.html
 http://www.chadstovern.com/failure.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -165,7 +197,7 @@ http://www.chadstovern.com/failure.html
 http://www.chadstovern.com/fastmail.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -173,7 +205,7 @@ http://www.chadstovern.com/fastmail.html
 http://www.chadstovern.com/fear.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -181,7 +213,7 @@ http://www.chadstovern.com/fear.html
 http://www.chadstovern.com/focus.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -189,7 +221,7 @@ http://www.chadstovern.com/focus.html
 http://www.chadstovern.com/freebsd.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -197,7 +229,7 @@ http://www.chadstovern.com/freebsd.html
 http://www.chadstovern.com/gaming.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -205,7 +237,7 @@ http://www.chadstovern.com/gaming.html
 http://www.chadstovern.com/getting-started.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -213,7 +245,7 @@ http://www.chadstovern.com/getting-started.html
 http://www.chadstovern.com/gmail.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -221,7 +253,7 @@ http://www.chadstovern.com/gmail.html
 http://www.chadstovern.com/google.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -229,7 +261,7 @@ http://www.chadstovern.com/google.html
 http://www.chadstovern.com/gtd.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -237,7 +269,7 @@ http://www.chadstovern.com/gtd.html
 http://www.chadstovern.com/habits.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -245,7 +277,7 @@ http://www.chadstovern.com/habits.html
 http://www.chadstovern.com/hearthstone-for-ipad-impressions.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -253,7 +285,7 @@ http://www.chadstovern.com/hearthstone-for-ipad-impressions.html
 http://www.chadstovern.com/hearthstone.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -261,7 +293,7 @@ http://www.chadstovern.com/hearthstone.html
 http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -269,7 +301,7 @@ http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3.html
 http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -277,7 +309,7 @@ http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mys
 http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -285,7 +317,7 @@ http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-wi
 http://www.chadstovern.com/index.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -293,7 +325,7 @@ http://www.chadstovern.com/index.html
 http://www.chadstovern.com/inspiration.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -301,7 +333,7 @@ http://www.chadstovern.com/inspiration.html
 http://www.chadstovern.com/ipad.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -309,7 +341,7 @@ http://www.chadstovern.com/ipad.html
 http://www.chadstovern.com/markdown.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -317,7 +349,7 @@ http://www.chadstovern.com/markdown.html
 http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-information.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -325,7 +357,7 @@ http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-informati
 http://www.chadstovern.com/mind-mapping.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -333,7 +365,7 @@ http://www.chadstovern.com/mind-mapping.html
 http://www.chadstovern.com/mind-node-pro.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -341,7 +373,7 @@ http://www.chadstovern.com/mind-node-pro.html
 http://www.chadstovern.com/nvalt.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -349,7 +381,7 @@ http://www.chadstovern.com/nvalt.html
 http://www.chadstovern.com/osx.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -357,7 +389,7 @@ http://www.chadstovern.com/osx.html
 http://www.chadstovern.com/p/2.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -365,7 +397,7 @@ http://www.chadstovern.com/p/2.html
 http://www.chadstovern.com/p/3.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -373,7 +405,7 @@ http://www.chadstovern.com/p/3.html
 http://www.chadstovern.com/p/4.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -381,7 +413,15 @@ http://www.chadstovern.com/p/4.html
 http://www.chadstovern.com/p/5.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
+</lastmod>
+</url>
+<url>
+<loc>
+http://www.chadstovern.com/p/6.html
+</loc>
+<lastmod>
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -389,7 +429,7 @@ http://www.chadstovern.com/p/5.html
 http://www.chadstovern.com/polarismail.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -397,7 +437,7 @@ http://www.chadstovern.com/polarismail.html
 http://www.chadstovern.com/postgresql.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -405,7 +445,7 @@ http://www.chadstovern.com/postgresql.html
 http://www.chadstovern.com/privacy.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -413,7 +453,7 @@ http://www.chadstovern.com/privacy.html
 http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -421,7 +461,7 @@ http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy.html
 http://www.chadstovern.com/procrastination.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -429,7 +469,7 @@ http://www.chadstovern.com/procrastination.html
 http://www.chadstovern.com/productivity.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -437,7 +477,7 @@ http://www.chadstovern.com/productivity.html
 http://www.chadstovern.com/projects.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -445,7 +485,7 @@ http://www.chadstovern.com/projects.html
 http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -453,7 +493,7 @@ http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes.html
 http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -461,7 +501,7 @@ http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp.html
 http://www.chadstovern.com/replacing-gmail-and-google-calendar.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -477,7 +517,7 @@ http://www.chadstovern.com/resume/index.html
 http://www.chadstovern.com/second-hand-meta-wizard.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -485,7 +525,7 @@ http://www.chadstovern.com/second-hand-meta-wizard.html
 http://www.chadstovern.com/security.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -493,7 +533,7 @@ http://www.chadstovern.com/security.html
 http://www.chadstovern.com/sendmail.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -501,7 +541,7 @@ http://www.chadstovern.com/sendmail.html
 http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-development.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -509,7 +549,7 @@ http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-developme
 http://www.chadstovern.com/shell-scripting.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -517,7 +557,7 @@ http://www.chadstovern.com/shell-scripting.html
 http://www.chadstovern.com/simplenote.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -525,7 +565,7 @@ http://www.chadstovern.com/simplenote.html
 http://www.chadstovern.com/sleep.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -533,7 +573,7 @@ http://www.chadstovern.com/sleep.html
 http://www.chadstovern.com/standing-desks.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -541,7 +581,7 @@ http://www.chadstovern.com/standing-desks.html
 http://www.chadstovern.com/starting.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -549,7 +589,15 @@ http://www.chadstovern.com/starting.html
 http://www.chadstovern.com/stress.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
+</lastmod>
+</url>
+<url>
+<loc>
+http://www.chadstovern.com/sublime-text.html
+</loc>
+<lastmod>
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -557,7 +605,7 @@ http://www.chadstovern.com/stress.html
 http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-simplenote.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -565,7 +613,7 @@ http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-sim
 http://www.chadstovern.com/tags.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -573,7 +621,7 @@ http://www.chadstovern.com/tags.html
 http://www.chadstovern.com/technology.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -581,7 +629,7 @@ http://www.chadstovern.com/technology.html
 http://www.chadstovern.com/the-importance-of-rest.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -589,7 +637,7 @@ http://www.chadstovern.com/the-importance-of-rest.html
 http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 <url>
@@ -597,7 +645,7 @@ http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts.ht
 http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-feel-like-it.html
 </loc>
 <lastmod>
-2016-02-10
+2016-02-15
 </lastmod>
 </url>
 </urlset>

@@ -12,11 +12,51 @@ http://www.chadstovern.com/
 Christian. Husband. Dad. Geek.
 </description>
 <lastBuildDate>
-Wed, 10 Feb 2016 13:58:28 -0600
+Mon, 15 Feb 2016 15:28:56 -0600
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+http://www.chadstovern.com/clojure-in-atom.html
+</guid>
+<link>
+http://www.chadstovern.com/clojure-in-atom.html
+</link>
+<title>
+Clojure in Atom
+</title>
+<description>
+ &lt;p&gt;Since I just recently made a getting started with Clojure in Sublime Text video, I decided to also make a video showing how to get started with Clojure in Github's Atom.  I hope you enjoy it as well.&lt;/p&gt;&lt;p&gt;&lt;a href='https://www.youtube.com/watch?v=l_fxk3QvOrQ'&gt;Clojure in Atom&lt;/a&gt;&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Tue, 16 Feb 2016 00:00:00 -0600
+</pubDate>
+</item>
+<item>
+<guid>
+http://www.chadstovern.com/clojure-in-sublime-text.html
+</guid>
+<link>
+http://www.chadstovern.com/clojure-in-sublime-text.html
+</link>
+<title>
+Clojure in Sublime Text
+</title>
+<description>
+ &lt;p&gt;After the last Clojure MKE (Milwaukee) meetup, I decided it would be good of me to make a quick video showing others how to get up and running with Clojure on Sublime Text.  I hope you enjoy it.&lt;/p&gt;&lt;p&gt;&lt;a href='https://www.youtube.com/watch?v=-FTHCAIcB1I'&gt;Clojure in Sublime Text&lt;/a&gt;&lt;/p&gt;
+</description>
+<enclosure>
+
+</enclosure>
+<pubDate>
+Mon, 15 Feb 2016 00:00:00 -0600
+</pubDate>
+</item>
 <item>
 <guid>
 http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp.html

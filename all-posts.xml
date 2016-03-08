@@ -12,23 +12,23 @@ http://www.chadstovern.com/
 Christian. Husband. Dad. Geek.
 </description>
 <lastBuildDate>
-Mon, 15 Feb 2016 15:28:56 -0600
+Tue, 08 Mar 2016 16:04:37 -0600
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
 <item>
 <guid>
-http://www.chadstovern.com/clojure-in-atom.html
+http://www.chadstovern.com/clojure-in-atom/
 </guid>
 <link>
-http://www.chadstovern.com/clojure-in-atom.html
+http://www.chadstovern.com/clojure-in-atom/
 </link>
 <title>
 Clojure in Atom
 </title>
 <description>
- &lt;p&gt;Since I just recently made a getting started with Clojure in Sublime Text video, I decided to also make a video showing how to get started with Clojure in Github's Atom.  I hope you enjoy it as well.&lt;/p&gt;&lt;p&gt;&lt;a href='https://www.youtube.com/watch?v=l_fxk3QvOrQ'&gt;Clojure in Atom&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Since I just recently made a getting started with Clojure in Sublime Text video, I decided to also make a video showing how to get started with Clojure in Github's Atom.  I hope you enjoy it as well.&lt;/p&gt;&lt;p&gt;&lt;a href='https://www.youtube.com/watch?v=l_fxk3QvOrQ'&gt;Clojure in Atom&lt;/a&gt;&lt;/p&gt;
 </description>
 <enclosure>
 
@@ -39,10 +39,10 @@ Tue, 16 Feb 2016 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/clojure-in-sublime-text.html
+http://www.chadstovern.com/clojure-in-sublime-text/
 </guid>
 <link>
-http://www.chadstovern.com/clojure-in-sublime-text.html
+http://www.chadstovern.com/clojure-in-sublime-text/
 </link>
 <title>
 Clojure in Sublime Text
@@ -59,10 +59,10 @@ Mon, 15 Feb 2016 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp.html
+http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp/
 </guid>
 <link>
-http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp.html
+http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp/
 </link>
 <title>
 Quick Tip: How to Rename Email Flags in Mail.app
@@ -79,10 +79,10 @@ Tue, 23 Jun 2015 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1.html
+http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/
 </guid>
 <link>
-http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1.html
+http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/
 </link>
 <title>
 How to Run a Django Site with Apache, mod_wsgi, and MySQL on FreeBSD 10.1
@@ -99,10 +99,10 @@ Mon, 08 Jun 2015 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1.html
+http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/
 </guid>
 <link>
-http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1.html
+http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/
 </link>
 <title>
 How To Send Email through an External SMTP Service with Sendmail on FreeBSD 10.1
@@ -119,10 +119,10 @@ Tue, 02 Jun 2015 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes.html
+http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes/
 </guid>
 <link>
-http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes.html
+http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes/
 </link>
 <title>
 Build a $20 Standing Desk in 20 Minutes
@@ -139,10 +139,10 @@ Tue, 12 May 2015 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-development.html
+http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-development/
 </guid>
 <link>
-http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-development.html
+http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-development/
 </link>
 <title>
 Setting Up PostgreSQL on OS X Yosemite for Local Development
@@ -171,10 +171,10 @@ Fri, 01 May 2015 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-feel-like-it.html
+http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-feel-like-it/
 </guid>
 <link>
-http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-feel-like-it.html
+http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-feel-like-it/
 </link>
 <title>
 What you should be doing even when you don’t want to
@@ -191,10 +191,10 @@ Mon, 16 Feb 2015 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/the-importance-of-rest.html
+http://www.chadstovern.com/the-importance-of-rest/
 </guid>
 <link>
-http://www.chadstovern.com/the-importance-of-rest.html
+http://www.chadstovern.com/the-importance-of-rest/
 </link>
 <title>
 The importance of rest
@@ -211,10 +211,10 @@ Mon, 15 Dec 2014 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes.html
+http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes/
 </guid>
 <link>
-http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes.html
+http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes/
 </link>
 <title>
 Quick CSS for better looking pull quotes
@@ -238,10 +238,10 @@ Mon, 15 Dec 2014 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/a-new-job-where-im-learning-to-code.html
+http://www.chadstovern.com/a-new-job-where-im-learning-to-code/
 </guid>
 <link>
-http://www.chadstovern.com/a-new-job-where-im-learning-to-code.html
+http://www.chadstovern.com/a-new-job-where-im-learning-to-code/
 </link>
 <title>
 A New Job Where I'm Learning to Code
@@ -258,10 +258,10 @@ Thu, 20 Nov 2014 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3.html
+http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3/
 </guid>
 <link>
-http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3.html
+http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3/
 </link>
 <title>
 How to Backup All Your Files to Amazon S3
@@ -278,10 +278,10 @@ Wed, 08 Oct 2014 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-information.html
+http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-information/
 </guid>
 <link>
-http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-information.html
+http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-information/
 </link>
 <title>
 Mind Mapping 101: The Visual Way to Organize Information
@@ -298,10 +298,10 @@ Mon, 02 Jun 2014 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-simplenote.html
+http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-simplenote/
 </guid>
 <link>
-http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-simplenote.html
+http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-simplenote/
 </link>
 <title>
 Superpower Your Note Taking Skills With nvALT and Simplenote
@@ -318,10 +318,10 @@ Tue, 27 May 2014 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/hearthstone-for-ipad-impressions.html
+http://www.chadstovern.com/hearthstone-for-ipad-impressions/
 </guid>
 <link>
-http://www.chadstovern.com/hearthstone-for-ipad-impressions.html
+http://www.chadstovern.com/hearthstone-for-ipad-impressions/
 </link>
 <title>
 HearthStone for iPad impressions
@@ -338,10 +338,10 @@ Thu, 17 Apr 2014 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/getting-started.html
+http://www.chadstovern.com/getting-started/
 </guid>
 <link>
-http://www.chadstovern.com/getting-started.html
+http://www.chadstovern.com/getting-started/
 </link>
 <title>
 Getting started
@@ -358,10 +358,10 @@ Sat, 12 Apr 2014 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/second-hand-meta-wizard.html
+http://www.chadstovern.com/second-hand-meta-wizard/
 </guid>
 <link>
-http://www.chadstovern.com/second-hand-meta-wizard.html
+http://www.chadstovern.com/second-hand-meta-wizard/
 </link>
 <title>
 Second-hand meta wizard
@@ -378,10 +378,10 @@ Thu, 10 Apr 2014 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts.html
+http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts/
 </guid>
 <link>
-http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts.html
+http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts/
 </link>
 <title>
 Upgrade FreeBSD ports without confirmation prompts
@@ -412,10 +412,10 @@ Mon, 17 Feb 2014 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times.html
+http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times/
 </guid>
 <link>
-http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times.html
+http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times/
 </link>
 <title>
 A moment of clarity in stressful times
@@ -432,10 +432,10 @@ Sat, 15 Feb 2014 00:00:00 -0600
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/replacing-gmail-and-google-calendar.html
+http://www.chadstovern.com/replacing-gmail-and-google-calendar/
 </guid>
 <link>
-http://www.chadstovern.com/replacing-gmail-and-google-calendar.html
+http://www.chadstovern.com/replacing-gmail-and-google-calendar/
 </link>
 <title>
 replacing gmail and google calendar
@@ -452,10 +452,10 @@ Tue, 08 Oct 2013 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy.html
+http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy/
 </guid>
 <link>
-http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy.html
+http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy/
 </link>
 <title>
 Procrastination: I don't think you're lazy
@@ -472,10 +472,10 @@ Wed, 19 Jun 2013 00:00:00 -0500
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/changing-your-internal-field-separator.html
+http://www.chadstovern.com/changing-your-internal-field-separator/
 </guid>
 <link>
-http://www.chadstovern.com/changing-your-internal-field-separator.html
+http://www.chadstovern.com/changing-your-internal-field-separator/
 </link>
 <title>
 changing your internal field separator

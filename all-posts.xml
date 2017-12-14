@@ -9,20 +9,20 @@ Chad Stovern
 http://www.chadstovern.com/
 </link>
 <description>
-Chad Stovern's personal blog.
+Chad Stovern's personal blog
 </description>
 <lastBuildDate>
-Wed, 13 Dec 2017 15:15:40 -0600
+Thu, 14 Dec 2017 09:08:01 -0600
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
 <item>
 <guid>
-http://www.chadstovern.com/clojure-in-atom/
+http://www.chadstovern.com/2016/clojure-in-atom/
 </guid>
 <link>
-http://www.chadstovern.com/clojure-in-atom/
+http://www.chadstovern.com/2016/clojure-in-atom/
 </link>
 <title>
 Clojure in Atom
@@ -30,19 +30,16 @@ Clojure in Atom
 <description>
 &lt;p&gt;Since I just recently made a getting started with Clojure in Sublime Text video, I decided to also make a video showing how to get started with Clojure in Github's Atom.  I hope you enjoy it as well.&lt;/p&gt;&lt;p&gt;&lt;a href='https://www.youtube.com/watch?v=l_fxk3QvOrQ'&gt;Clojure in Atom&lt;/a&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Tue, 16 Feb 2016 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/clojure-in-sublime-text/
+http://www.chadstovern.com/2016/clojure-in-sublime-text/
 </guid>
 <link>
-http://www.chadstovern.com/clojure-in-sublime-text/
+http://www.chadstovern.com/2016/clojure-in-sublime-text/
 </link>
 <title>
 Clojure in Sublime Text
@@ -50,19 +47,16 @@ Clojure in Sublime Text
 <description>
  &lt;p&gt;After the last Clojure MKE (Milwaukee) meetup, I decided it would be good of me to make a quick video showing others how to get up and running with Clojure on Sublime Text.  I hope you enjoy it.&lt;/p&gt;&lt;p&gt;&lt;a href='https://www.youtube.com/watch?v=-FTHCAIcB1I'&gt;Clojure in Sublime Text&lt;/a&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Mon, 15 Feb 2016 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp/
+http://www.chadstovern.com/2015/quick-tip-how-to-rename-email-flags-in-mailapp/
 </guid>
 <link>
-http://www.chadstovern.com/quick-tip-how-to-rename-email-flags-in-mailapp/
+http://www.chadstovern.com/2015/quick-tip-how-to-rename-email-flags-in-mailapp/
 </link>
 <title>
 Quick Tip: How to Rename Email Flags in Mail.app
@@ -70,19 +64,16 @@ Quick Tip: How to Rename Email Flags in Mail.app
 <description>
 &lt;p&gt;Keeping email well organized is a challenge all of us face. Tags, Flags, and Inbox Zero. This short article isn't going to solve all your email woes, but will give you a quick tip to help you on your way to email nirvana.&lt;/p&gt;&lt;p&gt;Mail.app on the Mac has a nice built in feature called Flags. Using flags helps to categorize and even note the priority of a message. Rather than keep a taxonomy floating in your head, I've written a &lt;a href='http://computers.tutsplus.com/tutorials/quick-tip-how-to-rename-email-flags-in-mailapp&amp;ndash;cms-24027'&gt;quick tutorial&lt;/a&gt; over at Tuts+ to show you how to give email flags meaningful names.&lt;/p&gt;&lt;p&gt;Check out the tutorial here: &lt;a href='http://computers.tutsplus.com/tutorials/quick-tip-how-to-rename-email-flags-in-mailapp&amp;ndash;cms-24027'&gt;Quick Tip: How to Rename Email Flags in Mail.app&lt;/a&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Tue, 23 Jun 2015 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/
+http://www.chadstovern.com/2015/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/
 </guid>
 <link>
-http://www.chadstovern.com/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/
+http://www.chadstovern.com/2015/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/
 </link>
 <title>
 How to Run a Django Site with Apache, mod_wsgi, and MySQL on FreeBSD 10.1
@@ -90,19 +81,16 @@ How to Run a Django Site with Apache, mod_wsgi, and MySQL on FreeBSD 10.1
 <description>
 &lt;p&gt;The beauty of developing with popular web frameworks like Django is that a lot of repetitious work has been done for you, so you can focus on building your site.  It's also great to know that the core of what you're running has undergone the scrutiny of a large open-source community and should be less susceptible to large security holes.&lt;/p&gt;&lt;p&gt;Whether you're a developer or not, one thing that is not inherently simple is knowing how to get these web frameworks up and running outside of your own development or testing environment. &lt;/p&gt;&lt;p&gt;I’ve written a &lt;a href='https://www.digitalocean.com/community/tutorials/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1'&gt;full tutorial&lt;/a&gt; over at &lt;a href='https://www.digitalocean.com/?refcode=70a5a49b1c4c'&gt;DigitalOcean&lt;/a&gt; covering exactly how you set this up on a FreeBSD droplet using a standard Apache, mod_wsgi, and MySQL stack running on top of FreeBSD 10.1.&lt;/p&gt;&lt;p&gt;Check out the full tutorial here: &lt;a href='https://www.digitalocean.com/community/tutorials/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1'&gt;How to Run a Django Site with Apache, mod_wsgi, and MySQL on FreeBSD 10.1&lt;/a&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Mon, 08 Jun 2015 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/
+http://www.chadstovern.com/2015/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/
 </guid>
 <link>
-http://www.chadstovern.com/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/
+http://www.chadstovern.com/2015/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1/
 </link>
 <title>
 How To Send Email through an External SMTP Service with Sendmail on FreeBSD 10.1
@@ -110,19 +98,16 @@ How To Send Email through an External SMTP Service with Sendmail on FreeBSD 10.1
 <description>
 &lt;p&gt;One of the most common needs when setting up a new web server is sending email. The safest and easiest way to do this is to connect your server to a mailing service such as SendGrid or Amazon SES. Using an external service will help you avoid pitfalls like your server IP getting blacklisted by anti-spam services.&lt;/p&gt;&lt;p&gt;I’ve written a &lt;a href='https://www.digitalocean.com/community/tutorials/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1'&gt;full tutorial&lt;/a&gt; over at &lt;a href='https://www.digitalocean.com/?refcode=70a5a49b1c4c'&gt;DigitalOcean&lt;/a&gt; covering exactly how you set this up on your FreeBSD droplet.&lt;/p&gt;&lt;p&gt;If you're new to FreeBSD, some of what we do may look a little scary, but you'll soon be comfortable rolling up your sleeves to do a little recompiling of system tools like the FreeBSD pros.&lt;/p&gt;&lt;p&gt;Check out the full tutorial here: &lt;a href='https://www.digitalocean.com/community/tutorials/how-to-send-email-through-an-external-smtp-service-with-sendmail-on-freebsd-10-1'&gt;How To Send Email through an External SMTP Service with Sendmail on FreeBSD 10.1&lt;/a&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Tue, 02 Jun 2015 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes/
+http://www.chadstovern.com/2015/build-a-20-dollar-standing-desk-in-20-minutes/
 </guid>
 <link>
-http://www.chadstovern.com/build-a-20-dollar-standing-desk-in-20-minutes/
+http://www.chadstovern.com/2015/build-a-20-dollar-standing-desk-in-20-minutes/
 </link>
 <title>
 Build a $20 Standing Desk in 20 Minutes
@@ -130,31 +115,28 @@ Build a $20 Standing Desk in 20 Minutes
 <description>
 &lt;p&gt;After nearly a decade of working jobs doing geek stuff sitting in front of a computer all day, I started developing lower back pain.  Even being active off hours wasn't enough, so I caved and talked my boss into a &lt;a href='http://www.geekdesk.com/geekdesk-v3'&gt;GeekDesk v3&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;However, now that I've moved on and am part of a small &lt;a href='https://idonethis.com/about/our-team/'&gt;startup team&lt;/a&gt; working from my home office, that's just not a purchase I was ready to justify again.  Nine months into my new adventure with &lt;a href='https://idonethis.com'&gt;iDoneThis&lt;/a&gt; and my enthusiasm is high, yet my back is killing me…&lt;/p&gt;&lt;p&gt;Colin, the founder of &lt;a href='http://customer.io'&gt;Customer.io&lt;/a&gt;, has an awesome and famous post about his &lt;a href='http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html'&gt;$22 standing desk&lt;/a&gt;.  This is truly a creative gem, that I really wanted to set up for myself.&lt;/p&gt;&lt;p&gt;My problem was that my desk has a raised monitor area.  I would either have to remove part of the desk or hack off half of the back legs of the table in Colin's solution.  :-(&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/img/desk-sitting.jpg&quot; alt=&quot;Desk Sitting&quot; /&gt;&lt;/p&gt;&lt;p&gt;I thought about finding or building a couple simple boxes as the dimensions I would need for the monitor section of my desk and the work surface were roughly the same.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;After searching around for those dimensions I found this stackable &lt;a href='http://www.target.com/p/room-essentials-24-horizontal-shelf-espresso/-/A-15091670'&gt;shelf unit&lt;/a&gt; (11.63&quot; H x 24.13&quot; W x 11.63&quot; D and holds up to 20 pounds) at Target.  The total cost with tax and shipping was only $19.84 ( due to a 10% off coupon code + free in store pickup).&lt;/p&gt;&lt;p&gt;Once I brought the shelves home, it took me all of 20 minutes to clear my desk, assemble them, and set my gear back up.  I've been standing for a week now and once again my back pain has subsided.&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/img/desk-standing.jpg&quot; alt=&quot;Desk Standing&quot; /&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Tue, 12 May 2015 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-development/
+http://www.chadstovern.com/2015/setting-up-postgresql-on-yosemite-for-local-development/
 </guid>
 <link>
-http://www.chadstovern.com/setting-up-postgresql-on-yosemite-for-local-development/
+http://www.chadstovern.com/2015/setting-up-postgresql-on-yosemite-for-local-development/
 </link>
 <title>
 Setting Up PostgreSQL on OS X Yosemite for Local Development
 </title>
 <description>
-&lt;p&gt;First and foremost, I highly recommend that you download &lt;a href='https://www.virtualbox.org/wiki/Downloads'&gt;VirtualBox&lt;/a&gt; and &lt;a href='https://www.vagrantup.com/downloads.html'&gt;Vagrant&lt;/a&gt; to bootstrap a development server on your Mac.&lt;/p&gt;&lt;p&gt;That being said there are times when you're doing a simple test or tutorial and you'd like to be able to run PostgreSQL on your local machine.&lt;/p&gt;&lt;p&gt;I'm writing this as I found setting this up on OS X 10.10 Yosemite to be a bit of a pain, since a simple &lt;a href='http://brew.sh'&gt;homebrew&lt;/a&gt; install didn't do the trick for me.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Caution&lt;/strong&gt;: Before going any further, this tutorial assumes you do not have a prior installation that has data you actually want to keep.  If this is not the case then &lt;strong&gt;stop now&lt;/strong&gt;, and backup your data to restore later.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;fire&amp;#95;up&amp;#95;that&amp;#95;command&amp;#95;line,&amp;#95;it's&amp;#95;time&amp;#95;to&amp;#95;dive&amp;#95;in.&quot;&gt;&lt;/a&gt;Fire Up That Command Line, It's Time to Dive In.&lt;/h2&gt;&lt;p&gt;This is not a production environment and chances are this is a Mac that you alone use.  Therefore it's perfectly acceptable to optimize for simplicity and ease of use.&lt;/p&gt;&lt;p&gt;If you've never installed PostgreSQL in the past &lt;em&gt;(if you have skip ahead one step)&lt;/em&gt;, then create the data directory you need and set the permissions so your user account has full access.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;mkdir /usr/local/var/postgres
+&lt;p&gt;First and foremost, I highly recommend that you download &lt;a href='https://www.virtualbox.org/wiki/Downloads'&gt;VirtualBox&lt;/a&gt; and &lt;a href='https://www.vagrantup.com/downloads.html'&gt;Vagrant&lt;/a&gt; to bootstrap a development server on your Mac.&lt;/p&gt;&lt;p&gt;That being said there are times when you're doing a simple test or tutorial and you'd like to be able to run PostgreSQL on your local machine.&lt;/p&gt;&lt;p&gt;I'm writing this as I found setting this up on OS X 10.10 Yosemite to be a bit of a pain, since a simple &lt;a href='http://brew.sh'&gt;homebrew&lt;/a&gt; install didn't do the trick for me.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Caution&lt;/strong&gt;: Before going any further, this tutorial assumes you do not have a prior installation that has data you actually want to keep.  If this is not the case then &lt;strong&gt;stop now&lt;/strong&gt;, and backup your data to restore later.&lt;/p&gt;&lt;h2 id=&quot;fire&amp;#95;up&amp;#95;that&amp;#95;command&amp;#95;line,&amp;#95;it's&amp;#95;time&amp;#95;to&amp;#95;dive&amp;#95;in.&quot;&gt;Fire Up That Command Line, It's Time to Dive In.&lt;/h2&gt;&lt;p&gt;This is not a production environment and chances are this is a Mac that you alone use.  Therefore it's perfectly acceptable to optimize for simplicity and ease of use.&lt;/p&gt;&lt;p&gt;If you've never installed PostgreSQL in the past &lt;em&gt;(if you have skip ahead one step)&lt;/em&gt;, then create the data directory you need and set the permissions so your user account has full access.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;mkdir /usr/local/var/postgres
 chmod 770 /usr/local/var/postgres
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you've installed PostgreSQL before &lt;em&gt;(if you haven't you should follow the first step and skip this one)&lt;/em&gt; and &lt;strong&gt;do not&lt;/strong&gt; have data you care about, follow these steps to setup your data directory with full access for your user account.&lt;br /&gt; If the first command produces an error just ignore it, you're making sure PostgreSQL isn't loaded already and trying to run before you have things setup correctly.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;launchctl unload -w &amp;#126;/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 sudo rm -rf /usr/local/var/postgres
 mkdir /usr/local/var/postgres
 chmod 770 /usr/local/var/postgres
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now install PostgreSQL using [homebrew][].  If you already have it or an old build just uninstall that first.  &lt;em&gt;(hint: &lt;code&gt;brew uninstall postgresql&lt;/code&gt;)&lt;/em&gt;&lt;/p&gt;&lt;pre&gt;&lt;code&gt;brew install postgresql
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now install PostgreSQL using &lt;a href=''&gt;homebrew&lt;/a&gt;.  If you already have it or an old build just uninstall that first.  &lt;em&gt;(hint: &lt;code&gt;brew uninstall postgresql&lt;/code&gt;)&lt;/em&gt;&lt;/p&gt;&lt;pre&gt;&lt;code&gt;brew install postgresql
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next initialize the data directory.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;initdb -D /usr/local/var/postgres
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After the initialization is complete, setup PostgreSQL to run on boot with these two commands.  The first creates a symlink to a launch agent and the second tells launchctl that that agent would be loaded now and on boot.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;ln -sfv /usr/local/opt/postgresql/&amp;#42;.plist &amp;#126;/Library/LaunchAgents
 launchctl load -w &amp;#126;/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
@@ -162,39 +144,33 @@ launchctl load -w &amp;#126;/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now you can connect to your locally running PostgreSQL server just by running this short command.&lt;/p&gt;&lt;pre&gt;&lt;code&gt;psql
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You're now ready to create a database or two for your projects to use and start hacking.  Have fun!  :-)&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Fri, 01 May 2015 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-feel-like-it/
+http://www.chadstovern.com/2015/what-you-should-be-doing-even-when-you-dont-feel-like-it/
 </guid>
 <link>
-http://www.chadstovern.com/what-you-should-be-doing-even-when-you-dont-feel-like-it/
+http://www.chadstovern.com/2015/what-you-should-be-doing-even-when-you-dont-feel-like-it/
 </link>
 <title>
 What you should be doing even when you don’t want to
 </title>
 <description>
-&lt;p&gt;Brett Terpstra's &lt;a href='http://www.esn.fm/systematic/126'&gt;interview&lt;/a&gt; with Rory Vaden was a gold mine, I highly recommend a &lt;a href='http://www.esn.fm/systematic/126'&gt;listen&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Here are a couple pull quotes in no particular order that I thought were nothing other than amazing:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; Successful people and top performers at some point learn to do the things they should be doing even when they don't feel like doing them. &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;This is very true.  Many of the people that inspire me, are great at this, and it's really hard to be great at doing things you just don't feel like doing.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; Procrastination and indulgence are nothing more than creditors that charge you interest. &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Relating procrastination to personal finance really resonates with me.  &quot;I'll do it later&quot; just leaves you feeling behind and you can't catch up.  Taking care of priorities before fun is one of the smartest things you can do.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; The paradox principle of sacrifice: &lt;br /&gt;&lt;ul&gt;&lt;li&gt;Easy short term choices lead to difficult long term consequences.&lt;/li&gt;&lt;li&gt;Difficult short term choices lead to easy long term consequences.&lt;/li&gt;&lt;/ul&gt;It's really easy to eat a cookie and grab more coffee than to go for a run and drink plenty of water each day.  :-P &lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Brett Terpstra's &lt;a href='http://www.esn.fm/systematic/126'&gt;interview&lt;/a&gt; with Rory Vaden was a gold mine, I highly recommend a &lt;a href='http://www.esn.fm/systematic/126'&gt;listen&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Here are a couple pull quotes in no particular order that I thought were nothing other than amazing:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; Successful people and top performers at some point learn to do the things they should be doing even when they don't feel like doing them. &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;This is very true.  Many of the people that inspire me, are great at this, and it's really hard to be great at doing things you just don't feel like doing.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; Procrastination and indulgence are nothing more than creditors that charge you interest. &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;Relating procrastination to personal finance really resonates with me.  &quot;I'll do it later&quot; just leaves you feeling behind and you can't catch up.  Taking care of priorities before fun is one of the smartest things you can do.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; The paradox principle of sacrifice: &lt;br /&gt;&lt;ul&gt;&lt;li&gt;Easy short term choices lead to difficult long term consequences.&lt;/li&gt;&lt;li&gt;Difficult short term choices lead to easy long term consequences.&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;It's really easy to eat a cookie and grab more coffee than to go for a run and drink plenty of water each day.  :-P&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Mon, 16 Feb 2015 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/the-importance-of-rest/
+http://www.chadstovern.com/2014/the-importance-of-rest/
 </guid>
 <link>
-http://www.chadstovern.com/the-importance-of-rest/
+http://www.chadstovern.com/2014/the-importance-of-rest/
 </link>
 <title>
 The importance of rest
@@ -202,19 +178,16 @@ The importance of rest
 <description>
 &lt;blockquote&gt;&lt;p&gt; Rest begets awareness. &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt; Awareness begets prioritization. &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt; Prioritization begets caring. &lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt; Caring begets achievement. &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;This is Eddie Smith at his &lt;a href='http://www.practicallyefficient.com/home/rest-begets'&gt;best&lt;/a&gt;.  It's also some of the best advice you can follow, but it's really hard and seems counterintuitive at times.&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Mon, 15 Dec 2014 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes/
+http://www.chadstovern.com/2014/quick-css-for-better-looking-pull-quotes/
 </guid>
 <link>
-http://www.chadstovern.com/quick-css-for-better-looking-pull-quotes/
+http://www.chadstovern.com/2014/quick-css-for-better-looking-pull-quotes/
 </link>
 <title>
 Quick CSS for better looking pull quotes
@@ -227,21 +200,18 @@ Quick CSS for better looking pull quotes
 	padding-left: 15px;
 	border-left: 3px solid #ccc;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Things can be really fun, if you let them be. &lt;br /&gt;&lt;/p&gt;&lt;footer&gt; Me (just now, boom!)&lt;/footer&gt;&lt;p&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;strong&gt;Next steps:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Learn more from &lt;a href='http://css-tricks.com/examples/Blockquotes/'&gt;css-tricks&lt;/a&gt; and go nuts with different classes for different uses on different parts of your site.  Have fun!&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Things can be really fun, if you let them be. &lt;br /&gt;&lt;/p&gt;&lt;footer&gt; Me (just now, boom!)&lt;/footer&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;strong&gt;Next steps:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Learn more from &lt;a href='http://css-tricks.com/examples/Blockquotes/'&gt;css-tricks&lt;/a&gt; and go nuts with different classes for different uses on different parts of your site.  Have fun!&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Mon, 15 Dec 2014 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/a-new-job-where-im-learning-to-code/
+http://www.chadstovern.com/2014/a-new-job-where-im-learning-to-code/
 </guid>
 <link>
-http://www.chadstovern.com/a-new-job-where-im-learning-to-code/
+http://www.chadstovern.com/2014/a-new-job-where-im-learning-to-code/
 </link>
 <title>
 A New Job Where I'm Learning to Code
@@ -249,39 +219,33 @@ A New Job Where I'm Learning to Code
 <description>
 &lt;p&gt;I'm pretty excited about my new job that I've been at for about three months now.  One of the great parts is the allowance for on the job time to beef up my coding skills.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;I wrote about the entire journey for our &quot;Inside iDoneThis&quot; blog; go check it out &lt;a href='http://inside.idonethis.com/learn-how-to-code/'&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/img/mindmap-dream.png&quot; alt=&quot;Dream Mindmap&quot; /&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Thu, 20 Nov 2014 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3/
+http://www.chadstovern.com/2014/how-to-backup-all-your-files-to-amazon-s3/
 </guid>
 <link>
-http://www.chadstovern.com/how-to-backup-all-your-files-to-amazon-s3/
+http://www.chadstovern.com/2014/how-to-backup-all-your-files-to-amazon-s3/
 </link>
 <title>
 How to Backup All Your Files to Amazon S3
 </title>
 <description>
-&lt;p&gt;&lt;img src=&quot;/img/amazon-aws.jpg&quot; alt=&quot;Amazon Web Services&quot; /&gt;&lt;/p&gt;&lt;p&gt;Losing your favorite photos, your entire music collection, or your most important documents is something none us want to experience, yet there are still so many of us that either have an inadequate backup strategy or none at all.&lt;/p&gt;&lt;p&gt;I've written a full &lt;a href='http://computers.tutsplus.com/tutorials/how-to-backup-all-your-files-to-amazon-s3&amp;ndash;cms-21386'&gt;tutorial&lt;/a&gt; over at Tuts+ covering exactly how you can protect yourself with Amazon S3.&lt;/p&gt;&lt;p&gt;Check it out here:  **&lt;a href='http://computers.tutsplus.com/tutorials/how-to-backup-all-your-files-to-amazon-s3&amp;ndash;cms-21386'&gt;How to Backup All Your Files to Amazon S3&lt;/a&gt;**&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/amazon-aws.jpg&quot; alt=&quot;Amazon Web Services&quot; /&gt;&lt;/p&gt;&lt;p&gt;Losing your favorite photos, your entire music collection, or your most important documents is something none us want to experience, yet there are still so many of us that either have an inadequate backup strategy or none at all.&lt;/p&gt;&lt;p&gt;I've written a full &lt;a href='http://computers.tutsplus.com/tutorials/how-to-backup-all-your-files-to-amazon-s3&amp;ndash;cms-21386'&gt;tutorial&lt;/a&gt; over at Tuts+ covering exactly how you can protect yourself with Amazon S3.&lt;/p&gt;&lt;p&gt;Check it out here:  &lt;strong&gt;&lt;a href='http://computers.tutsplus.com/tutorials/how-to-backup-all-your-files-to-amazon-s3&amp;ndash;cms-21386'&gt;How to Backup All Your Files to Amazon S3&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Wed, 08 Oct 2014 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-information/
+http://www.chadstovern.com/2014/mind-mapping-101-the-visual-way-to-organize-information/
 </guid>
 <link>
-http://www.chadstovern.com/mind-mapping-101-the-visual-way-to-organize-information/
+http://www.chadstovern.com/2014/mind-mapping-101-the-visual-way-to-organize-information/
 </link>
 <title>
 Mind Mapping 101: The Visual Way to Organize Information
@@ -289,59 +253,50 @@ Mind Mapping 101: The Visual Way to Organize Information
 <description>
 &lt;p&gt;&lt;img src=&quot;/img/mindmap-preview.png&quot; alt=&quot;Mind Map Preview&quot; /&gt;&lt;/p&gt;&lt;p&gt;Mind mapping is a great way to capture your thoughts and organize them visually.  By planning with a mind map you promote creative thinking and avoid forced linear thinking.  And yet, mind mapping often ends up being a buzzword, with little explanation by what it means and how you'd go about making a mind map.  I've written a full &lt;a href='http://computers.tutsplus.com/tutorials/mind-mapping-101-the-visual-way-to-organize-information&amp;ndash;cms-21182'&gt;tutorial&lt;/a&gt; over at Tuts+ covering exactly how to get started with mind mapping.&lt;/p&gt;&lt;p&gt;Check it out here:  &lt;strong&gt;&lt;a href='http://computers.tutsplus.com/tutorials/mind-mapping-101-the-visual-way-to-organize-information&amp;ndash;cms-21182'&gt;Mind Mapping 101: The Visual Way to Organize Information&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Mon, 02 Jun 2014 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-simplenote/
+http://www.chadstovern.com/2014/superpower-your-note-taking-skills-with-nvalt-and-simplenote/
 </guid>
 <link>
-http://www.chadstovern.com/superpower-your-note-taking-skills-with-nvalt-and-simplenote/
+http://www.chadstovern.com/2014/superpower-your-note-taking-skills-with-nvalt-and-simplenote/
 </link>
 <title>
 Superpower Your Note Taking Skills With nvALT and Simplenote
 </title>
 <description>
-&lt;p&gt;&lt;img src=&quot;/img/nvalt-logo.jpg&quot; alt=&quot;nvALT logo&quot; /&gt;&lt;/p&gt;&lt;p&gt;nvALT is a powerful and fast note taking tool. It’s great for keeping running lists and creating reference documentation on–the–fly, and is absolutely essential to my daily workflow.  I've written a full &lt;a href='http://computers.tutsplus.com/tutorials/superpower-your-note-taking-skills-with-nvalt-and-simplenote&amp;ndash;cms-20816' title='Superpower Your Note Taking Skills With nvALT and Simplenote'&gt;tutorial&lt;/a&gt; over at Tuts+ covering many tricks from tagging, markdown preview, Simplenote integration, and more.&lt;/p&gt;&lt;p&gt;Check it out here: **&lt;a href='http://computers.tutsplus.com/tutorials/superpower-your-note-taking-skills-with-nvalt-and-simplenote&amp;ndash;cms-20816' title='Superpower Your Note Taking Skills With nvALT and Simplenote'&gt;Superpower Your Note Taking Skills With nvALT and Simplenote&lt;/a&gt;**&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/nvalt-logo.jpg&quot; alt=&quot;nvALT logo&quot; /&gt;&lt;/p&gt;&lt;p&gt;nvALT is a powerful and fast note taking tool. It’s great for keeping running lists and creating reference documentation on–the–fly, and is absolutely essential to my daily workflow.  I've written a full &lt;a href='http://computers.tutsplus.com/tutorials/superpower-your-note-taking-skills-with-nvalt-and-simplenote&amp;ndash;cms-20816' title='Superpower Your Note Taking Skills With nvALT and Simplenote'&gt;tutorial&lt;/a&gt; over at Tuts+ covering many tricks from tagging, markdown preview, Simplenote integration, and more.&lt;/p&gt;&lt;p&gt;Check it out here: &lt;strong&gt;&lt;a href='http://computers.tutsplus.com/tutorials/superpower-your-note-taking-skills-with-nvalt-and-simplenote&amp;ndash;cms-20816' title='Superpower Your Note Taking Skills With nvALT and Simplenote'&gt;Superpower Your Note Taking Skills With nvALT and Simplenote&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Tue, 27 May 2014 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/hearthstone-for-ipad-impressions/
+http://www.chadstovern.com/2014/hearthstone-for-ipad-impressions/
 </guid>
 <link>
-http://www.chadstovern.com/hearthstone-for-ipad-impressions/
+http://www.chadstovern.com/2014/hearthstone-for-ipad-impressions/
 </link>
 <title>
 HearthStone for iPad impressions
 </title>
 <description>
-&lt;p&gt;&lt;a href='/img/hsipad-splash.png'&gt;&lt;img src=&quot;/img/hsipad-splash-thumbnail.png&quot; alt=&quot;splash screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;It's no secret that I'm a big fan of Blizzard games in general, and I've been waiting for HearthStone to release to have a Blizzard title to enjoy casually on my iPad.  Now that that time is here — my biases aside — let's dive in for a quick look.&lt;/p&gt;&lt;p&gt;Once you go through the initial setup of your account and get the game started up for the first time, you'll notice it looks just like the desktop edition for Mac or Windows.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-homescreen.png'&gt;&lt;img src=&quot;/img/hsipad-homescreen-thumbnail.png&quot; alt=&quot;home screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The same thing is true for all of the menus.  If you click on &quot;My Collection&quot; you'll see any of the decks you've put together so far.  Making a deck and naming worked just the same as on the desktop edition of the game with one caveat; you need to drag the cards over into the deck staging area on the right side of the screen.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-deck.png'&gt;&lt;img src=&quot;/img/hsipad-deck-thumbnail.png&quot; alt=&quot;deck&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;One of the cool benefits of trying this out last night and taking these screenshots was being awarded a free pack of cards just for completing a single game in any game mode.  Here is a quick look at a few shots from the couple hands I played between last night and this morning.&lt;/p&gt;&lt;p&gt;Identical to the desktop version — noticing a trend here? — you'll start out the pre–match ritual of keeping or replacing a card in your starting hand.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-starting-hand.png'&gt;&lt;img src=&quot;/img/hsipad-starting-hand-thumbnail.png&quot; alt=&quot;hand&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Let the battle begin!  Here's where I start to prefer the iPad version over the desktop edition.  It is so natural and intuitive and ***just feels nice*** to drag a card out of your hand and plop it onto the game-board, or tap and drag to target an enemy.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-battle.png'&gt;&lt;img src=&quot;/img/hsipad-battle-thumbnail.png&quot; alt=&quot;battle&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;While I'm not a &quot;seasoned&quot; HearthStone player the computer AI obviously had no chance against my &quot;draw more cards, full taunt mob&quot; hunter deck.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-iwin.png'&gt;&lt;img src=&quot;/img/hsipad-iwin-thumbnail.png&quot; alt=&quot;iWin&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Needless to say I had a blast trying this out and can't wait to face my friends and other opponents online in the comfort wherever I can plop down and get some wifi.  Feel free to friend me via my battle-tag (Giddeon#1794) and join me for a game.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Lok'Tar Ogar! - Victory or Death!&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-victory.png'&gt;&lt;img src=&quot;/img/hsipad-victory-thumbnail.png&quot; alt=&quot;victory&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='/img/hsipad-splash.png'&gt;&lt;img src=&quot;/img/hsipad-splash-thumbnail.png&quot; alt=&quot;splash screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;It's no secret that I'm a big fan of Blizzard games in general, and I've been waiting for HearthStone to release to have a Blizzard title to enjoy casually on my iPad.  Now that that time is here — my biases aside — let's dive in for a quick look.&lt;/p&gt;&lt;p&gt;Once you go through the initial setup of your account and get the game started up for the first time, you'll notice it looks just like the desktop edition for Mac or Windows.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-homescreen.png'&gt;&lt;img src=&quot;/img/hsipad-homescreen-thumbnail.png&quot; alt=&quot;home screen&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;The same thing is true for all of the menus.  If you click on &quot;My Collection&quot; you'll see any of the decks you've put together so far.  Making a deck and naming worked just the same as on the desktop edition of the game with one caveat; you need to drag the cards over into the deck staging area on the right side of the screen.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-deck.png'&gt;&lt;img src=&quot;/img/hsipad-deck-thumbnail.png&quot; alt=&quot;deck&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;One of the cool benefits of trying this out last night and taking these screenshots was being awarded a free pack of cards just for completing a single game in any game mode.  Here is a quick look at a few shots from the couple hands I played between last night and this morning.&lt;/p&gt;&lt;p&gt;Identical to the desktop version — noticing a trend here? — you'll start out the pre–match ritual of keeping or replacing a card in your starting hand.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-starting-hand.png'&gt;&lt;img src=&quot;/img/hsipad-starting-hand-thumbnail.png&quot; alt=&quot;hand&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Let the battle begin!  Here's where I start to prefer the iPad version over the desktop edition.  It is so natural and intuitive and &lt;b&gt;&lt;i&gt;just feels nice&lt;/i&gt;&lt;/b&gt; to drag a card out of your hand and plop it onto the game-board, or tap and drag to target an enemy.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-battle.png'&gt;&lt;img src=&quot;/img/hsipad-battle-thumbnail.png&quot; alt=&quot;battle&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;While I'm not a &quot;seasoned&quot; HearthStone player the computer AI obviously had no chance against my &quot;draw more cards, full taunt mob&quot; hunter deck.&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-iwin.png'&gt;&lt;img src=&quot;/img/hsipad-iwin-thumbnail.png&quot; alt=&quot;iWin&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Needless to say I had a blast trying this out and can't wait to face my friends and other opponents online in the comfort wherever I can plop down and get some wifi.  Feel free to friend me via my battle-tag (Giddeon#1794) and join me for a game.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;Lok'Tar Ogar! - Victory or Death!&lt;/p&gt;&lt;p&gt;&lt;a href='/img/hsipad-victory.png'&gt;&lt;img src=&quot;/img/hsipad-victory-thumbnail.png&quot; alt=&quot;victory&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Thu, 17 Apr 2014 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/getting-started/
+http://www.chadstovern.com/2014/getting-started/
 </guid>
 <link>
-http://www.chadstovern.com/getting-started/
+http://www.chadstovern.com/2014/getting-started/
 </link>
 <title>
 Getting started
@@ -349,19 +304,16 @@ Getting started
 <description>
 &lt;p&gt;Getting started is hard.  The best way to start when you can't seem to, is to merely start.  Being afraid to fail has claimed countless projects, blog posts, ideas, and other things from coming into existence.  I bet more often than not never starting is more of a failure than having to listen to critique, edit, make changes, or try something completely new.&lt;/p&gt;&lt;p&gt;…back to writing the &lt;em&gt;actual&lt;/em&gt; thing &lt;em&gt;I&lt;/em&gt; was afraid to start.&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Sat, 12 Apr 2014 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/second-hand-meta-wizard/
+http://www.chadstovern.com/2014/second-hand-meta-wizard/
 </guid>
 <link>
-http://www.chadstovern.com/second-hand-meta-wizard/
+http://www.chadstovern.com/2014/second-hand-meta-wizard/
 </link>
 <title>
 Second-hand meta wizard
@@ -369,29 +321,26 @@ Second-hand meta wizard
 <description>
 &lt;p&gt;I've helped a number of people at work and elsewhere with &quot;personal productivity stuff&quot; by steering them to David Allen's book &quot;&lt;a href='http://www.amazon.com/gp/product/0142000280/?tag=digitalnoma09-20'&gt;Getting Things Done&lt;/a&gt;&quot;, things Merlin Mann has &lt;a href='http://www.kungfugrippe.com/post/47631308074/chasing-the-right-zero'&gt;written&lt;/a&gt; or said on a podcast, Scott Hanselman's talk &quot;&lt;a href='http://www.hanselman.com/blog/ItsNotWhatYouReadItsWhatYouIgnoreVideoOfScottHanselmansPersonalProductivityTips.aspx'&gt;Scale Yourself&lt;/a&gt;&quot; — among other resources.&lt;/p&gt;&lt;p&gt;While I'm happy to be able to help others make improvements where I have also iterated and improved, I can't help but feel like sort of a &quot;Second-hand meta wizard&quot;.&lt;/p&gt;&lt;p&gt;I suppose all the folks listed above that have inspired me were at one point also inspired by others before them.  I guess the takeaway is summed up by a poster I like that reads &quot;Be inspired, inspire.&quot;&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Thu, 10 Apr 2014 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts/
+http://www.chadstovern.com/2014/upgrade-freebsd-ports-without-confirmation-prompts/
 </guid>
 <link>
-http://www.chadstovern.com/upgrade-freebsd-ports-without-confirmation-prompts/
+http://www.chadstovern.com/2014/upgrade-freebsd-ports-without-confirmation-prompts/
 </link>
 <title>
 Upgrade FreeBSD ports without confirmation prompts
 </title>
 <description>
-&lt;p&gt;Here is a very handy method for updating all of the software on your FreeBSD box.  This gives you the ability to just &quot;walk away&quot; while your machine merrily hums along recompiling all your software without you having to sit around to answer prompts.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;update&amp;#95;your&amp;#95;ports&amp;#95;tree&quot;&gt;&lt;/a&gt;Update your ports tree&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portsnap fetch &amp;amp;&amp;amp; portsnap update
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a name=&quot;check&amp;#95;for&amp;#95;updates&amp;#95;and&amp;#95;choose&amp;#95;/&amp;#95;update&amp;#95;any&amp;#95;options&quot;&gt;&lt;/a&gt;Check for updates and choose / update any options&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portmaster -an --no-confirm
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a name=&quot;update&amp;#95;all&amp;#95;ports&amp;#95;without&amp;#95;any&amp;#95;confirmation&amp;#95;questions&quot;&gt;&lt;/a&gt;Update all ports without any confirmation questions&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portmaster -aydbg --no-confirm
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a name=&quot;…or&amp;#95;update&amp;#95;only&amp;#95;specific&amp;#95;ports&amp;#95;without&amp;#95;any&amp;#95;confirmation&amp;#95;questions&quot;&gt;&lt;/a&gt;…Or update only specific ports without any confirmation questions&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portmaster -ydbg --no-confirm portdir/port portdir2/port2
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a name=&quot;explanations&amp;#95;of&amp;#95;options&amp;#95;from&amp;#95;the&amp;#95;portmaster&amp;#95;man&amp;#95;page&quot;&gt;&lt;/a&gt;Explanations of options from the portmaster man page&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;manpage&quot;&gt;-y  answer yes to all user prompts for the features below
+&lt;p&gt;Here is a very handy method for updating all of the software on your FreeBSD box.  This gives you the ability to just &quot;walk away&quot; while your machine merrily hums along recompiling all your software without you having to sit around to answer prompts.&lt;/p&gt;&lt;h2 id=&quot;update&amp;#95;your&amp;#95;ports&amp;#95;tree&quot;&gt;Update your ports tree&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portsnap fetch &amp;amp;&amp;amp; portsnap update
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;check&amp;#95;for&amp;#95;updates&amp;#95;and&amp;#95;choose&amp;#95;/&amp;#95;update&amp;#95;any&amp;#95;options&quot;&gt;Check for updates and choose / update any options&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portmaster -an --no-confirm
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;update&amp;#95;all&amp;#95;ports&amp;#95;without&amp;#95;any&amp;#95;confirmation&amp;#95;questions&quot;&gt;Update all ports without any confirmation questions&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portmaster -aydbg --no-confirm
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;…or&amp;#95;update&amp;#95;only&amp;#95;specific&amp;#95;ports&amp;#95;without&amp;#95;any&amp;#95;confirmation&amp;#95;questions&quot;&gt;…Or update only specific ports without any confirmation questions&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;portmaster -ydbg --no-confirm portdir/port portdir2/port2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;explanations&amp;#95;of&amp;#95;options&amp;#95;from&amp;#95;the&amp;#95;portmaster&amp;#95;man&amp;#95;page&quot;&gt;Explanations of options from the portmaster man page&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;manpage&quot;&gt;-y  answer yes to all user prompts for the features below
 
 -d  always clean distfiles
 
@@ -403,59 +352,50 @@ Upgrade FreeBSD ports without confirmation prompts
 do not ask the user to confirm the list of ports to be installed and/or updated before proceeding
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Mon, 17 Feb 2014 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times/
+http://www.chadstovern.com/2014/a-moment-of-clarity-in-stressful-times/
 </guid>
 <link>
-http://www.chadstovern.com/a-moment-of-clarity-in-stressful-times/
+http://www.chadstovern.com/2014/a-moment-of-clarity-in-stressful-times/
 </link>
 <title>
 A moment of clarity in stressful times
 </title>
 <description>
-&lt;h2&gt;&lt;a name=&quot;stress&quot;&gt;&lt;/a&gt;Stress&lt;/h2&gt;The past few weeks at the office have been more stressful than most.  I do fairly technical work on a regular basis and manage a small team of people at the same time.  When there are outages caused by things ranging from equipment failures to widespread fallout from &quot;&lt;a href='http://en.wikipedia.org/wiki/Denial_of_service'&gt;denial of service attacks&lt;/a&gt;&quot; online; it can quickly become a daunting task to fix problems, direct people, and manage expectations.&lt;p&gt;The problem is, this was just the most recent piece of a larger recent pattern.  I realized this when someone very close to me stated, &quot;You just don't seem happy anymore.&quot;  Now they were not saying that I don't  joke around or enjoy life — it's that my default resting state had become one that exhibits being down, worn out, and seemingly slightly depressed.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;clarity&quot;&gt;&lt;/a&gt;Clarity&lt;/h2&gt;It was later that afternoon after reading some texts that ended with &quot;You just don't seem happy anymore.&quot; that I had my moment of clarity.  I tweeted the following:&lt;blockquote&gt;&lt;p&gt; &lt;em&gt;Sometimes it takes being in the pressure cooker beyond any level of comfort to have a moment of clarity / zen.&lt;/em&gt; &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;strong&gt;I then wrote the following on a small index card:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Focus on habits&lt;/li&gt;&lt;li&gt;Work diligently &amp; then defer / manage expectations&lt;/li&gt;&lt;li&gt;Remain joyful (not necessarily happy)&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;&lt;a name=&quot;focus&amp;#95;on&amp;#95;habits&quot;&gt;&lt;/a&gt;Focus on habits&lt;/h3&gt;There are certain daily and weekly goals I've set to make better habits for myself.  When I don't take time to work on those goals and meet at least some of them, I can feel generally down and unhappy with myself.  It is important — daily — to spend a little time on yourself in the form of self maintenance or &quot;bettering yourself&quot; regardless of the perceived chaos you live and work in.  Find that 15 minutes a couple times a day for your own well being and sanity.&lt;h3&gt;&lt;a name=&quot;work&amp;#95;diligently&amp;#95;and&amp;#95;then&amp;#95;defer&amp;#95;/&amp;#95;manage&amp;#95;expectations&quot;&gt;&lt;/a&gt;Work diligently and then defer / manage expectations&lt;/h3&gt;We're made to work; it's good to exert effort and &quot;do work&quot;.  If we're taking good care of ourselves we should work diligently at what we set out to do.  For me that means working hard each day to solve problems and enlist the help of others to solve problems.  At times there are many &quot;priorities&quot; or &quot;emergencies&quot;.  We can do our best to make judgement calls and work hard, yet at the end of the day there can be an important and difficult set of responsibilities we have.&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Managing the expectations of others — which often times means being ok with disappointing others in a courteous and professional manner.&lt;/li&gt;&lt;li&gt;Deferring what isn't complete to a future time.&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;&lt;a name=&quot;remain&amp;#95;&quot;joyful&quot;&amp;#95;(not&amp;#95;necessarily&amp;#95;happy)&quot;&gt;&lt;/a&gt;Remain &quot;joyful&quot; (not necessarily happy)&lt;/h3&gt;Here's the thing about &lt;strong&gt;happiness&lt;/strong&gt;.  It &lt;strong&gt;relies on happenings&lt;/strong&gt;.  In the midst of chaos and stress I think it's important to remain &quot;joyful&quot;.  In looking at definitions &lt;a href='http://www.diffen.com/difference/Happiness_vs_Joy'&gt;here&lt;/a&gt; is a difference between emotions that I liked:&lt;ul&gt;&lt;li&gt;happiness: outward expression of elation&lt;/li&gt;&lt;li&gt;joy: inward peace and contentment&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;To me it comes down to being mindful and thankful regardless of your happenings.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;in&amp;#95;summary&quot;&gt;&lt;/a&gt;In summary&lt;/h2&gt;In the midst of what seems to be overwhelming stress remember to take care of yourself (focus on habits), work hard (work diligently &amp; then defer / manage expectations), and don't let yourself get down due to your happenings (remain joyful).
+&lt;h2 id=&quot;stress&quot;&gt;Stress&lt;/h2&gt;&lt;p&gt;The past few weeks at the office have been more stressful than most.  I do fairly technical work on a regular basis and manage a small team of people at the same time.  When there are outages caused by things ranging from equipment failures to widespread fallout from &quot;&lt;a href='http://en.wikipedia.org/wiki/Denial_of_service'&gt;denial of service attacks&lt;/a&gt;&quot; online; it can quickly become a daunting task to fix problems, direct people, and manage expectations.&lt;/p&gt;&lt;p&gt;The problem is, this was just the most recent piece of a larger recent pattern.  I realized this when someone very close to me stated, &quot;You just don't seem happy anymore.&quot;  Now they were not saying that I don't  joke around or enjoy life — it's that my default resting state had become one that exhibits being down, worn out, and seemingly slightly depressed.&lt;/p&gt;&lt;h2 id=&quot;clarity&quot;&gt;Clarity&lt;/h2&gt;&lt;p&gt;It was later that afternoon after reading some texts that ended with &quot;You just don't seem happy anymore.&quot; that I had my moment of clarity.  I tweeted the following:&lt;blockquote&gt;&lt;p&gt; &lt;em&gt;Sometimes it takes being in the pressure cooker beyond any level of comfort to have a moment of clarity / zen.&lt;/em&gt;  &lt;/p&gt;&lt;/blockquote&gt;&lt;strong&gt;I then wrote the following on a small index card:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Focus on habits&lt;/li&gt;&lt;li&gt;Work diligently &amp; then defer / manage expectations&lt;/li&gt;&lt;li&gt;Remain joyful (not necessarily happy)&lt;/li&gt;&lt;/ul&gt;&lt;h3 id=&quot;focus&amp;#95;on&amp;#95;habits&quot;&gt;Focus on habits&lt;/h3&gt;&lt;p&gt;There are certain daily and weekly goals I've set to make better habits for myself.  When I don't take time to work on those goals and meet at least some of them, I can feel generally down and unhappy with myself.  It is important — daily — to spend a little time on yourself in the form of self maintenance or &quot;bettering yourself&quot; regardless of the perceived chaos you live and work in.  Find that 15 minutes a couple times a day for your own well being and sanity.&lt;/p&gt;&lt;h3 id=&quot;work&amp;#95;diligently&amp;#95;and&amp;#95;then&amp;#95;defer&amp;#95;/&amp;#95;manage&amp;#95;expectations&quot;&gt;Work diligently and then defer / manage expectations&lt;/h3&gt;&lt;p&gt;We're made to work; it's good to exert effort and &quot;do work&quot;.  If we're taking good care of ourselves we should work diligently at what we set out to do.  For me that means working hard each day to solve problems and enlist the help of others to solve problems.  At times there are many &quot;priorities&quot; or &quot;emergencies&quot;.  We can do our best to make judgement calls and work hard, yet at the end of the day there can be an important and difficult set of responsibilities we have.&lt;br /&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Managing the expectations of others — which often times means being ok with disappointing others in a courteous and professional manner.&lt;/li&gt;&lt;li&gt;Deferring what isn't complete to a future time.&lt;/li&gt;&lt;/ul&gt;&lt;h3 id=&quot;remain&amp;#95;&quot;joyful&quot;&amp;#95;(not&amp;#95;necessarily&amp;#95;happy)&quot;&gt;Remain &quot;joyful&quot; (not necessarily happy)&lt;/h3&gt;&lt;p&gt;Here's the thing about &lt;strong&gt;happiness&lt;/strong&gt;.  It &lt;strong&gt;relies on happenings&lt;/strong&gt;.  In the midst of chaos and stress I think it's important to remain &quot;joyful&quot;.  In looking at definitions &lt;a href='http://www.diffen.com/difference/Happiness_vs_Joy'&gt;here&lt;/a&gt; is a difference between emotions that I liked:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;happiness: outward expression of elation&lt;/li&gt;&lt;li&gt;joy: inward peace and contentment&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;To me it comes down to being mindful and thankful regardless of your happenings.&lt;/p&gt;&lt;h2 id=&quot;in&amp;#95;summary&quot;&gt;In summary&lt;/h2&gt;&lt;p&gt;In the midst of what seems to be overwhelming stress remember to take care of yourself (focus on habits), work hard (work diligently &amp; then defer / manage expectations), and don't let yourself get down due to your happenings (remain joyful).&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Sat, 15 Feb 2014 00:00:00 -0600
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/replacing-gmail-and-google-calendar/
+http://www.chadstovern.com/2013/replacing-gmail-and-google-calendar/
 </guid>
 <link>
-http://www.chadstovern.com/replacing-gmail-and-google-calendar/
+http://www.chadstovern.com/2013/replacing-gmail-and-google-calendar/
 </link>
 <title>
 replacing gmail and google calendar
 </title>
 <description>
-&lt;p&gt;&lt;img src=&quot;/img/gmail.png&quot; alt=&quot;Gmail&quot; /&gt;&lt;/p&gt;&lt;p&gt;I'll start this post by stating that I've been a Google fan for years.  I've been a Gmail user since I snagged a beta invite in college.  I followed the development of Android from before the time the G1 was announced.  I was labeled &quot;another one of those annoying people that &lt;em&gt;have&lt;/em&gt; to use Chrome&quot; when it was still in early single digit releases. &lt;a href='#fn-1' id='fnref1'&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;  Who would be the first to quote &quot;Do no evil&quot;?  — This guy.&lt;/p&gt;&lt;p&gt;I've decided that in many facets of my life online that I'm sick of being the product and not the customer.  I am not woo'd by Google or Facebook to stay with them because of feature X or enhancement Y — no no, that focus is for the real customers — advertisers. &lt;a href='#fn-2' id='fnref2'&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;  There can be real conveniences to being served relevant ad data and the US federal government is pretty much scanning everything anyway.  However, I'm at a point now where I want to more actively and consciously decide what information I'm going to give organizations.  I just want to start being the customer for once and have a little bit of personal privacy.  In this case, I'm just not ok with any of my primary forms of communication being used to target ad data to me anymore.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;fastmail&amp;#95;to&amp;#95;the&amp;#95;rescue?&quot;&gt;&lt;/a&gt;Fastmail to the rescue?&lt;/h2&gt;I've looked at Opera's Fastmail offering before and have read some pretty glowing reviews about their service lately.  A couple short conversations over on App.net also sparked my interest to look into their service a bit further.  Unfortunately for my needs it's slightly cost prohibitive.  I want two email accounts each on their own domain.  A &quot;proper&quot; setup with Fastmail would cost me 80 USD per year.  I could utilize domain aliases and create some rules to bring it down to 40 USD, but I really want these accounts seperate and don't want to have to deal with the &quot;reply–as&quot; hassle with my mail applications.&lt;p&gt;After &quot;reading the rags&quot; (various forums), there have been a number of incidents where accounts were shut off for hitting send caps, or flagged and disabled for sending bulk mail out when it was not the fault of the user.  These sorts of reports — of which there were more than a few — were enough to give me pause to at least look at the rest of the competition.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;polarismail&amp;#95;+&amp;#95;icloud&amp;#95;calendars&quot;&gt;&lt;/a&gt;PolarisMail + iCloud Calendars&lt;/h2&gt;A number of people that were looking for options other than Fastmail were recommending a service called &lt;a href='https://www.polarismail.com'&gt;PolarisMail&lt;/a&gt;.  I'm always a bit leary of seemingly obscure recommendations.  In this case I was pleasantly surprised.  The reviews seemed to be all positive, the pricing competitive, and they even had a &quot;Fastmail Promotion&quot; running.  The promotion was designed for people unhappy with the Fastmail service and provided a 90 day free trial (up from 30) as well as a free basic mail account for every enhanced account purchased.  Their basic mail offering was only 12 USD per year per mailbox and supported multiple domains.  &lt;p&gt;&lt;strong&gt;This means for 24 USD per year I could have the following.&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Two mailboxes on seperate domains yet managed from a single admin panel&lt;/li&gt;&lt;li&gt;Fast IMAP &amp; SMTP mail service&lt;/li&gt;&lt;li&gt;A choice of webmail interfaces including the very nice looking non–free (there is no additional cost; it's just not opensource) Atmail interface&lt;/li&gt;&lt;li&gt;25 GB of storage per mailbox&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;I signed up for the 30 day free trial and emailed support about the Fastmail promotion.  &lt;a href='#fn-3' id='fnref3'&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;  I mentioned that I was looking to move from Google Apps to Fastmail and stumbled upon PolarisMail.  I asked if they would be willing to apply the promotion to my account for choosing them over Fastmail.  It would not have by any means been a deal breaker, but in under an hour they had responded and bumped my free trial up to 90 days.  They did also let me know that since I purchased two basic accounts and no enhanced accounts that I would not be eligible for any free accounts.  No problems there, I was just happy to see the prompt communication!&lt;/p&gt;&lt;p&gt;As far as calendaring goes, I've decided to use iCloud to store and sync my calendars across my devices.  I use a Mac and iPad at work and at home and I'll be moving to an iPhone soon enough.  For Android users there is an app called &quot;&lt;a href='https://play.google.com/store/apps/details?id=org.dmfs.caldav.icloud&amp;hl=en'&gt;SmoothSync for Cloud Calendar&lt;/a&gt;&quot; on the Play Store that will let you access and sync your iCloud calendars.  Not much else to say here other than I've had zero issues with my calendaring so far.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;polarismail&amp;#95;with&amp;#95;builtin&amp;#95;caldav&amp;#95;&amp;&amp;#95;carddav&quot;&gt;&lt;/a&gt;PolarisMail with builtin CalDav &amp; CardDav&lt;/h2&gt;If you don't want to be tied to Apple for your calendaring there are options for that too.  Apple supports connecting to any CalDav or CardDav service.  Fortunately PolarisMail offers &quot;Enhanced&quot; accounts for 24 USD per year that offer those services as well.  You can look at it simply as 12 USD per year for email hosting and 12 USD per year for calendar and contact hosting and syncing.&lt;h2&gt;&lt;a name=&quot;buyer's&amp;#95;remorse?&quot;&gt;&lt;/a&gt;Buyer's remorse?&lt;/h2&gt;&lt;strong&gt;Nope.&lt;/strong&gt;&lt;p&gt;I've been using the setup fo PolarisMail + iCloud calendars with my MacBook Pro, iPad, and Android phone for nearly two months now without a hiccup.&lt;/p&gt;&lt;p&gt;If I wanted to provide a tiny amount of critical feedback it would be that they still billed me after 30 days rather than a 90 day free trial.  They apologized and assured me that they would set the bill date forward for next year so I could get the extra two free months per my recommendation to keep things simple.&lt;/p&gt;&lt;p&gt;**If you're looking for an inexpensive reliable place to host your mail**, you should definitely consider taking &lt;a href='https://www.polarismail.com'&gt;PolarisMail&lt;/a&gt; for a spin.&lt;/p&gt;&lt;ol&gt;&lt;li id='fn-1'&gt;Now our whole dev team uses it as their primary browser.&lt;a href='#fnref1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn-2'&gt;Advertising isn't something I view as evil or wrong.  I merely resist it in the form of creepily parsing my personal data and building a profile to help decide which ads I see.  By contrast, I'm fine with seeing a giant Miller billboard at a Brewers game.  People that go to a stadium game are more likely to buy a beer or two, that makes sense.  Once again I would not be ok with them scanning my ticket when I purchase a brew so they could text me personalized coupon codes or something.&lt;a href='#fnref2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn-3'&gt;The Fastmail sales folks were friendly and helpful though it did often take more than a day between replies to my short thread with them asking questions about the service and migration options.&lt;a href='#fnref3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;/img/gmail.png&quot; alt=&quot;Gmail&quot; /&gt;&lt;/p&gt;&lt;p&gt;I'll start this post by stating that I've been a Google fan for years.  I've been a Gmail user since I snagged a beta invite in college.  I followed the development of Android from before the time the G1 was announced.  I was labeled &quot;another one of those annoying people that &lt;em&gt;have&lt;/em&gt; to use Chrome&quot; when it was still in early single digit releases. &lt;a href='#fn-1' id='fnref1'&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;  Who would be the first to quote &quot;Do no evil&quot;?  — This guy.&lt;/p&gt;&lt;p&gt;I've decided that in many facets of my life online that I'm sick of being the product and not the customer.  I am not woo'd by Google or Facebook to stay with them because of feature X or enhancement Y — no no, that focus is for the real customers — advertisers. &lt;a href='#fn-2' id='fnref2'&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;  There can be real conveniences to being served relevant ad data and the US federal government is pretty much scanning everything anyway.  However, I'm at a point now where I want to more actively and consciously decide what information I'm going to give organizations.  I just want to start being the customer for once and have a little bit of personal privacy.  In this case, I'm just not ok with any of my primary forms of communication being used to target ad data to me anymore.&lt;/p&gt;&lt;h2 id=&quot;fastmail&amp;#95;to&amp;#95;the&amp;#95;rescue?&quot;&gt;Fastmail to the rescue?&lt;/h2&gt;&lt;p&gt;I've looked at Opera's Fastmail offering before and have read some pretty glowing reviews about their service lately.  A couple short conversations over on App.net also sparked my interest to look into their service a bit further.  Unfortunately for my needs it's slightly cost prohibitive.  I want two email accounts each on their own domain.  A &quot;proper&quot; setup with Fastmail would cost me 80 USD per year.  I could utilize domain aliases and create some rules to bring it down to 40 USD, but I really want these accounts seperate and don't want to have to deal with the &quot;reply–as&quot; hassle with my mail applications.&lt;/p&gt;&lt;p&gt;After &quot;reading the rags&quot; (various forums), there have been a number of incidents where accounts were shut off for hitting send caps, or flagged and disabled for sending bulk mail out when it was not the fault of the user.  These sorts of reports — of which there were more than a few — were enough to give me pause to at least look at the rest of the competition.&lt;/p&gt;&lt;h2 id=&quot;polarismail&amp;#95;+&amp;#95;icloud&amp;#95;calendars&quot;&gt;PolarisMail + iCloud Calendars&lt;/h2&gt;&lt;p&gt;A number of people that were looking for options other than Fastmail were recommending a service called &lt;a href='https://www.polarismail.com'&gt;PolarisMail&lt;/a&gt;.  I'm always a bit leary of seemingly obscure recommendations.  In this case I was pleasantly surprised.  The reviews seemed to be all positive, the pricing competitive, and they even had a &quot;Fastmail Promotion&quot; running.  The promotion was designed for people unhappy with the Fastmail service and provided a 90 day free trial (up from 30) as well as a free basic mail account for every enhanced account purchased.  Their basic mail offering was only 12 USD per year per mailbox and supported multiple domains.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;This means for 24 USD per year I could have the following.&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Two mailboxes on seperate domains yet managed from a single admin panel&lt;/li&gt;&lt;li&gt;Fast IMAP &amp; SMTP mail service&lt;/li&gt;&lt;li&gt;A choice of webmail interfaces including the very nice looking non–free (there is no additional cost; it's just not opensource) Atmail interface&lt;/li&gt;&lt;li&gt;25 GB of storage per mailbox&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;I signed up for the 30 day free trial and emailed support about the Fastmail promotion.  &lt;a href='#fn-3' id='fnref3'&gt;&lt;sup&gt;3&lt;/sup&gt;&lt;/a&gt;  I mentioned that I was looking to move from Google Apps to Fastmail and stumbled upon PolarisMail.  I asked if they would be willing to apply the promotion to my account for choosing them over Fastmail.  It would not have by any means been a deal breaker, but in under an hour they had responded and bumped my free trial up to 90 days.  They did also let me know that since I purchased two basic accounts and no enhanced accounts that I would not be eligible for any free accounts.  No problems there, I was just happy to see the prompt communication!&lt;/p&gt;&lt;p&gt;As far as calendaring goes, I've decided to use iCloud to store and sync my calendars across my devices.  I use a Mac and iPad at work and at home and I'll be moving to an iPhone soon enough.  For Android users there is an app called &quot;&lt;a href='https://play.google.com/store/apps/details?id=org.dmfs.caldav.icloud&amp;hl=en'&gt;SmoothSync for Cloud Calendar&lt;/a&gt;&quot; on the Play Store that will let you access and sync your iCloud calendars.  Not much else to say here other than I've had zero issues with my calendaring so far.&lt;/p&gt;&lt;h2 id=&quot;polarismail&amp;#95;with&amp;#95;builtin&amp;#95;caldav&amp;#95;&amp;&amp;#95;carddav&quot;&gt;PolarisMail with builtin CalDav &amp; CardDav&lt;/h2&gt;&lt;p&gt;If you don't want to be tied to Apple for your calendaring there are options for that too.  Apple supports connecting to any CalDav or CardDav service.  Fortunately PolarisMail offers &quot;Enhanced&quot; accounts for 24 USD per year that offer those services as well.  You can look at it simply as 12 USD per year for email hosting and 12 USD per year for calendar and contact hosting and syncing.&lt;/p&gt;&lt;h2 id=&quot;buyer's&amp;#95;remorse?&quot;&gt;Buyer's remorse?&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Nope.&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;I've been using the setup fo PolarisMail + iCloud calendars with my MacBook Pro, iPad, and Android phone for nearly two months now without a hiccup.&lt;/p&gt;&lt;p&gt;If I wanted to provide a tiny amount of critical feedback it would be that they still billed me after 30 days rather than a 90 day free trial.  They apologized and assured me that they would set the bill date forward for next year so I could get the extra two free months per my recommendation to keep things simple.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;If you're looking for an inexpensive reliable place to host your mail&lt;/strong&gt;, you should definitely consider taking &lt;a href='https://www.polarismail.com'&gt;PolarisMail&lt;/a&gt; for a spin.&lt;/p&gt;&lt;ol class='footnotes'&gt;&lt;li id='fn-1'&gt;Now our whole dev team uses it as their primary browser.&lt;a href='#fnref1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn-2'&gt;Advertising isn't something I view as evil or wrong.  I merely resist it in the form of creepily parsing my personal data and building a profile to help decide which ads I see.  By contrast, I'm fine with seeing a giant Miller billboard at a Brewers game.  People that go to a stadium game are more likely to buy a beer or two, that makes sense.  Once again I would not be ok with them scanning my ticket when I purchase a brew so they could text me personalized coupon codes or something.&lt;a href='#fnref2'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;li id='fn-3'&gt;The Fastmail sales folks were friendly and helpful though it did often take more than a day between replies to my short thread with them asking questions about the service and migration options.&lt;a href='#fnref3'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Tue, 08 Oct 2013 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy/
+http://www.chadstovern.com/2013/procrastination-i-dont-think-youre-lazy/
 </guid>
 <link>
-http://www.chadstovern.com/procrastination-i-dont-think-youre-lazy/
+http://www.chadstovern.com/2013/procrastination-i-dont-think-youre-lazy/
 </link>
 <title>
 Procrastination: I don't think you're lazy
@@ -463,25 +403,22 @@ Procrastination: I don't think you're lazy
 <description>
 &lt;p&gt;When you see the word procrastination what do you think of?&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Laziness?&lt;/li&gt;&lt;li&gt;Poor work ethic?&lt;/li&gt;&lt;li&gt;Lack of care?&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;img src=&quot;/img/omnifocus-completed-small.png&quot; alt=&quot;OmniFocus Completed&quot; /&gt;&lt;/p&gt;&lt;p&gt;Those things can be true — but let's face it — the fact that we're skimming an article like this this is a form of &quot;care&quot; and therefore a pretty good sign those things are mostly untrue of us.  What I believe happens more often than not is that our brain gets in the way.  I'll give you a quick example of something I've been neglecting lately, my expense report.&lt;/p&gt;&lt;p&gt;That seems like such an easy task.  It's a task that benefits me directly, with money!  Why on earth have I not finished my last expense report?  I've seen a reminder in my &lt;em&gt;trusted system&lt;/em&gt; that tells me &quot;do expense report today&quot;.  The issue is &quot;do expense report today&quot; — while seemingly actionable — is not.  My brain knows that there are more steps to that task that I haven't defined; It's actually a project.  Maybe I know I need to print off receipts, but I have no idea where I put them.  If I don't know what the next well defined physical action is to achieve the goal of a submitted expense report, my brain provides resistance to working on it.  Let's fix this.&lt;/p&gt;&lt;p&gt;The &lt;em&gt;project&lt;/em&gt; &quot;Complete Expense Report&quot; has several physical action steps that might look like this:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Find receipt from OfficeMax inbox purchase&lt;/li&gt;&lt;li&gt;Plot mileage from the office to our recent vendor meet-up&lt;/li&gt;&lt;li&gt;Find last months mileage email on my Mac to find current reimbursement rate&lt;/li&gt;&lt;li&gt;Calculate mileage owed and enter into expense report spreadsheet&lt;/li&gt;&lt;li&gt;Print cell phone receipt for on call reimbursement&lt;/li&gt;&lt;li&gt;Enter data for printed receipts into expense report spreadsheet&lt;/li&gt;&lt;li&gt;Print expense report spreadsheet&lt;/li&gt;&lt;li&gt;Attach receipts to expense report spreadsheet&lt;/li&gt;&lt;li&gt;Sign expense report and turn in to my boss&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;That sounds really fancy and unnecessary Chad.  Oh really?  How many nagging things do you have on a list or floating in your head that you feel bad about because you haven't done anything about them yet?&lt;br /&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Here's my challenge to you:&lt;/strong&gt; over the next week find one thing you've been putting off that you feel is important and figure out what the first or next &lt;em&gt;physical&lt;/em&gt; action is that is required to get you closer to completion.  If you do this for even one item on your todo list that isn't getting done, I promise you'll make more progress than just ocassionally thinking about it or feeling bad that it isn't done yet.  In fact, it looks like I'm all set with a set of super simple yet very well defined tasks that will lead me to finally get my latest expense report finished.&lt;/p&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Wed, 19 Jun 2013 00:00:00 -0500
 </pubDate>
 </item>
 <item>
 <guid>
-http://www.chadstovern.com/changing-your-internal-field-separator/
+http://www.chadstovern.com/2013/changing-your-internal-field-separator/
 </guid>
 <link>
-http://www.chadstovern.com/changing-your-internal-field-separator/
+http://www.chadstovern.com/2013/changing-your-internal-field-separator/
 </link>
 <title>
 changing your internal field separator
 </title>
 <description>
-&lt;h2&gt;&lt;a name=&quot;wow;&amp;#95;that&amp;#95;sounds&amp;#95;pretty&amp;#95;exciting&amp;#95;doesn’t&amp;#95;it?&quot;&gt;&lt;/a&gt;Wow; that sounds pretty exciting doesn’t it?&lt;/h2&gt;&lt;p&gt;If you do much shell scripting (I frequent bash) at some point you’ll come across “IFS” and learn to appreciate the usefulness in manipulating it.  Let’s look at a script showing that — and then dive into the details.&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/usr/bin/env bash
+&lt;h2 id=&quot;wow;&amp;#95;that&amp;#95;sounds&amp;#95;pretty&amp;#95;exciting&amp;#95;doesn’t&amp;#95;it?&quot;&gt;Wow; that sounds pretty exciting doesn’t it?&lt;/h2&gt;&lt;p&gt;If you do much shell scripting (I frequent bash) at some point you’ll come across “IFS” and learn to appreciate the usefulness in manipulating it.  Let’s look at a script showing that — and then dive into the details.&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;#!/usr/bin/env bash
 
 ## test function
 ifs&amp;#95;test&amp;#40;&amp;#41;
@@ -506,7 +443,7 @@ ifs&amp;#95;test
 IFS=$oIFS
 
 exit
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a name=&quot;so&amp;#95;what’s&amp;#95;happening&amp;#95;here&amp;#95;and&amp;#95;how&amp;#95;is&amp;#95;it&amp;#95;relevant?&quot;&gt;&lt;/a&gt;So what’s happening here and how is it relevant?&lt;/h2&gt;&lt;p&gt;A number of times I’ve had to write scripts to automate the processing of files, which can turn out to be any combination of renaming them, moving them around, or checking if they are valid based on some set of rules.  One thing that can often bite me is file names with unexpected spaces.  You may say, “but people know how to name the files correctly, there’s documentation for it even.”  I’m sure you’re right, but you’re not accounting for the fact that these people are human.  Humans make mistakes.  You can get clever and pass results through another Unix tool, but I prefer to avoid extra dependencies when the shell I’m working in can handle it cleanly and efficiently.&lt;/p&gt;&lt;p&gt;As an example look at the bash function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; in our example.  It’s just a trivial for loop which echoes out the results of the &lt;code&gt;ls -lah&lt;/code&gt; command.  The first time it is called this is the result we get:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&amp;#91;chadhs@mac scratch&amp;#93;$ ./ifstest.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;so&amp;#95;what’s&amp;#95;happening&amp;#95;here&amp;#95;and&amp;#95;how&amp;#95;is&amp;#95;it&amp;#95;relevant?&quot;&gt;So what’s happening here and how is it relevant?&lt;/h2&gt;&lt;p&gt;A number of times I’ve had to write scripts to automate the processing of files, which can turn out to be any combination of renaming them, moving them around, or checking if they are valid based on some set of rules.  One thing that can often bite me is file names with unexpected spaces.  You may say, “but people know how to name the files correctly, there’s documentation for it even.”  I’m sure you’re right, but you’re not accounting for the fact that these people are human.  Humans make mistakes.  You can get clever and pass results through another Unix tool, but I prefer to avoid extra dependencies when the shell I’m working in can handle it cleanly and efficiently.&lt;/p&gt;&lt;p&gt;As an example look at the bash function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; in our example.  It’s just a trivial for loop which echoes out the results of the &lt;code&gt;ls -lah&lt;/code&gt; command.  The first time it is called this is the result we get:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;&amp;#91;chadhs@mac scratch&amp;#93;$ ./ifstest.sh
 drwxr-xr-x
 4
 chadhs
@@ -543,15 +480,12 @@ Mar
 24
 17:17
 so-secret-filename-is-classified.md
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a name=&quot;ouch.&amp;#95;&amp;#95;that&amp;#95;was&amp;#95;super&amp;#95;ugly;&amp;#95;how&amp;#95;do&amp;#95;we&amp;#95;fix&amp;#95;it?&quot;&gt;&lt;/a&gt;Ouch.  That was super ugly; how do we fix it?&lt;/h2&gt;&lt;p&gt;Before explaining that, let’s see how the output looks the second time the function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; is called.&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;drwxr-xr-x   4 chadhs  staff   136B Mar 24 19:36 .
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;ouch.&amp;#95;&amp;#95;that&amp;#95;was&amp;#95;super&amp;#95;ugly;&amp;#95;how&amp;#95;do&amp;#95;we&amp;#95;fix&amp;#95;it?&quot;&gt;Ouch.  That was super ugly; how do we fix it?&lt;/h2&gt;&lt;p&gt;Before explaining that, let’s see how the output looks the second time the function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; is called.&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;drwxr-xr-x   4 chadhs  staff   136B Mar 24 19:36 .
 drwxr-xr-x+ 39 chadhs  staff   1.3K Mar 24 19:36 ..
 -rw-r--r--   1 chadhs  staff   576B Jul 31  2012 pckeyboardhack.tmp
 -rw-r--r--   1 chadhs  staff     0B Mar 24 17:17 so-secret-filename…
-&lt;/code&gt;&lt;/pre&gt;&lt;h2&gt;&lt;a name=&quot;ahh…&amp;#95;that’s&amp;#95;much&amp;#95;better.&quot;&gt;&lt;/a&gt;Ahh… that’s much better.&lt;/h2&gt;&lt;p&gt;So to fully understand what is going on each time the function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; is called we need to understand what the variable IFS is.  By default the internal shell variable IFS is set to recognize spaces, tabs, and new lines as a field delimiter (aka Internal Field Separator).  Seeing that there are multiple spaces in each of our results from the &lt;code&gt;ls -lah&lt;/code&gt; command in the for loop, our shell is treating every single white space (compare the first result to the second) as a delimiter for a new item in our list of results renerated in the for loop.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;now&amp;#95;for&amp;#95;the&amp;#95;fix&quot;&gt;&lt;/a&gt;Now for the fix&lt;/h2&gt;&lt;p&gt;You’ll notice in our example that before the function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; is called the second time, we set a variable called oIFS to store the default value of IFS, and then change IFS to only treat a new line as a field separator / delimiter.  Once we no longer need this behavior we then set IFS back to it’s default value &lt;a href='#fn-1' id='fnref1'&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;&lt;h2&gt;&lt;a name=&quot;wrapping&amp;#95;it&amp;#95;all&amp;#95;up&quot;&gt;&lt;/a&gt;Wrapping it all up&lt;/h2&gt;&lt;p&gt;The reason I spent a little time writing this up and sharing it was the simple fact that learning about how to alter IFS to control how the shell delimits results saved me some pain in a project recently.  My scripts continued to run and do their job but I’d get a lot of little errors when someone didn’t follow the documentation; and trusting humans is just bad for business.  ;-)&lt;/p&gt;&lt;ol&gt;&lt;li id='fn-1'&gt;In theory we can just unset IFS to return it to it’s default value, but I like to do it manually &amp; explicitly.&lt;a href='#fnref1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;ahh…&amp;#95;that’s&amp;#95;much&amp;#95;better.&quot;&gt;Ahh… that’s much better.&lt;/h2&gt;&lt;p&gt;So to fully understand what is going on each time the function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; is called we need to understand what the variable IFS is.  By default the internal shell variable IFS is set to recognize spaces, tabs, and new lines as a field delimiter (aka Internal Field Separator).  Seeing that there are multiple spaces in each of our results from the &lt;code&gt;ls -lah&lt;/code&gt; command in the for loop, our shell is treating every single white space (compare the first result to the second) as a delimiter for a new item in our list of results renerated in the for loop.&lt;/p&gt;&lt;h2 id=&quot;now&amp;#95;for&amp;#95;the&amp;#95;fix&quot;&gt;Now for the fix&lt;/h2&gt;&lt;p&gt;You’ll notice in our example that before the function &lt;code&gt;ifs&amp;#95;test&lt;/code&gt; is called the second time, we set a variable called oIFS to store the default value of IFS, and then change IFS to only treat a new line as a field separator / delimiter.  Once we no longer need this behavior we then set IFS back to it’s default value &lt;a href='#fn-1' id='fnref1'&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;&lt;h2 id=&quot;wrapping&amp;#95;it&amp;#95;all&amp;#95;up&quot;&gt;Wrapping it all up&lt;/h2&gt;&lt;p&gt;The reason I spent a little time writing this up and sharing it was the simple fact that learning about how to alter IFS to control how the shell delimits results saved me some pain in a project recently.  My scripts continued to run and do their job but I’d get a lot of little errors when someone didn’t follow the documentation; and trusting humans is just bad for business.  ;-)&lt;/p&gt;&lt;ol class='footnotes'&gt;&lt;li id='fn-1'&gt;In theory we can just unset IFS to return it to it’s default value, but I like to do it manually &amp; explicitly.&lt;a href='#fnref1'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;
 </description>
-<enclosure>
-
-</enclosure>
 <pubDate>
 Wed, 27 Mar 2013 00:00:00 -0500
 </pubDate>

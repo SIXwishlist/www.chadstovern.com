@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>changing your internal field separator | Chad Stovern</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/zenburn.min.css">
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div id="site_title">
+        <h1><a href="/">Chad Stovern</a></h1>
+        
+    </div>
+
+    <div id="menu">
+        <ul>
+            <li><a href="/">blog</a></li>
+            
+            <li><a href="/about/">about</a></li>
+            
+            <li><a href="/projects/">projects</a></li>
+            
+            <li><a href="/archives/">archives</a></li>
+            <li><a href="/all-posts.xml"><i class="fa fa-rss"></i></a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="main">
+            <div id="page_title">
+                
+  <div id="post_title">
+    <a href="/changing-your-internal-field-separator/"><h1>changing your internal field separator</h1></a>
+  </div>
+
+            </div>
+            
+  <div class="post_meta">
+  Mar 27, 2013 &nbsp;
+  
+    tags: <a href="/tag/shell-scripting/">shell-scripting</a> <a href="/tag/technology/">technology</a> 
+  
+</div>
+<div class="post_content">
+  <h2 id="wow;&#95;that&#95;sounds&#95;pretty&#95;exciting&#95;doesn’t&#95;it?">Wow; that sounds pretty exciting doesn’t it?</h2><p>If you do much shell scripting (I frequent bash) at some point you’ll come across “IFS” and learn to appreciate the usefulness in manipulating it.  Let’s look at a script showing that — and then dive into the details.</p><pre><code class="bash">#!/usr/bin/env bash
+
+## test function
+ifs&#95;test&#40;&#41;
+{
+	cd &#126;/tmp || exit 1
+	for entry in `ls -lah`
+	do
+		echo $entry
+	done
+}
+
+## let’s see how it behaves
+ifs&#95;test
+
+## let’s modify IFS and run it again
+oIFS=$IFS
+IFS=&quot;
+&quot;
+ifs&#95;test
+
+## let’s be anal and restore IFS explicitly
+IFS=$oIFS
+
+exit
+</code></pre><h2 id="so&#95;what’s&#95;happening&#95;here&#95;and&#95;how&#95;is&#95;it&#95;relevant?">So what’s happening here and how is it relevant?</h2><p>A number of times I’ve had to write scripts to automate the processing of files, which can turn out to be any combination of renaming them, moving them around, or checking if they are valid based on some set of rules.  One thing that can often bite me is file names with unexpected spaces.  You may say, “but people know how to name the files correctly, there’s documentation for it even.”  I’m sure you’re right, but you’re not accounting for the fact that these people are human.  Humans make mistakes.  You can get clever and pass results through another Unix tool, but I prefer to avoid extra dependencies when the shell I’m working in can handle it cleanly and efficiently.</p><p>As an example look at the bash function <code>ifs&#95;test</code> in our example.  It’s just a trivial for loop which echoes out the results of the <code>ls -lah</code> command.  The first time it is called this is the result we get:</p><pre><code class="sh">&#91;chadhs@mac scratch&#93;$ ./ifstest.sh
+drwxr-xr-x
+4
+chadhs
+staff
+136B
+Mar
+24
+19:36
+.
+drwxr-xr-x+
+39
+chadhs
+staff
+1.3K
+Mar
+24
+19:36
+..
+-rw-r--r--
+1
+chadhs
+staff
+576B
+Jul
+31
+2012
+pckeyboardhack.tmp
+-rw-r--r--
+1
+chadhs
+staff
+0B
+Mar
+24
+17:17
+so-secret-filename-is-classified.md
+</code></pre><h2 id="ouch.&#95;&#95;that&#95;was&#95;super&#95;ugly;&#95;how&#95;do&#95;we&#95;fix&#95;it?">Ouch.  That was super ugly; how do we fix it?</h2><p>Before explaining that, let’s see how the output looks the second time the function <code>ifs&#95;test</code> is called.</p><pre><code class="sh">drwxr-xr-x   4 chadhs  staff   136B Mar 24 19:36 .
+drwxr-xr-x+ 39 chadhs  staff   1.3K Mar 24 19:36 ..
+-rw-r--r--   1 chadhs  staff   576B Jul 31  2012 pckeyboardhack.tmp
+-rw-r--r--   1 chadhs  staff     0B Mar 24 17:17 so-secret-filename…
+</code></pre><h2 id="ahh…&#95;that’s&#95;much&#95;better.">Ahh… that’s much better.</h2><p>So to fully understand what is going on each time the function <code>ifs&#95;test</code> is called we need to understand what the variable IFS is.  By default the internal shell variable IFS is set to recognize spaces, tabs, and new lines as a field delimiter (aka Internal Field Separator).  Seeing that there are multiple spaces in each of our results from the <code>ls -lah</code> command in the for loop, our shell is treating every single white space (compare the first result to the second) as a delimiter for a new item in our list of results renerated in the for loop.</p><h2 id="now&#95;for&#95;the&#95;fix">Now for the fix</h2><p>You’ll notice in our example that before the function <code>ifs&#95;test</code> is called the second time, we set a variable called oIFS to store the default value of IFS, and then change IFS to only treat a new line as a field separator / delimiter.  Once we no longer need this behavior we then set IFS back to it’s default value <a href='#fn-1' id='fnref1'><sup>1</sup></a>.</p><h2 id="wrapping&#95;it&#95;all&#95;up">Wrapping it all up</h2><p>The reason I spent a little time writing this up and sharing it was the simple fact that learning about how to alter IFS to control how the shell delimits results saved me some pain in a project recently.  My scripts continued to run and do their job but I’d get a lot of little errors when someone didn’t follow the documentation; and trusting humans is just bad for business.  ;-)</p><ol class='footnotes'><li id='fn-1'>In theory we can just unset IFS to return it to it’s default value, but I like to do it manually & explicitly.<a href='#fnref1'>&#8617;</a></li></ol>
+</div>
+
+
+  <div class="paginator">
+    
+      <a href="/procrastination-i-dont-think-youre-lazy/">&laquo; prev post</a>
+    
+    
+  </div>
+
+        </div>
+    </div>
+
+    <div id="footer">
+        
+  <div class="comments">
+    <h4>
+    
+      have a comment, question, or correction?  let's talk:
+    
+
+    
+      <i class="fa fa-twitter"></i> <a href="https://twitter.com/chadhs">twitter</a>
+    
+
+    
+      <i class="fa fa-envelope-o"></i> <a href="mailto:comment@chadstovern.com">email</a>
+    
+    </h4>
+  </div>
+
+
+<br>
+&copy; 2017 Chad Stovern — Powered by <a href="http://cryogenweb.org">Cryogen</a>
+
+    </div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="/js/highlight.pack.js" type="text/javascript"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+    var pageTracker = _gat._getTracker("UA-7881849-4");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+</body>
+</html>

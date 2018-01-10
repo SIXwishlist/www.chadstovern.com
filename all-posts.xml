@@ -12,11 +12,28 @@ http://www.chadstovern.com/
 Chad Stovern's personal blog
 </description>
 <lastBuildDate>
-Sat, 16 Dec 2017 07:16:07 -0600
+Wed, 10 Jan 2018 15:39:29 -0600
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+http://www.chadstovern.com/emacs-is-a-way-of-life/
+</guid>
+<link>
+http://www.chadstovern.com/emacs-is-a-way-of-life/
+</link>
+<title>
+Emacs is a Way of Life
+</title>
+<description>
+&lt;p&gt;Emacs is an operating system.&lt;/p&gt;&lt;p&gt;Emacs has a never-ending learning curve.&lt;/p&gt;&lt;p&gt;Emacs is a way of life.&lt;/p&gt;&lt;p&gt;All of these things are both a joke and largely true.  As a die hard Vim fan, I never thought I'd fall into such enthusiastic use of Emacs, yet I have and don't want to look back.&lt;/p&gt;&lt;p&gt;I started down this path because of my interest in learning Common Lisp and then Clojure.  The Emacs tooling for lisps is superb and once I learned you could configure text editing in Emacs to behave identically to Vim, I set out on my spirit quest.&lt;/p&gt;&lt;p&gt;With multiple years under my belt using, configuring, and solving my problems with Emacs, I'd like to start sharing some of these tips, tricks, and use cases.  In the meantime I invite anyone to skim through my living literate config below.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;a href='https://github.com/chadhs/dotfiles/blob/master/editors/emacs-config.org#emacs-configuration'&gt;Chad's Literate Emacs Configuration&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Happy hacking!&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;http://c4.staticflickr.com/8/7598/16914999852_995b77a811_z.jpg&quot; alt=&quot;Learning Curve for Emacs&quot; /&gt;&lt;/p&gt;
+</description>
+<pubDate>
+Thu, 26 Oct 2017 00:00:00 -0500
+</pubDate>
+</item>
 <item>
 <guid>
 http://www.chadstovern.com/clojure-in-atom/

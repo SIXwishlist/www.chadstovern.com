@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Emacs is a Way of Life | Chad Stovern</title>
+    <title>Using Paredit With Javascript Modes | Chad Stovern</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/zenburn.min.css">
     <link href="/css/main.css" rel="stylesheet" type="text/css" />
@@ -32,28 +32,34 @@
             <div id="page_title">
                 
   <div id="post_title">
-    <a href="/emacs-is-a-way-of-life/"><h1>Emacs is a Way of Life</h1></a>
+    <a href="/using-paredit-with-javascript-modes/"><h1>Using Paredit With Javascript Modes</h1></a>
   </div>
 
             </div>
             
   <div class="post_meta">
-  Jan 10, 2018 &nbsp;
+  Jan 31, 2018 &nbsp;
   
-    tags: <a href="/tag/emacs/">emacs</a> <a href="/tag/technology/">technology</a> 
+    tags: <a href="/tag/emacs/">emacs</a> <a href="/tag/javascript/">javascript</a> <a href="/tag/technology/">technology</a> 
   
 </div>
 <div class="post_content">
-  <p>Emacs is an operating system.</p><p>Emacs has a never-ending learning curve.</p><p>Emacs is a way of life.</p><p>All of these things are both a joke and largely true.  As a die hard Vim fan, I never thought I'd fall into such enthusiastic use of Emacs, yet I have and don't want to look back.</p><p>I started down this path because of my interest in learning Common Lisp and then Clojure.  The Emacs tooling for lisps is superb and once I learned you could configure text editing in Emacs to behave identically to Vim, I set out on my spirit quest.</p><p>With multiple years under my belt using, configuring, and solving my problems with Emacs, I'd like to start sharing some of these tips, tricks, and use cases.  In the meantime I invite anyone to skim through my living literate config below.</p><p><strong><a href='https://github.com/chadhs/dotfiles/blob/master/editors/emacs-config.org#emacs-configuration'>Chad's Literate Emacs Configuration</a></strong></p><p>Happy hacking!</p><p><img src="http://c4.staticflickr.com/8/7598/16914999852_995b77a811_z.jpg" alt="Learning Curve for Emacs" /></p>
+   <p>I'm a huge fan of Emacs and a huge fan of programming using Clojure.  I've been trying to avoid Javascript, but it's reach is everywhere and learning it will definitely help my day job efforts helping teams create cloud native applications.</p><p>One hurdle I faced in setting up Emacs for Javascript development was paredit inserting a space before opening parens  in Javascript and JSON modes; leaving me with things like <code>console.log &#40;&quot;foo&quot;&#41;</code> rather than <code>console.log&#40;&quot;foo&quot;&#41;</code> as I merily typed along.</p><p>Even though non-lisps don't lend themselves to structural editing the way lisps do, I still like being able to wrap and manipulate parens, braces, quotations, etc with paredit—so I did not want to disable paredit in these modes.</p><p>Here is the quick fix I am using from my <a href='https://github.com/chadhs/dotfiles/blob/master/editors/emacs-config.org#paredit'>emacs configuration</a>:</p><pre><code class="lisp">;; prevent paredit from adding a space before opening paren in certain modes
+&#40;defun cs/mode-space-delimiter-p &#40;endp delimiter&#41;
+  &quot;Don't insert a space before delimiters in certain modes&quot;
+  &#40;or
+   &#40;bound-and-true-p js2-mode&#41;
+   &#40;bound-and-true-p js-mode&#41;
+   &#40;bound-and-true-p javascript-mode&#41;&#41;&#41;
+&#40;add-to-list 'paredit-space-for-delimiter-predicates #'cs/mode-space-delimiter-p&#41;&#41;
+</code></pre><p>Happy hacking; and until next time…</p><blockquote><p> “If you think paredit is not for you then you need to become the kind of person that paredit is for.” </p></blockquote>
 </div>
 
 
   <div class="paginator">
     
-      <a href="/using-paredit-with-javascript-modes/">&laquo; prev post</a>
     
-    
-      <a href="/clojure-in-atom/">next post &raquo;</a>
+      <a href="/emacs-is-a-way-of-life/">next post &raquo;</a>
     
   </div>
 

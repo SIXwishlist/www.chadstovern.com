@@ -35,6 +35,22 @@
             
   
     <div class="preview_post">
+      <a href="/quick-tip-how-to-rename-email-flags-in-mailapp/"><h2>Quick Tip: How to Rename Email Flags in Mail.app</h2></a>
+    </div>
+    <div class="post_meta">
+  Jun 23, 2015 &nbsp;
+  
+    tags: <a href="/tag/email/">email</a> <a href="/tag/osx/">osx</a> <a href="/tag/productivity/">productivity</a> 
+  
+</div>
+<div class="post_content">
+  <p>Keeping email well organized is a challenge all of us face. Tags, Flags, and Inbox Zero. This short article isn't going to solve all your email woes, but will give you a quick tip to help you on your way to email nirvana.</p><p>Mail.app on the Mac has a nice built in feature called Flags. Using flags helps to categorize and even note the priority of a message. Rather than keep a taxonomy floating in your head, I've written a <a href="https://computers.tutsplus.com/tutorials/quick-tip-how-to-rename-email-flags-in-mailapp--cms-24027">quick tutorial</a> over at Tuts+ to show you how to give email flags meaningful names.</p><p>Check out the tutorial here: <a href="https://computers.tutsplus.com/tutorials/quick-tip-how-to-rename-email-flags-in-mailapp--cms-24027">Quick Tip: How to Rename Email Flags in Mail.app</a></p>
+</div>
+
+    
+    <br>
+  
+    <div class="preview_post">
       <a href="/how-to-run-a-django-site-with-apache-mod_wsgi-and-mysql-on-freebsd-10-1/"><h2>How to Run a Django Site with Apache, mod_wsgi, and MySQL on FreeBSD 10.1</h2></a>
     </div>
     <div class="post_meta">
@@ -77,34 +93,6 @@
 </div>
 <div class="post_content">
   <p>After nearly a decade of working jobs doing geek stuff sitting in front of a computer all day, I started developing lower back pain.  Even being active off hours wasn't enough, so I caved and talked my boss into a <a href="http://www.geekdesk.com/geekdesk-v3">GeekDesk v3</a>.</p><p>However, now that I've moved on and am part of a small <a href="https://idonethis.com/about/our-team/">startup team</a> working from my home office, that's just not a purchase I was ready to justify again.  Nine months into my new adventure with <a href="https://idonethis.com">iDoneThis</a> and my enthusiasm is high, yet my back is killing me…</p><p>Colin, the founder of <a href="http://customer.io">Customer.io</a>, has an awesome and famous post about his <a href="http://iamnotaprogrammer.com/Ikea-Standing-desk-for-22-dollars.html">$22 standing desk</a>.  This is truly a creative gem, that I really wanted to set up for myself.</p><p>My problem was that my desk has a raised monitor area.  I would either have to remove part of the desk or hack off half of the back legs of the table in Colin's solution.  :-(</p><p><img src="/img/desk-sitting.jpg" alt="Desk Sitting" /></p><p>I thought about finding or building a couple simple boxes as the dimensions I would need for the monitor section of my desk and the work surface were roughly the same.<br /></p><p>After searching around for those dimensions I found this stackable <a href="http://www.target.com/p/room-essentials-24-horizontal-shelf-espresso/-/A-15091670">shelf unit</a> (11.63" H x 24.13" W x 11.63" D and holds up to 20 pounds) at Target.  The total cost with tax and shipping was only $19.84 ( due to a 10% off coupon code + free in store pickup).</p><p>Once I brought the shelves home, it took me all of 20 minutes to clear my desk, assemble them, and set my gear back up.  I've been standing for a week now and once again my back pain has subsided.</p><p><img src="/img/desk-standing.jpg" alt="Desk Standing" /></p>
-</div>
-
-    
-    <br>
-  
-    <div class="preview_post">
-      <a href="/setting-up-postgresql-on-yosemite-for-local-development/"><h2>Setting Up PostgreSQL on OS X Yosemite for Local Development</h2></a>
-    </div>
-    <div class="post_meta">
-  May 1, 2015 &nbsp;
-  
-    tags: <a href="/tag/osx/">osx</a> <a href="/tag/postgresql/">postgresql</a> <a href="/tag/technology/">technology</a> 
-  
-</div>
-<div class="post_content">
-  <p>First and foremost, I highly recommend that you download <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> and <a href="https://www.vagrantup.com/downloads.html">Vagrant</a> to bootstrap a development server on your Mac.</p><p>That being said there are times when you're doing a simple test or tutorial and you'd like to be able to run PostgreSQL on your local machine.</p><p>I'm writing this as I found setting this up on OS X 10.10 Yosemite to be a bit of a pain, since a simple <a href="http://brew.sh">homebrew</a> install didn't do the trick for me.</p><p><strong>Caution</strong>: Before going any further, this tutorial assumes you do not have a prior installation that has data you actually want to keep.  If this is not the case then <strong>stop now</strong>, and backup your data to restore later.</p><h2 id="fire_up_that_command_line,_it's_time_to_dive_in.">Fire Up That Command Line, It's Time to Dive In.</h2><p>This is not a production environment and chances are this is a Mac that you alone use.  Therefore it's perfectly acceptable to optimize for simplicity and ease of use.</p><p>If you've never installed PostgreSQL in the past <em>(if you have skip ahead one step)</em>, then create the data directory you need and set the permissions so your user account has full access.</p><pre><code>mkdir /usr/local/var/postgres
-chmod 770 /usr/local/var/postgres
-</code></pre><p>If you've installed PostgreSQL before <em>(if you haven't you should follow the first step and skip this one)</em> and <strong>do not</strong> have data you care about, follow these steps to setup your data directory with full access for your user account.<br /> If the first command produces an error just ignore it, you're making sure PostgreSQL isn't loaded already and trying to run before you have things setup correctly.</p><pre><code>launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-sudo rm -rf /usr/local/var/postgres
-mkdir /usr/local/var/postgres
-chmod 770 /usr/local/var/postgres
-</code></pre><p>Now install PostgreSQL using <a href="">homebrew</a>.  If you already have it or an old build just uninstall that first.  <em>(hint: <code>brew uninstall postgresql</code>)</em></p><pre><code>brew install postgresql
-</code></pre><p>Next initialize the data directory.</p><pre><code>initdb -D /usr/local/var/postgres
-</code></pre><p>After the initialization is complete, setup PostgreSQL to run on boot with these two commands.  The first creates a symlink to a launch agent and the second tells launchctl that that agent would be loaded now and on boot.</p><pre><code>ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-</code></pre><p>PostgreSQL will now start up and be ready to use.  One trick is to run the <code>createdb</code> command with no arguments to create a database named after your user account.  You never have to do anything with this database, but this allows you to run the <code>psql</code> command unadorned to connect to PostgreSQL.<br /></p><p>TL;DR<br /> Do this now and save keystrokes later.</p><pre><code>createdb
-</code></pre><p>Now you can connect to your locally running PostgreSQL server just by running this short command.</p><pre><code>psql
-</code></pre><p>You're now ready to create a database or two for your projects to use and start hacking.  Have fun!  :-)</p>
 </div>
 
     

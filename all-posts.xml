@@ -12,11 +12,36 @@ http://www.chadstovern.com/
 Chad Stovern's personal blog
 </description>
 <lastBuildDate>
-Mon, 15 Jan 2018 16:55:09 -0600
+Wed, 31 Jan 2018 13:50:28 -0600
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+http://www.chadstovern.com/using-paredit-with-javascript-modes/
+</guid>
+<link>
+http://www.chadstovern.com/using-paredit-with-javascript-modes/
+</link>
+<title>
+Using Paredit With Javascript Modes
+</title>
+<description>
+ &lt;p&gt;I'm a huge fan of Emacs and a huge fan of programming using Clojure.  I've been trying to avoid Javascript, but it's reach is everywhere and learning it will definitely help my day job efforts helping teams create cloud native applications.&lt;/p&gt;&lt;p&gt;One hurdle I faced in setting up Emacs for Javascript development was paredit inserting a space before opening parens  in Javascript and JSON modes; leaving me with things like &lt;code&gt;console.log &amp;#40;&amp;quot;foo&amp;quot;&amp;#41;&lt;/code&gt; rather than &lt;code&gt;console.log&amp;#40;&amp;quot;foo&amp;quot;&amp;#41;&lt;/code&gt; as I merily typed along.&lt;/p&gt;&lt;p&gt;Even though non-lisps don't lend themselves to structural editing the way lisps do, I still like being able to wrap and manipulate parens, braces, quotations, etc with paredit—so I did not want to disable paredit in these modes.&lt;/p&gt;&lt;p&gt;Here is the quick fix I am using from my &lt;a href='https://github.com/chadhs/dotfiles/blob/master/editors/emacs-config.org#paredit'&gt;emacs configuration&lt;/a&gt;:&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;lisp&quot;&gt;;; prevent paredit from adding a space before opening paren in certain modes
+&amp;#40;defun cs/mode-space-delimiter-p &amp;#40;endp delimiter&amp;#41;
+  &amp;quot;Don't insert a space before delimiters in certain modes&amp;quot;
+  &amp;#40;or
+   &amp;#40;bound-and-true-p js2-mode&amp;#41;
+   &amp;#40;bound-and-true-p js-mode&amp;#41;
+   &amp;#40;bound-and-true-p javascript-mode&amp;#41;&amp;#41;&amp;#41;
+&amp;#40;add-to-list 'paredit-space-for-delimiter-predicates #'cs/mode-space-delimiter-p&amp;#41;&amp;#41;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Happy hacking; and until next time…&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt; “If you think paredit is not for you then you need to become the kind of person that paredit is for.” &lt;/p&gt;&lt;/blockquote&gt;
+</description>
+<pubDate>
+Wed, 31 Jan 2018 00:00:00 -0600
+</pubDate>
+</item>
 <item>
 <guid>
 http://www.chadstovern.com/emacs-is-a-way-of-life/

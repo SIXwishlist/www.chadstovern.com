@@ -35,6 +35,30 @@
             
   
     <div class="preview_post">
+      <a href="/using-paredit-with-javascript-modes/"><h2>Using Paredit With Javascript Modes</h2></a>
+    </div>
+    <div class="post_meta">
+  Jan 31, 2018 &nbsp;
+  
+    tags: <a href="/tag/emacs/">emacs</a> <a href="/tag/javascript/">javascript</a> <a href="/tag/technology/">technology</a> 
+  
+</div>
+<div class="post_content">
+   <p>I'm a huge fan of Emacs and a huge fan of programming using Clojure.  I've been trying to avoid Javascript, but it's reach is everywhere and learning it will definitely help my day job efforts helping teams create cloud native applications.</p><p>One hurdle I faced in setting up Emacs for Javascript development was paredit inserting a space before opening parens  in Javascript and JSON modes; leaving me with things like <code>console.log ("foo")</code> rather than <code>console.log("foo")</code> as I merily typed along.</p><p>Even though non-lisps don't lend themselves to structural editing the way lisps do, I still like being able to wrap and manipulate parens, braces, quotations, etc with paredit—so I did not want to disable paredit in these modes.</p><p>Here is the quick fix I am using from my <a href="https://github.com/chadhs/dotfiles/blob/master/editors/emacs-config.org#paredit">emacs configuration</a>:</p><pre><code class="lisp">;; prevent paredit from adding a space before opening paren in certain modes
+(defun cs/mode-space-delimiter-p (endp delimiter)
+  "Don't insert a space before delimiters in certain modes"
+  (or
+   (bound-and-true-p js2-mode)
+   (bound-and-true-p js-mode)
+   (bound-and-true-p javascript-mode)))
+(add-to-list 'paredit-space-for-delimiter-predicates #'cs/mode-space-delimiter-p))
+</code></pre><p>Happy hacking; and until next time…</p><blockquote><p> “If you think paredit is not for you then you need to become the kind of person that paredit is for.” </p></blockquote>
+</div>
+
+    
+    <br>
+  
+    <div class="preview_post">
       <a href="/emacs-is-a-way-of-life/"><h2>Emacs is a Way of Life</h2></a>
     </div>
     <div class="post_meta">
@@ -77,22 +101,6 @@
 </div>
 <div class="post_content">
    <p>After the last Clojure MKE (Milwaukee) meetup, I decided it would be good of me to make a quick video showing others how to get up and running with Clojure on Sublime Text.  I hope you enjoy it.</p><p><a href="https://www.youtube.com/watch?v=-FTHCAIcB1I">Clojure in Sublime Text</a></p>
-</div>
-
-    
-    <br>
-  
-    <div class="preview_post">
-      <a href="/quick-tip-how-to-rename-email-flags-in-mailapp/"><h2>Quick Tip: How to Rename Email Flags in Mail.app</h2></a>
-    </div>
-    <div class="post_meta">
-  Jun 23, 2015 &nbsp;
-  
-    tags: <a href="/tag/email/">email</a> <a href="/tag/osx/">osx</a> <a href="/tag/productivity/">productivity</a> 
-  
-</div>
-<div class="post_content">
-  <p>Keeping email well organized is a challenge all of us face. Tags, Flags, and Inbox Zero. This short article isn't going to solve all your email woes, but will give you a quick tip to help you on your way to email nirvana.</p><p>Mail.app on the Mac has a nice built in feature called Flags. Using flags helps to categorize and even note the priority of a message. Rather than keep a taxonomy floating in your head, I've written a <a href="https://computers.tutsplus.com/tutorials/quick-tip-how-to-rename-email-flags-in-mailapp--cms-24027">quick tutorial</a> over at Tuts+ to show you how to give email flags meaningful names.</p><p>Check out the tutorial here: <a href="https://computers.tutsplus.com/tutorials/quick-tip-how-to-rename-email-flags-in-mailapp--cms-24027">Quick Tip: How to Rename Email Flags in Mail.app</a></p>
 </div>
 
     

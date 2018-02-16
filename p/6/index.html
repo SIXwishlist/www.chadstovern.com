@@ -36,6 +36,36 @@
             
   
     <div class="preview_post">
+      <a href="/upgrade-freebsd-ports-without-confirmation-prompts/"><h2>Upgrade FreeBSD ports without confirmation prompts</h2></a>
+    </div>
+    <div class="post_meta">
+  Feb 17, 2014 &nbsp;
+  
+    tags: <a href="/tag/freebsd/">freebsd</a> <a href="/tag/technology/">technology</a> 
+  
+</div>
+<div class="post_content">
+  <p>Here is a very handy method for updating all of the software on your FreeBSD box.  This gives you the ability to just "walk away" while your machine merrily hums along recompiling all your software without you having to sit around to answer prompts.</p><h2 id="update_your_ports_tree">Update your ports tree</h2><pre><code class="sh">portsnap fetch &amp;&amp; portsnap update
+</code></pre><h2 id="check_for_updates_and_choose_/_update_any_options">Check for updates and choose / update any options</h2><pre><code class="sh">portmaster -an --no-confirm
+</code></pre><h2 id="update_all_ports_without_any_confirmation_questions">Update all ports without any confirmation questions</h2><pre><code class="sh">portmaster -aydbg --no-confirm
+</code></pre><h2 id="…or_update_only_specific_ports_without_any_confirmation_questions">…Or update only specific ports without any confirmation questions</h2><pre><code class="sh">portmaster -ydbg --no-confirm portdir/port portdir2/port2
+</code></pre><h2 id="explanations_of_options_from_the_portmaster_man_page">Explanations of options from the portmaster man page</h2><pre><code class="manpage">-y  answer yes to all user prompts for the features below
+
+-d  always clean distfiles
+
+-b  create and keep a backup package of an installed port
+
+-g  create a package of the new port
+
+--no-confirm  
+do not ask the user to confirm the list of ports to be installed and/or updated before proceeding
+</code></pre>
+</div>
+
+    
+    <br>
+  
+    <div class="preview_post">
       <a href="/a-moment-of-clarity-in-stressful-times/"><h2>A moment of clarity in stressful times</h2></a>
     </div>
     <div class="post_meta">
@@ -83,93 +113,13 @@
     
     <br>
   
-    <div class="preview_post">
-      <a href="/changing-your-internal-field-separator/"><h2>changing your internal field separator</h2></a>
-    </div>
-    <div class="post_meta">
-  Mar 27, 2013 &nbsp;
-  
-    tags: <a href="/tag/shell-scripting/">shell-scripting</a> <a href="/tag/technology/">technology</a> 
-  
-</div>
-<div class="post_content">
-  <h2 id="wow;_that_sounds_pretty_exciting_doesn’t_it?">Wow; that sounds pretty exciting doesn’t it?</h2><p>If you do much shell scripting (I frequent bash) at some point you’ll come across “IFS” and learn to appreciate the usefulness in manipulating it.  Let’s look at a script showing that — and then dive into the details.</p><pre><code class="bash">#!/usr/bin/env bash
-
-## test function
-ifs_test()
-{
-	cd ~/tmp || exit 1
-	for entry in `ls -lah`
-	do
-		echo $entry
-	done
-}
-
-## let’s see how it behaves
-ifs_test
-
-## let’s modify IFS and run it again
-oIFS=$IFS
-IFS="
-"
-ifs_test
-
-## let’s be anal and restore IFS explicitly
-IFS=$oIFS
-
-exit
-</code></pre><h2 id="so_what’s_happening_here_and_how_is_it_relevant?">So what’s happening here and how is it relevant?</h2><p>A number of times I’ve had to write scripts to automate the processing of files, which can turn out to be any combination of renaming them, moving them around, or checking if they are valid based on some set of rules.  One thing that can often bite me is file names with unexpected spaces.  You may say, “but people know how to name the files correctly, there’s documentation for it even.”  I’m sure you’re right, but you’re not accounting for the fact that these people are human.  Humans make mistakes.  You can get clever and pass results through another Unix tool, but I prefer to avoid extra dependencies when the shell I’m working in can handle it cleanly and efficiently.</p><p>As an example look at the bash function <code>ifs_test</code> in our example.  It’s just a trivial for loop which echoes out the results of the <code>ls -lah</code> command.  The first time it is called this is the result we get:</p><pre><code class="sh">[chadhs@mac scratch]$ ./ifstest.sh
-drwxr-xr-x
-4
-chadhs
-staff
-136B
-Mar
-24
-19:36
-.
-drwxr-xr-x+
-39
-chadhs
-staff
-1.3K
-Mar
-24
-19:36
-..
--rw-r--r--
-1
-chadhs
-staff
-576B
-Jul
-31
-2012
-pckeyboardhack.tmp
--rw-r--r--
-1
-chadhs
-staff
-0B
-Mar
-24
-17:17
-so-secret-filename-is-classified.md
-</code></pre><h2 id="ouch.__that_was_super_ugly;_how_do_we_fix_it?">Ouch.  That was super ugly; how do we fix it?</h2><p>Before explaining that, let’s see how the output looks the second time the function <code>ifs_test</code> is called.</p><pre><code class="sh">drwxr-xr-x   4 chadhs  staff   136B Mar 24 19:36 .
-drwxr-xr-x+ 39 chadhs  staff   1.3K Mar 24 19:36 ..
--rw-r--r--   1 chadhs  staff   576B Jul 31  2012 pckeyboardhack.tmp
--rw-r--r--   1 chadhs  staff     0B Mar 24 17:17 so-secret-filename…
-</code></pre><h2 id="ahh…_that’s_much_better.">Ahh… that’s much better.</h2><p>So to fully understand what is going on each time the function <code>ifs_test</code> is called we need to understand what the variable IFS is.  By default the internal shell variable IFS is set to recognize spaces, tabs, and new lines as a field delimiter (aka Internal Field Separator).  Seeing that there are multiple spaces in each of our results from the <code>ls -lah</code> command in the for loop, our shell is treating every single white space (compare the first result to the second) as a delimiter for a new item in our list of results renerated in the for loop.</p><h2 id="now_for_the_fix">Now for the fix</h2><p>You’ll notice in our example that before the function <code>ifs_test</code> is called the second time, we set a variable called oIFS to store the default value of IFS, and then change IFS to only treat a new line as a field separator / delimiter.  Once we no longer need this behavior we then set IFS back to it’s default value <a href="#fn-1" id="fnref1"><sup>1</sup></a>.</p><h2 id="wrapping_it_all_up">Wrapping it all up</h2><p>The reason I spent a little time writing this up and sharing it was the simple fact that learning about how to alter IFS to control how the shell delimits results saved me some pain in a project recently.  My scripts continued to run and do their job but I’d get a lot of little errors when someone didn’t follow the documentation; and trusting humans is just bad for business.  ;-)</p><ol class="footnotes"><li id="fn-1">In theory we can just unset IFS to return it to it’s default value, but I like to do it manually &amp; explicitly.<a href="#fnref1">↩</a></li></ol>
-</div>
-
-    
-    <br>
-  
 
   <div class="paginator">
     
       <a class="left" href="/p/5/">&laquo; newer posts</a>
     
+    
+      <a class="right" href="/p/7/">older posts &raquo;</a>
     
   </div>
 

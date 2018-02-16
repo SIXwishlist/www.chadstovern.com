@@ -36,6 +36,35 @@
             
   
     <div class="preview_post">
+      <a href="/javascript-support-in-emacs/"><h2>Javascript Support in Emacs</h2></a>
+    </div>
+    <div class="post_meta">
+  Feb 16, 2018 &nbsp;
+  
+    tags: <a href="/tag/emacs/">emacs</a> <a href="/tag/javascript/">javascript</a> <a href="/tag/technology/">technology</a> 
+  
+</div>
+<div class="post_content">
+  <p>Two hills I'm prepared to die on are the superiority of modal editing and the near limitless power and customization of Emacs.</p><p>While vscode, atom, etc are nice and have decent communities building plugins around them, I'll be configuring emacs to take me on my journey to learn javascript.</p><p>There is a built in javascript mode with very basic functionality but we want better highlighting and parsing plus syntax checking.  This is where js2-mode comes in: http://elpa.gnu.org/packages/js2-mode.html</p><p>I'm going to make two assumptions here:</p><ol><li>You already have flycheck installed or will go read about it and set it up yourself.</li><li>You are using use-package to manage your package installs and configuration like me, or know how to adapt my examples for your own preferred method.</li></ol><p>This snippet will get js2-mode installed and set as the default mode for all <code>.js</code> files you edit.  It is also setting some indentation preferences and disabling some built in syntax checking options (we'll be leveraging flycheck and jshint).</p><pre><code class="lisp">;; a better javascript mode
+(use-package js2-mode
+  :mode "\\.js\\'"
+  :config
+  (setq js2-mode-show-parse-errors nil
+        js2-mode-show-strict-warnings nil
+        js2-basic-offset 2
+        js-indent-level 2)
+  (electric-pair-mode 1))
+</code></pre><p>Now we can install jshint for linting / syntax checking purposes.</p><p><code>npm install -g jshint</code></p><p>Followed by creating a global <code>.jshintrc</code> file in our home directory.  See a full set of options here: https://github.com/jshint/jshint/blob/master/examples/.jshintrc</p><pre><code class="json">{
+  "asi"       : true,
+  "esversion" : 6
+}
+</code></pre><p>We're now ready to start hacking around with javascript code with full syntax checking and highligting.</p><p>Better code auto-completion would be nice, but we'll tackle that next time. B-) </p>
+</div>
+
+    
+    <br>
+  
+    <div class="preview_post">
       <a href="/using-paredit-with-javascript-modes/"><h2>Using Paredit With Javascript Modes</h2></a>
     </div>
     <div class="post_meta">
@@ -86,22 +115,6 @@
 </div>
 <div class="post_content">
   <p>Since I just recently made a getting started with Clojure in Sublime Text video, I decided to also make a video showing how to get started with Clojure in Github's Atom.  I hope you enjoy it as well.</p><p><a href="https://www.youtube.com/watch?v=l_fxk3QvOrQ">Clojure in Atom</a></p>
-</div>
-
-    
-    <br>
-  
-    <div class="preview_post">
-      <a href="/clojure-in-sublime-text/"><h2>Clojure in Sublime Text</h2></a>
-    </div>
-    <div class="post_meta">
-  Feb 15, 2016 &nbsp;
-  
-    tags: <a href="/tag/clojure/">clojure</a> <a href="/tag/sublime-text/">sublime-text</a> <a href="/tag/technology/">technology</a> 
-  
-</div>
-<div class="post_content">
-   <p>After the last Clojure MKE (Milwaukee) meetup, I decided it would be good of me to make a quick video showing others how to get up and running with Clojure on Sublime Text.  I hope you enjoy it.</p><p><a href="https://www.youtube.com/watch?v=-FTHCAIcB1I">Clojure in Sublime Text</a></p>
 </div>
 
     

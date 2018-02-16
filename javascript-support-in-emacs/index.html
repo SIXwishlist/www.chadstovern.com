@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>Using Paredit With Javascript Modes | Chad Stovern</title>
+    <title>Javascript Support in Emacs | Chad Stovern</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/zenburn.min.css"> -->
     <link rel="stylesheet" href="/css/solarized-dark.css">
@@ -33,36 +33,39 @@
             <div id="page_title">
                 
   <div id="post_title">
-    <a href="/using-paredit-with-javascript-modes/"><h1>Using Paredit With Javascript Modes</h1></a>
+    <a href="/javascript-support-in-emacs/"><h1>Javascript Support in Emacs</h1></a>
   </div>
 
             </div>
             
   <div class="post_meta">
-  Jan 31, 2018 &nbsp;
+  Feb 16, 2018 &nbsp;
   
     tags: <a href="/tag/emacs/">emacs</a> <a href="/tag/javascript/">javascript</a> <a href="/tag/technology/">technology</a> 
   
 </div>
 <div class="post_content">
-   <p>I'm a huge fan of Emacs and a huge fan of programming using Clojure.  I've been trying to avoid Javascript, but it's reach is everywhere and learning it will definitely help my day job efforts helping teams create cloud native applications.</p><p>One hurdle I faced in setting up Emacs for Javascript development was paredit inserting a space before opening parens  in Javascript and JSON modes; leaving me with things like <code>console.log &#40;&quot;foo&quot;&#41;</code> rather than <code>console.log&#40;&quot;foo&quot;&#41;</code> as I merily typed along.</p><p>Even though non-lisps don't lend themselves to structural editing the way lisps do, I still like being able to wrap and manipulate parens, braces, quotations, etc with paredit—so I did not want to disable paredit in these modes.</p><p>Here is the quick fix I am using from my <a href='https://github.com/chadhs/dotfiles/blob/master/editors/emacs-config.org#paredit'>emacs configuration</a>:</p><pre><code class="lisp">;; prevent paredit from adding a space before opening paren in certain modes
-&#40;defun cs/mode-space-delimiter-p &#40;endp delimiter&#41;
-  &quot;Don't insert a space before delimiters in certain modes&quot;
-  &#40;or
-   &#40;bound-and-true-p js2-mode&#41;
-   &#40;bound-and-true-p js-mode&#41;
-   &#40;bound-and-true-p javascript-mode&#41;&#41;&#41;
-&#40;add-to-list 'paredit-space-for-delimiter-predicates #'cs/mode-space-delimiter-p&#41;&#41;
-</code></pre><p>Happy hacking; and until next time…</p><blockquote><p> “If you think paredit is not for you then you need to become the kind of person that paredit is for.” </p></blockquote>
+  <p>Two hills I'm prepared to die on are the superiority of modal editing and the near limitless power and customization of Emacs.</p><p>While vscode, atom, etc are nice and have decent communities building plugins around them, I'll be configuring emacs to take me on my journey to learn javascript.</p><p>There is a built in javascript mode with very basic functionality but we want better highlighting and parsing plus syntax checking.  This is where js2-mode comes in: http://elpa.gnu.org/packages/js2-mode.html</p><p>I'm going to make two assumptions here:</p><ol><li>You already have flycheck installed or will go read about it and set it up yourself.</li><li>You are using use-package to manage your package installs and configuration like me, or know how to adapt my examples for your own preferred method.</li></ol><p>This snippet will get js2-mode installed and set as the default mode for all <code>.js</code> files you edit.  It is also setting some indentation preferences and disabling some built in syntax checking options (we'll be leveraging flycheck and jshint).</p><pre><code class="lisp">;; a better javascript mode
+&#40;use-package js2-mode
+  :mode &quot;\\.js\\'&quot;
+  :config
+  &#40;setq js2-mode-show-parse-errors nil
+        js2-mode-show-strict-warnings nil
+        js2-basic-offset 2
+        js-indent-level 2&#41;
+  &#40;electric-pair-mode 1&#41;&#41;
+</code></pre><p>Now we can install jshint for linting / syntax checking purposes.</p><p><code>npm install -g jshint</code></p><p>Followed by creating a global <code>.jshintrc</code> file in our home directory.  See a full set of options here: https://github.com/jshint/jshint/blob/master/examples/.jshintrc</p><pre><code class="json">{
+  &quot;asi&quot;       : true,
+  &quot;esversion&quot; : 6
+}
+</code></pre><p>We're now ready to start hacking around with javascript code with full syntax checking and highligting.</p><p>Better code auto-completion would be nice, but we'll tackle that next time. B-) </p>
 </div>
 
 
   <div class="paginator">
     
-      <a href="/javascript-support-in-emacs/">&laquo; prev post</a>
     
-    
-      <a href="/emacs-is-a-way-of-life/">next post &raquo;</a>
+      <a href="/using-paredit-with-javascript-modes/">next post &raquo;</a>
     
   </div>
 

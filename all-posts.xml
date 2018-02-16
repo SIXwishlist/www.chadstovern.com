@@ -12,11 +12,41 @@ http://www.chadstovern.com/
 Chad Stovern's personal blog
 </description>
 <lastBuildDate>
-Tue, 06 Feb 2018 14:36:20 -0600
+Fri, 16 Feb 2018 12:46:13 -0600
 </lastBuildDate>
 <generator>
 clj-rss
 </generator>
+<item>
+<guid>
+http://www.chadstovern.com/javascript-support-in-emacs/
+</guid>
+<link>
+http://www.chadstovern.com/javascript-support-in-emacs/
+</link>
+<title>
+Javascript Support in Emacs
+</title>
+<description>
+&lt;p&gt;Two hills I'm prepared to die on are the superiority of modal editing and the near limitless power and customization of Emacs.&lt;/p&gt;&lt;p&gt;While vscode, atom, etc are nice and have decent communities building plugins around them, I'll be configuring emacs to take me on my journey to learn javascript.&lt;/p&gt;&lt;p&gt;There is a built in javascript mode with very basic functionality but we want better highlighting and parsing plus syntax checking.  This is where js2-mode comes in: http://elpa.gnu.org/packages/js2-mode.html&lt;/p&gt;&lt;p&gt;I'm going to make two assumptions here:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;You already have flycheck installed or will go read about it and set it up yourself.&lt;/li&gt;&lt;li&gt;You are using use-package to manage your package installs and configuration like me, or know how to adapt my examples for your own preferred method.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;This snippet will get js2-mode installed and set as the default mode for all &lt;code&gt;.js&lt;/code&gt; files you edit.  It is also setting some indentation preferences and disabling some built in syntax checking options (we'll be leveraging flycheck and jshint).&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;lisp&quot;&gt;;; a better javascript mode
+&amp;#40;use-package js2-mode
+  :mode &amp;quot;\\.js\\'&amp;quot;
+  :config
+  &amp;#40;setq js2-mode-show-parse-errors nil
+        js2-mode-show-strict-warnings nil
+        js2-basic-offset 2
+        js-indent-level 2&amp;#41;
+  &amp;#40;electric-pair-mode 1&amp;#41;&amp;#41;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Now we can install jshint for linting / syntax checking purposes.&lt;/p&gt;&lt;p&gt;&lt;code&gt;npm install -g jshint&lt;/code&gt;&lt;/p&gt;&lt;p&gt;Followed by creating a global &lt;code&gt;.jshintrc&lt;/code&gt; file in our home directory.  See a full set of options here: https://github.com/jshint/jshint/blob/master/examples/.jshintrc&lt;/p&gt;&lt;pre&gt;&lt;code class=&quot;json&quot;&gt;{
+  &amp;quot;asi&amp;quot;       : true,
+  &amp;quot;esversion&amp;quot; : 6
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We're now ready to start hacking around with javascript code with full syntax checking and highligting.&lt;/p&gt;&lt;p&gt;Better code auto-completion would be nice, but we'll tackle that next time. B-) &lt;/p&gt;
+</description>
+<pubDate>
+Fri, 16 Feb 2018 00:00:00 -0600
+</pubDate>
+</item>
 <item>
 <guid>
 http://www.chadstovern.com/using-paredit-with-javascript-modes/

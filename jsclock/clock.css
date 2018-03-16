@@ -5,7 +5,8 @@ body {
 
 #clock {
   font-size: 32vw;
-  font-family: "Courier", monospace;
+  /* font-family: "Courier", monospace; */
+  font-family: 'Roboto Mono', monospace;
   color: #6A5ACD;
   position: absolute;
   top: 50%;
